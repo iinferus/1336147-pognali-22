@@ -1,12 +1,378 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
 
-  </body>
+<body class="page-body">
+
+  <header class="page-header">
+
+    <a class="header__logo">
+      <img src="img/Pognali.png" alt="Логотип компании" width="100" height="15">
+    </a>
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#about">
+              О сервисе
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#direction">
+              Направления
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#companion">
+              Попутчики
+            </a>
+          </li>
+        </ul>
+        <div class="main-nav__list user-list">
+          <a href="#" class="user-list__login">Авторизация</a>
+        </div>
+        <ul class="main-nav__list contact-list">
+          <li class="contact-list__item">
+            <a class="contact-list__phone" href="tel:+88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contact-list__item">
+            <a class="contact-list__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list social-list">
+          <li class="social-list__item">
+            <a class="social-list--facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list--vk" href="#"><span class="visually-hidden">VK</span></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list--twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1><span class="visually-hidden">Погнали?</span>В путешествие с крутыми попутчиками!</h1>
+    <section class="quote">
+      <div class="quote__wrapper wrapper">
+        <p class="quote__text">«Лучшее приложение,<br /> что я видел в жизни!»</p>
+        <p class="quote__author">Мурат Эльтазин<br /> главный редактор<br /> газеты «гаджетлайф»</p>
+        <img src="img/traveller-illustration-mobile 1.png" alt="" width="192" height="255">
+      </div>
+    </section>
+    <section class="tips">
+      <div class="tips__wrapper wrapper">
+        <h2 class="visually-hidden">Советы</h2>
+        <ul class="tips__list">
+          <li class="tips__item first-tips">
+            <p>Выберите<br />направление</p>
+            <p>1</p>
+          </li>
+          <li class="tips__item second-tips">
+            <p>Изучите идеи<br />путешественников</p>
+            <p>2</p>
+          </li>
+          <li class="tips__item third-tips">
+            <p>Находите тех,<br />кто похож на вас</p>
+            <p>3</p>
+          </li>
+          <li class="tips__item fourth-tips">
+            <p>Путешествуйте<br />вместе!
+            </p>
+            <p>4</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about__wrapper wrapper">
+        <h2 class="about__title">О сервисе</h2>
+        <p class="about__desc">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими
+          идеями путешествий и черпайте вдохновение в чужих.</p>
+        <p class="about__tagline">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+      </div>
+    </section>
+    <section class="direction" id="direction">
+      <div class="direction__wrapper wrapper">
+        <h2 class="direction__title">Направления</h2>
+        <p class="direction__desc">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы
+          отправиться и чем можно там заняться.</p>
+        <ul class="direction__list">
+          <li class="direction__item">
+            <img src="img/thailand-mobile.jpg" alt="Тайланд" width="270" height="110">
+            <img src="img/Thailand-flag.jpg" alt="Флаг Тайланда" width="35" height="24">
+            <h3 class="direction__name">Таиланд</h3>
+            <p class="direction__tagline">Джунгли зовут!</p>
+            <p class="direction__companion">18321</p>
+          </li>
+          <li class="direction__item">
+            <img src="img/france-mobile.jpg" alt="Франция" width="270" height="110">
+            <img src="img/france-flag.jpg" alt="Флаг Франции" width="35" height="24">
+            <h3 class="direction__name">Франция</h3>
+            <p class="direction__tagline">Трэ бьен, манифик!</p>
+            <p class="direction__companion">12518</p>
+          </li>
+          <li class="direction__item">
+            <img src="img/czech-mobile.jpg" alt="Чехия" width="270" height="110">
+            <img src="img/Czech-flag.jpg" alt="Флаг Чехии" width="35" height="24">
+            <h3 class="direction__name">Чехия</h3>
+            <p class="direction__tagline">Закоулки старой Европы</p>
+            <p class="direction__companion">5326</p>
+          </li>
+        </ul>
+        <a href="#" class="button">Показать все</a>
+      </div>
+    </section>
+    <section class="companion" id="companion">
+      <div class="companion__wrapper wrapper">
+        <h2 class="companion__title">Попутчики</h2>
+        <p class="companion__desc">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
+          коктейль, а другому маршрут для хайкинга.</p>
+        <p class="companion__tagline">Теперь можно легко найти
+          единомышленников!</p>
+        <ul class="companion__list">
+          <li class="companion__item">
+            <div class="companion__level">
+              <span class="level__nubmer">99</span>
+              <span class="level__text">level</span>
+            </div>
+            <img src="img/avatar-1.jpg" alt="Таня Фирсова" width="270" height="270">
+            <ul class="country__list">
+              <li class="country__item"><img src="img/Sri-Lanka-flag.jpg" alt="Флаг Шри-Ланки" width="35" height="25">
+              </li>
+              <li class="country__item"><img src="img/Thailand-flag.jpg" alt="Флаг Тайланда" width="35" height="25">
+              </li>
+              <li class="country__item"><img src="img/Seychelles-flag.jpg" alt="Флаг Сейшел" width="35" height="25">
+              </li>
+            </ul>
+            <h3 class="companion__name">Таня Фирсова</h3>
+            <p class="companion__tegs">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <div class="companion__transport">
+              <svg class="transport__icon transport__icon--active" width="23" height="22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M18.49 1.18c-.8.18-1.6.36-1.9.86L14.28 6.4 1.86 9.21l-.5 1.4 9.5.85-1.61 3.8-3.6.8-.9 1.5 2.59.26.3 1.22c.13.43.6.72 1 .63l1.2-.27 1.38 2.25.9-1.49-.88-3.65 2.6-3.16 4.98 8.3 1-1.08-3.05-12.58 2.8-4.06c.31-.5.11-1.3-.09-2.12-.1-.4-.6-.72-1-.63z"
+                    fill="#1D2E5B" />
+                </g>
+                <defs>
+                  <clippath id="clip0">
+                    <path fill="#fff" transform="translate(.08)" d="M0 0h22.85v22H0z" />
+                  </clippath>
+                </defs>
+              </svg>
+              <svg class="transport__icon transport__icon--disable" width="19" height="20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M4.84 13.57c0-.4-.16-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.31.28-.46.62-.46 1.01 0 .4.15.73.45 1.01.3.28.68.42 1.1.42.44 0 .8-.14 1.1-.42.31-.28.47-.61.47-1zm12.47 0c0-.4-.15-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.3.28-.46.62-.46 1.01 0 .4.15.73.46 1.01.3.28.67.42 1.1.42.43 0 .8-.14 1.1-.42.3-.28.46-.61.46-1zm-.56-4.42l-.88-4.28a.72.72 0 00-.27-.42.8.8 0 00-.5-.16H3.92a.8.8 0 00-.5.16.72.72 0 00-.27.42l-.87 4.28c-.04.22.01.42.17.6.15.16.35.25.6.25h12.93c.25 0 .44-.09.6-.26a.66.66 0 00.17-.59zM14 2.32a.5.5 0 00-.17-.38.6.6 0 00-.42-.15h-7.8a.6.6 0 00-.4.15.5.5 0 00-.18.38c0 .15.06.28.17.38.11.1.25.16.41.16h7.8a.6.6 0 00.42-.16.5.5 0 00.17-.38zm4.87 8.1v6.72H17.3v1.43c0 .4-.15.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.3-.28-.46-.61-.46-1v-1.44H4.84v1.43c0 .4-.16.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.31-.28-.46-.61-.46-1v-1.44H.16v-6.73c0-.83.1-1.66.3-2.49l1.26-5.06c.07-.58.47-1.1 1.18-1.53a8.5 8.5 0 012.8-1C6.87.11 8.13 0 9.52 0c1.4 0 2.66.11 3.81.33a8.5 8.5 0 012.8 1c.72.44 1.12.95 1.19 1.53l1.28 5.06c.19.76.28 1.6.28 2.5z"
+                    fill="#1D2E5B" />
+                </g>
+                <defs>
+                  <clippath id="clip1">
+                    <path fill="#fff" transform="translate(.15)" d="M0 0h18.72v20H0z" />
+                  </clippath>
+                </defs>
+              </svg>
+              <svg class="transport__icon transport__icon--disable" width="26" height="25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.7 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.71-2.02 4.33 4.33 0 011.01-4.9 4.85 4.85 0 015.1-.97c.84.34 1.57.92 2.09 1.66a4.37 4.37 0 01-.58 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.19.17-1.69.5-.5.32-.9.78-1.12 1.31a2.82 2.82 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.03-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.16-.86zM6.3 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.72-2.02A4.33 4.33 0 013 14.2a4.85 4.85 0 015.1-.97c.85.34 1.58.92 2.1 1.66a4.37 4.37 0 01-.6 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.2.17-1.7.5-.5.32-.89.78-1.12 1.31a2.83 2.83 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.04-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.15-.86zM16.25 6.25a1.68 1.68 0 001.15-.46 1.55 1.55 0 00.36-1.7 1.54 1.54 0 00-.88-.85c-.2-.08-.4-.12-.62-.11a1.68 1.68 0 00-1.15.45 1.56 1.56 0 00-.48 1.1 1.51 1.51 0 00.47 1.1 1.63 1.63 0 001.15.47z"
+                  fill="#1D2E5B" />
+                <path
+                  d="M18.66 9.38h-2.22a.2.2 0 01-.1-.03.2.2 0 01-.08-.08l-1.6-2.84a1.6 1.6 0 00-2.5-.38L8.58 9.5c-.3.3-.47.69-.47 1.1 0 .85.63 1.15.93 1.32 1.45.8 2.47 1.39 3.03 1.71a.2.2 0 01.1.17v3.37a.81.81 0 001.1.76.82.82 0 00.46-.43c.04-.1.06-.2.06-.3v-4.2a.76.76 0 00-.34-.64l-1.87-1.3a.2.2 0 01-.09-.14.19.19 0 01.06-.15l2.13-2.19a.2.2 0 01.17-.06.2.2 0 01.15.1l1.11 1.93a.8.8 0 00.3.29c.13.07.27.1.41.1h2.85a.84.84 0 00.59-.23.78.78 0 00.22-.58c-.02-.42-.4-.74-.84-.74z"
+                  fill="#1D2E5B" />
+              </svg>
+              <svg class="transport__icon transport__icon--disable" width="23" height="24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.19 6c1.04 0 1.89-.9 1.89-2s-.85-2-1.9-2c-1.04 0-1.88.9-1.88 2s.84 2 1.89 2zM15.03 10.97c.22.34.53.6.9.75.36.15.75.18 1.13.08l3.14-.83-.46-1.94-3.13.83-1.3-2.07a1.9 1.9 0 00-1.21-.85l-3.64-.77a1.8 1.8 0 00-1.2.16c-.37.2-.67.51-.86.9l-1.57 3.32 1.7.9 1.56-3.32 1.86.4L7.15 17h-4.2v2h4.2c.65 0 1.28-.37 1.62-.97l1.8-3.2 4.9 1.04 1.71 5.45 1.8-.64-1.72-5.45c-.1-.33-.3-.63-.54-.86-.25-.24-.56-.4-.88-.46l-2.88-.61 1.68-2.96.4.63z"
+                  fill="#1D2E5B" />
+              </svg>
+            </div>
+          </li>
+          <li class="companion__item">
+            <div class="companion__level">
+              <span class="level__nubmer">80</span>
+              <span class="level__text">level</span>
+            </div>
+            <img src="img/avatar-2.jpg" alt="Петя Демин" width="270" height="270">
+            <ul class="country__list">
+              <li class="country__item"><img src="img/Belgium-flag.jpg" alt="Флаг Бельгии" width="35" height="25">
+              </li>
+              <li class="country__item"><img src="img/Czech-flag.jpg" alt="Флаг Чехии" width="35" height="25">
+              </li>
+            </ul>
+            <h3 class="companion__name">Петя Демин</h3>
+            <p class="companion__tegs">#бургер #бар #футбол #концерт #крафт</p>
+            <div class="companion__transport">
+              <svg class="transport__icon transport__icon--active" width="23" height="22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M18.49 1.18c-.8.18-1.6.36-1.9.86L14.28 6.4 1.86 9.21l-.5 1.4 9.5.85-1.61 3.8-3.6.8-.9 1.5 2.59.26.3 1.22c.13.43.6.72 1 .63l1.2-.27 1.38 2.25.9-1.49-.88-3.65 2.6-3.16 4.98 8.3 1-1.08-3.05-12.58 2.8-4.06c.31-.5.11-1.3-.09-2.12-.1-.4-.6-.72-1-.63z"
+                    fill="#1D2E5B" />
+                </g>
+                <defs>
+                  <clippath id="clip2">
+                    <path fill="#fff" transform="translate(.08)" d="M0 0h22.85v22H0z" />
+                  </clippath>
+                </defs>
+              </svg>
+              <svg class="transport__icon transport__icon--active" width="19" height="20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M4.84 13.57c0-.4-.16-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.31.28-.46.62-.46 1.01 0 .4.15.73.45 1.01.3.28.68.42 1.1.42.44 0 .8-.14 1.1-.42.31-.28.47-.61.47-1zm12.47 0c0-.4-.15-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.3.28-.46.62-.46 1.01 0 .4.15.73.46 1.01.3.28.67.42 1.1.42.43 0 .8-.14 1.1-.42.3-.28.46-.61.46-1zm-.56-4.42l-.88-4.28a.72.72 0 00-.27-.42.8.8 0 00-.5-.16H3.92a.8.8 0 00-.5.16.72.72 0 00-.27.42l-.87 4.28c-.04.22.01.42.17.6.15.16.35.25.6.25h12.93c.25 0 .44-.09.6-.26a.66.66 0 00.17-.59zM14 2.32a.5.5 0 00-.17-.38.6.6 0 00-.42-.15h-7.8a.6.6 0 00-.4.15.5.5 0 00-.18.38c0 .15.06.28.17.38.11.1.25.16.41.16h7.8a.6.6 0 00.42-.16.5.5 0 00.17-.38zm4.87 8.1v6.72H17.3v1.43c0 .4-.15.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.3-.28-.46-.61-.46-1v-1.44H4.84v1.43c0 .4-.16.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.31-.28-.46-.61-.46-1v-1.44H.16v-6.73c0-.83.1-1.66.3-2.49l1.26-5.06c.07-.58.47-1.1 1.18-1.53a8.5 8.5 0 012.8-1C6.87.11 8.13 0 9.52 0c1.4 0 2.66.11 3.81.33a8.5 8.5 0 012.8 1c.72.44 1.12.95 1.19 1.53l1.28 5.06c.19.76.28 1.6.28 2.5z"
+                    fill="#1D2E5B" />
+                </g>
+                <defs>
+                  <clippath id="clip3">
+                    <path fill="#fff" transform="translate(.15)" d="M0 0h18.72v20H0z" />
+                  </clippath>
+                </defs>
+              </svg>
+              <svg class="transport__icon transport__icon--disable" width="26" height="25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.7 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.71-2.02 4.33 4.33 0 011.01-4.9 4.85 4.85 0 015.1-.97c.84.34 1.57.92 2.09 1.66a4.37 4.37 0 01-.58 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.19.17-1.69.5-.5.32-.9.78-1.12 1.31a2.82 2.82 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.03-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.16-.86zM6.3 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.72-2.02A4.33 4.33 0 013 14.2a4.85 4.85 0 015.1-.97c.85.34 1.58.92 2.1 1.66a4.37 4.37 0 01-.6 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.2.17-1.7.5-.5.32-.89.78-1.12 1.31a2.83 2.83 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.04-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.15-.86zM16.25 6.25a1.68 1.68 0 001.15-.46 1.55 1.55 0 00.36-1.7 1.54 1.54 0 00-.88-.85c-.2-.08-.4-.12-.62-.11a1.68 1.68 0 00-1.15.45 1.56 1.56 0 00-.48 1.1 1.51 1.51 0 00.47 1.1 1.63 1.63 0 001.15.47z"
+                  fill="#1D2E5B" />
+                <path
+                  d="M18.66 9.38h-2.22a.2.2 0 01-.1-.03.2.2 0 01-.08-.08l-1.6-2.84a1.6 1.6 0 00-2.5-.38L8.58 9.5c-.3.3-.47.69-.47 1.1 0 .85.63 1.15.93 1.32 1.45.8 2.47 1.39 3.03 1.71a.2.2 0 01.1.17v3.37a.81.81 0 001.1.76.82.82 0 00.46-.43c.04-.1.06-.2.06-.3v-4.2a.76.76 0 00-.34-.64l-1.87-1.3a.2.2 0 01-.09-.14.19.19 0 01.06-.15l2.13-2.19a.2.2 0 01.17-.06.2.2 0 01.15.1l1.11 1.93a.8.8 0 00.3.29c.13.07.27.1.41.1h2.85a.84.84 0 00.59-.23.78.78 0 00.22-.58c-.02-.42-.4-.74-.84-.74z"
+                  fill="#1D2E5B" />
+              </svg>
+              <svg class="transport__icon transport__icon--active" width="23" height="24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.19 6c1.04 0 1.89-.9 1.89-2s-.85-2-1.9-2c-1.04 0-1.88.9-1.88 2s.84 2 1.89 2zM15.03 10.97c.22.34.53.6.9.75.36.15.75.18 1.13.08l3.14-.83-.46-1.94-3.13.83-1.3-2.07a1.9 1.9 0 00-1.21-.85l-3.64-.77a1.8 1.8 0 00-1.2.16c-.37.2-.67.51-.86.9l-1.57 3.32 1.7.9 1.56-3.32 1.86.4L7.15 17h-4.2v2h4.2c.65 0 1.28-.37 1.62-.97l1.8-3.2 4.9 1.04 1.71 5.45 1.8-.64-1.72-5.45c-.1-.33-.3-.63-.54-.86-.25-.24-.56-.4-.88-.46l-2.88-.61 1.68-2.96.4.63z"
+                  fill="#1D2E5B" />
+              </svg>
+            </div>
+          </li>
+        </ul>
+        <a href="catalog.html" class="button">Показать всех</a>
+      </div>
+    </section>
+    <section class="profile-rate">
+      <div class="profile-rate__wrapper wrapper">
+        <h2 class="">Добавьте свой профиль</h2>
+        <img class="profile-rate__image" src="img/rates.png" alt="" width="100" height="100">
+        <ul class="profile-rate__list">
+          <li class="profile-rate__item">
+            <p class="profile-rate__name">Базовое размещение</p>
+            <p class="profile-rate__cost">Бесплатно</p>
+            <p class="profile-rate__position">1</p>
+          </li>
+          <li class="profile-rate__item">
+            <p class="profile-rate__name">Вывод на первых позициях</p>
+            <p class="profile-rate__cost">99 руб./мес</p>
+            <p class="profile-rate__position">2</p>
+          </li>
+          <li class="profile-rate__item">
+            <p class="profile-rate__name">Кастомный цвет карточки</p>
+            <p class="profile-rate__cost">59 руб./мес</p>
+            <p class="profile-rate__position">3</p>
+          </li>
+        </ul>
+        <a class="button profile-rate__button" href="">Показать тарифы для бизнеса</a>
+      </div>
+    </section>
+    <section class="info">
+      <div class="info__wrapper wrapper">
+        <h2 class="info__title">Заинтересовались?</h2>
+        <p class="info__desc">
+          <span>Зарегистрируйтесь, это быстро и бесплатно!</span>
+          <span>Уже зарегистрированы? Тогда скорее <a href="">авторизуйтесь</a>.</span>
+        </p>
+        <form action="#">
+          <input type="email" name="email" id="info__email" placeholder="E-mail">
+          <button class="button" type="submit"><span class="visually-hidden">Отправить</span></button>
+        </form>
+      </div>
+      <p class="info__question">Остались вопросы? Мы с радостью на них ответим!</p>
+      <ul class="info__contact contact-list">
+        <li class="contact-list__item">
+          <a class="contact-list__phone" href="tel:+88005558628">8 800 555-86-28</a>
+        </li>
+        <li class="contact-list__item">
+          <a class="contact-list__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+    </section>
+    <section class="address">
+      <div class="address__wrapper wrapper">
+        <h2 class="visually-hidden">Как добраться</h2>
+        <p class="address__address">ул. Большая Конюшенная, 19/8</p>
+        <a class="button address__button" href="">Проложить маршрут</a>
+      </div>
+    </section>
+    <div class="map">
+      <img src="img/map.jpg" alt="Карта" width="320" height="762">
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <a class="footer__logo">
+      <img src="img/Pognali.png" alt="Логотип компании" width="100" height="15">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social-link--facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social-link--vk" href="#"><span class="visually-hidden">VK</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social-link--twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 60 60" width="27" height="34"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <div class="modal modal__business-rates">
+    <div class="business-rates__wrapper wrapper">
+      <h2 class="business-rates__title">
+        <ul class="business-rates__list">
+          <li class="business-rates__item">
+            <p class="business-rates__name">Реклама у блоггера</p>
+            <p class="business-rates__cost">300 000 руб./пост</p>
+          </li>
+          <li class="business-rates__item">
+            <p class="business-rates__name">Накрутка подписчиков</p>
+            <p class="business-rates__cost">от 1 руб./шт.</p>
+          </li>
+          <li class="business-rates__item">
+            <p class="business-rates__name">Лайки от ботов</p>
+            <p class="business-rates__cost">от 20 коп./лайк</p>
+          </li>
+          <li class="business-rates__item">
+            <p class="business-rates__name">Ваш продакт-плейсмент</p>
+            <p class="business-rates__cost">Индивидуально</p>
+          </li>
+        </ul>
+      </h2>
+    </div>
+  </div>
+
+</body>
+
 </html>
