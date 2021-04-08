@@ -90,475 +90,431 @@
     <section class="profile-card">
       <h2 class="visually-hidden">Профиль</h2>
       <div class="profile-card__wrapper wrapper">
-        <ul class="profile-card__list">
-          <li class="profile-card__item level">
+        <form action="https://echo.htmlacademy.ru" name="card-form" method="POST">
+          <div class="profile-card__level level">
             <span class="level__nubmer">99</span>
             <span class="level__text">level</span>
-          </li>
-          <li class="profile-card__item">
-            <img class="profile-card__photo" src="img/avatar-2.jpg" alt="Мое фото" width="100" height="100">
-          </li>
-          <li class="profile-card__item">
-            <button class="button inner-button "></button>
-          </li>
+          </div>
+          <img class="profile-card__photo" src="img/avatar-2.jpg" alt="Мое фото" width="100" height="100">
+          <div class="profile-card__item">
+            <input type="file" name="upload-avatar" class="button inner-button" title="Cменить фото"
+              placeholder="Cменить фото" capture>
+            <label for="upload-avatar" class="visually hidden">сменить фото</label>
+            <button type="button" class="button inner-button upload-image">Сменить фото</button>
+          </div>
           <li class="profile-card__item">
             <fieldset class="profile-card__field">
               <legend class="profile-card__legend">ТЭГИ</legend>
-              <label for="tags" class="visually-hidden">ТЭГИ</label>
-              <textarea name="tags" id="tags" cols="30" rows="10">#бургер #бар #футбол #концерт #крафт</textarea>
+              <label for="tags" class="visually-hidden">Добавить тэг</label>
+              <textarea name="tags" id="tags" cols="30" rows="2"
+                required>#бургер #бар #футбол #концерт #крафт</textarea>
             </fieldset>
           </li>
           <li class="profile-card__item">
             <fieldset class="profile-card__field transport">
-              <legend class="profile-card__legend">ТЭГИ</legend>
+              <legend class="profile-card__legend">транспорт</legend>
               <ul class="transport__list">
                 <li class="transport__item">
-                  <svg class="transport__icon transport__icon--active" width="23" height="22" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0)">
-                      <path
-                        d="M18.49 1.18c-.8.18-1.6.36-1.9.86L14.28 6.4 1.86 9.21l-.5 1.4 9.5.85-1.61 3.8-3.6.8-.9 1.5 2.59.26.3 1.22c.13.43.6.72 1 .63l1.2-.27 1.38 2.25.9-1.49-.88-3.65 2.6-3.16 4.98 8.3 1-1.08-3.05-12.58 2.8-4.06c.31-.5.11-1.3-.09-2.12-.1-.4-.6-.72-1-.63z"
-                        fill="#1D2E5B" />
-                    </g>
-                    <defs>
-                      <clippath id="clip0">
-                        <path fill="#fff" transform="translate(.08)" d="M0 0h22.85v22H0z" />
-                      </clippath>
-                    </defs>
-                  </svg>
+                  <input type="checkbox" name="icon__plane" id="plane"
+                    class="transport__checkbox transport__checkbox--plane" checked>
+                  <label for="icon__plane" class="visually-hidden">Самолетом</label>
                 </li>
                 <li class="transport__item">
-                  <svg class="transport__icon transport__icon--disable" width="19" height="20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0)">
-                      <path
-                        d="M4.84 13.57c0-.4-.16-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.31.28-.46.62-.46 1.01 0 .4.15.73.45 1.01.3.28.68.42 1.1.42.44 0 .8-.14 1.1-.42.31-.28.47-.61.47-1zm12.47 0c0-.4-.15-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.3.28-.46.62-.46 1.01 0 .4.15.73.46 1.01.3.28.67.42 1.1.42.43 0 .8-.14 1.1-.42.3-.28.46-.61.46-1zm-.56-4.42l-.88-4.28a.72.72 0 00-.27-.42.8.8 0 00-.5-.16H3.92a.8.8 0 00-.5.16.72.72 0 00-.27.42l-.87 4.28c-.04.22.01.42.17.6.15.16.35.25.6.25h12.93c.25 0 .44-.09.6-.26a.66.66 0 00.17-.59zM14 2.32a.5.5 0 00-.17-.38.6.6 0 00-.42-.15h-7.8a.6.6 0 00-.4.15.5.5 0 00-.18.38c0 .15.06.28.17.38.11.1.25.16.41.16h7.8a.6.6 0 00.42-.16.5.5 0 00.17-.38zm4.87 8.1v6.72H17.3v1.43c0 .4-.15.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.3-.28-.46-.61-.46-1v-1.44H4.84v1.43c0 .4-.16.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.31-.28-.46-.61-.46-1v-1.44H.16v-6.73c0-.83.1-1.66.3-2.49l1.26-5.06c.07-.58.47-1.1 1.18-1.53a8.5 8.5 0 012.8-1C6.87.11 8.13 0 9.52 0c1.4 0 2.66.11 3.81.33a8.5 8.5 0 012.8 1c.72.44 1.12.95 1.19 1.53l1.28 5.06c.19.76.28 1.6.28 2.5z"
-                        fill="#1D2E5B" />
-                    </g>
-                    <defs>
-                      <clippath id="clip1">
-                        <path fill="#fff" transform="translate(.15)" d="M0 0h18.72v20H0z" />
-                      </clippath>
-                    </defs>
-                  </svg>
+                  <input type="checkbox" name="icon__bus" id="bus" class="transport__checkbox transport__checkbox--bus"
+                    checked>
+                  <label for="icon__bus" class="visually-hidden">Автобусом</label>
                 </li>
                 <li class="transport__item">
-                  <svg class="transport__icon transport__icon--disable" width="26" height="25" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M19.7 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.71-2.02 4.33 4.33 0 011.01-4.9 4.85 4.85 0 015.1-.97c.84.34 1.57.92 2.09 1.66a4.37 4.37 0 01-.58 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.19.17-1.69.5-.5.32-.9.78-1.12 1.31a2.82 2.82 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.03-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.16-.86zM6.3 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.72-2.02A4.33 4.33 0 013 14.2a4.85 4.85 0 015.1-.97c.85.34 1.58.92 2.1 1.66a4.37 4.37 0 01-.6 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.2.17-1.7.5-.5.32-.89.78-1.12 1.31a2.83 2.83 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.04-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.15-.86zM16.25 6.25a1.68 1.68 0 001.15-.46 1.55 1.55 0 00.36-1.7 1.54 1.54 0 00-.88-.85c-.2-.08-.4-.12-.62-.11a1.68 1.68 0 00-1.15.45 1.56 1.56 0 00-.48 1.1 1.51 1.51 0 00.47 1.1 1.63 1.63 0 001.15.47z"
-                      fill="#1D2E5B" />
-                    <path
-                      d="M18.66 9.38h-2.22a.2.2 0 01-.1-.03.2.2 0 01-.08-.08l-1.6-2.84a1.6 1.6 0 00-2.5-.38L8.58 9.5c-.3.3-.47.69-.47 1.1 0 .85.63 1.15.93 1.32 1.45.8 2.47 1.39 3.03 1.71a.2.2 0 01.1.17v3.37a.81.81 0 001.1.76.82.82 0 00.46-.43c.04-.1.06-.2.06-.3v-4.2a.76.76 0 00-.34-.64l-1.87-1.3a.2.2 0 01-.09-.14.19.19 0 01.06-.15l2.13-2.19a.2.2 0 01.17-.06.2.2 0 01.15.1l1.11 1.93a.8.8 0 00.3.29c.13.07.27.1.41.1h2.85a.84.84 0 00.59-.23.78.78 0 00.22-.58c-.02-.42-.4-.74-.84-.74z"
-                      fill="#1D2E5B" />
-                  </svg>
+                  <input type="checkbox" name="icon__bicycle" id="bicycle"
+                    class="transport__checkbox transport__checkbox--bicycle" checked>
+                  <label for="icon__bicycle" class="visually-hidden">Велосипедом</label>
                 </li>
                 <li class="transport__item">
-                  <svg class="transport__icon transport__icon--disable" width="23" height="24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16.19 6c1.04 0 1.89-.9 1.89-2s-.85-2-1.9-2c-1.04 0-1.88.9-1.88 2s.84 2 1.89 2zM15.03 10.97c.22.34.53.6.9.75.36.15.75.18 1.13.08l3.14-.83-.46-1.94-3.13.83-1.3-2.07a1.9 1.9 0 00-1.21-.85l-3.64-.77a1.8 1.8 0 00-1.2.16c-.37.2-.67.51-.86.9l-1.57 3.32 1.7.9 1.56-3.32 1.86.4L7.15 17h-4.2v2h4.2c.65 0 1.28-.37 1.62-.97l1.8-3.2 4.9 1.04 1.71 5.45 1.8-.64-1.72-5.45c-.1-.33-.3-.63-.54-.86-.25-.24-.56-.4-.88-.46l-2.88-.61 1.68-2.96.4.63z"
-                      fill="#1D2E5B" />
-                  </svg>
+                  <input type="checkbox" name="icon__run" id="run" class="transport__checkbox transport__checkbox--run"
+                    checked>
+                  <label for="icon__run" class="visually-hidden">Пешком</label>
                 </li>
               </ul>
             </fieldset>
           </li>
-        </ul>
+        </form>
       </div>
     </section>
     <section class="profile-plan">
       <div class="profile-plan__wrapper wrapper">
         <h2 class="inner-section-title">Мои планы:</h2>
-        <div class="profile-plan__plan plan">
-          <ul class="plan__list">
-            <li class="plan__item">
-              <h3 class="plan__title">Франция, Италия</h3>
-            </li>
-            <li class="plan__item">
+        <ol class="profile-plan__plan plan">
+          <li class="plan__item">
+            <h3 class="plan__title">Франция, Италия</h3>
+            <div class="plan__content">
               <p class="plan__companion">3 попутчика</p>
               <p class="plan__period">26 мар — 29 мар</p>
-            </li>
-            <li class="plan__item">
-              <a href="" class="plan__button">Изменить</a>
-            </li>
-          </ul>
-        </div>
-        <div class="profile-plan__plan plan">
-          <ul class="plan__list">
-            <li class="plan__item">
-              <h3 class="plan__title">Таиланд, Индонезия</h3>
-            </li>
-            <li class="plan__item">
+            </div>
+            <a href="" class="plan__button">Изменить</a>
+          </li>
+
+          <li class="plan__item">
+            <h3 class="plan__title">Таиланд, Индонезия</h3>
+            <div class="plan__content">
               <p class="plan__companion">1 попутчик</p>
               <p class="plan__period">1 июл — 15 июл</p>
-            </li>
-            <li class="plan__item">
-              <a href="" class="plan__button">Изменить</a>
-            </li>
-          </ul>
-        </div>
+            </div>
+            <a href="" class="plan__button">Изменить</a>
+          </li>
+        </ol>
       </div>
     </section>
     <section class="create-plan">
       <div class="create-plan__wrapper wrapper">
         <h2 class="inner-section-title">Добавить план:</h2>
+        <div class="create-plan__slider slider">
+          <button type="button" class="slider__radio slider__radio--current" aria-label="Шаг 1"></button>
+          <button type="button" class="slider__radio slider__radio" aria-label="Шаг 2"></button>
+          <button type="button" class="slider__radio slider__radio" aria-label="Шаг 3"></button>
+        </div>
         <form class="create-plan__form step" action="https://echo.htmlacademy.ru" method="POST" name="plan-form">
           <div class="step__wrapper wrapper">
-            <fieldset class="create-plan__fieldset">
+            <fieldset class="create-plan__fieldset slide--current">
               <legend class="create-plan__legend">Шаг 1. Даты пребывания</legend>
               <div class="create-plan__wrp">
-                <ul class="create-plan__list">
-                  <li class="create-plan__item">
-                    <p class="create-plan__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы
-                      позвать
-                      в
-                      поездку, и ее предполагаемую длительность.</p>
-                  </li>
-                  <li class="create-plan__item">
-                    <label class="create-plan__quantity quantity" for="quantity-companion"><span>ищу
-                        попутчиков:</span><span class="qunit">чел.</span></label>
-                    <input type="number" name="quantity-companion" id="quantity-companion" value="2">
-                  </li>
-                  <li class="create-plan__item">
-                    <label class="create-plan__quantity quantity" for="quantity-date"><span>длительность:</span><span
-                        class="qunit">дн.</span></label>
-                    <input type="number" name="quantity-date" id="quantity-date" value="3">
-                  </li>
-                  <li class="create-plan__item">
-                    <input type="checkbox" name="create-plan__checkbox" id="create-plan__checkbox" checked>
-                    <label for="create-plan__checkbox">Можно с детьми</label>
-                  </li>
-                  <li class="create-plan__item calendar">
-                    <div class="calendar__wrapper">
-                      <div class="calendar__month">
-                        <time datetime="2021-04">Март 2021</time>
-                      </div>
-                      <div class="calendar__weekdays weekdays">
-                        <ul class="weekdays__list">
-                          <li class="weekdays__item">П</li>
-                          <li class="weekdays__item">В</li>
-                          <li class="weekdays__item">С</li>
-                          <li class="weekdays__item">Ч</li>
-                          <li class="weekdays__item">П</li>
-                          <li class="weekdays__item weekdays__item--weekend">С</li>
-                          <li class="weekdays__item weekdays__item--weekend">В</li>
-                        </ul>
-                      </div>
-                      <div class="calendar__days days">
-                        <ul class="days__list">
-                          <li class="days__item days__item--disable">
-                            <time datetime="2021-03-29">29</time>
-                          </li>
-                          <li class="days__item days__item--disable">
-                            <time datetime="2021-03-30">30</time>
-                          </li>
-                          <li class="days__item days__item--disable">
-                            <time datetime="2021-03-31">31</time>
-                          </li>
-                          <li class="days__item days__item--disable">
-                            <time datetime="2021-04-01">1</time>
-                          </li>
-                          <li class="days__item days__item--disable">
-                            <time datetime="2021-04-02">2</time>
-                          </li>
-                          <li class="days__item days__item--disable">
-                            <time datetime="2021-04-03">3</time>
-                          </li>
-                          <li class="days__item days__item--disable">
-                            <time datetime="2021-04-04">4</time>
-                          </li>
-                          <li class="days__item days__item--disable">
-                            <time datetime="2021-04-05">5</time>
-                          </li>
-                          <li class="days__item days__item--disable">
-                            <time datetime="2021-04-06">6</time>
-                          </li>
-                          <li class="days__item days__item--active days__item--current">
-                            <time datetime="2021-04-07">7</time>
-                          </li>
-                          <li class="days__item days__item--current">
-                            <time datetime="2021-04-08">8</time>
-                          </li>
-                          <li class="days__item days__item--current">
-                            <time datetime="2021-04-09">9</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-10">11</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-11">11</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-12">12</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-13">13</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-14">14</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-15">15</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-16">16</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-17">17</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-18">18</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-19">19</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-20">20</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-21">21</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-22">22</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-23">23</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-24">24</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-25">25</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-26">26</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-27">27</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-28">28</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-29">29</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-04-30">30</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-05-01">1</time>
-                          </li>
-                          <li class="days__item">
-                            <time datetime="2021-05-02">2</time>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <button type="button" class="button next-step">Следующий шаг</button>
+                <p class="create-plan__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы
+                  позвать
+                  в
+                  поездку, и ее предполагаемую длительность.</p>
+                <div class="create-plan__field">
+                  <label class="create-plan__quantity quantity" for="quantity-companion"><span>ищу
+                      попутчиков:</span><span class="qunit">чел.</span></label>
+                  <input type="number" name="quantity-companion" id="quantity-companion" value="2">
+                </div>
+                <div class="create-plan__field">
+                  <label class="create-plan__quantity quantity" for="quantity-date"><span>длительность:</span><span
+                      class="qunit">дн.</span></label>
+                  <input type="number" name="quantity-date" id="quantity-date" value="3">
+                </div>
+                <div class="create-plan__field">
+                  <input type="checkbox" name="create-plan__checkbox" id="create-plan__checkbox" checked>
+                  <label for="create-plan__checkbox">Можно с детьми</label>
+                </div>
+                <div class="create-plan__calendar calendar">
+                  <div class="calendar__month">
+                    <button type="button" class="calendar__month--previous" aria-label="Предыдущий месяц"></button>
+                    <time datetime="2021-04">Март 2021</time>
+                    <button type="button" class="calendar__month--next" aria-label="Следующий месяц"></button>
+                  </div>
+                  <div class="calendar__weekdays weekdays">
+                    <ul class="weekdays__list">
+                      <li class="weekdays__item">П</li>
+                      <li class="weekdays__item">В</li>
+                      <li class="weekdays__item">С</li>
+                      <li class="weekdays__item">Ч</li>
+                      <li class="weekdays__item">П</li>
+                      <li class="weekdays__item weekdays__item--weekend">С</li>
+                      <li class="weekdays__item weekdays__item--weekend">В</li>
+                    </ul>
+                  </div>
+                  <div class="calendar__days days">
+                    <ul class="days__list">
+                      <button type="button" class="days__item days__item--disable">
+                        <time datetime="2021-03-29">29</time>
+                      </button>
+                      <button type="button" class="days__item days__item--disable">
+                        <time datetime="2021-03-30">30</time>
+                      </button>
+                      <button type="button" class="days__item days__item--disable">
+                        <time datetime="2021-03-31">31</time>
+                      </button>
+                      <button type="button" class="days__item days__item--disable">
+                        <time datetime="2021-04-01">1</time>
+                      </button>
+                      <button type="button" class="days__item days__item--disable">
+                        <time datetime="2021-04-02">2</time>
+                      </button>
+                      <button type="button" class="days__item days__item--disable">
+                        <time datetime="2021-04-03">3</time>
+                      </button>
+                      <button type="button" class="days__item days__item--disable">
+                        <time datetime="2021-04-04">4</time>
+                      </button>
+                      <button type="button" class="days__item days__item--disable">
+                        <time datetime="2021-04-05">5</time>
+                      </button>
+                      <button type="button" class="days__item days__item--disable">
+                        <time datetime="2021-04-06">6</time>
+                      </button>
+                      <button type="button" class="days__item days__item--active days__item--current">
+                        <time datetime="2021-04-07">7</time>
+                      </button>
+                      <button type="button" class="days__item days__item--current">
+                        <time datetime="2021-04-08">8</time>
+                      </button>
+                      <button type="button" class="days__item days__item--current">
+                        <time datetime="2021-04-09">9</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-10">11</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-11">11</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-12">12</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-13">13</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-14">14</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-15">15</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-16">16</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-17">17</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-18">18</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-19">19</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-20">20</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-21">21</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-22">22</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-23">23</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-24">24</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-25">25</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-26">26</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-27">27</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-28">28</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-29">29</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-04-30">30</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-05-01">1</time>
+                      </button>
+                      <button type="button" class="days__item">
+                        <time datetime="2021-05-02">2</time>
+                      </button>
+                    </ul>
+                  </div>
+                </div>
+                <button type="button" class="button step__button--next">Следующий шаг</button>
               </div>
             </fieldset>
             <fieldset class="create-plan__fieldset">
               <legend class="create-plan__legend">Шаг 2. Маршрут</legend>
               <div class="create-plan__wrp">
-                <ul class="create-plan__list">
-                  <li class="create-plan__item">
-                    <p class="create-plan__desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или
-                      сразу несколько.</p>
-                  </li>
-                  <li class="create-plan__item choose-country">
-                    <div class="choose-country__block">
-                      <button type="button"
-                        class="choose-country__button choose-country__button--active choose-country__button--open">Босния
-                        и Герцеговина</button>
-                      <div class="choose-country__menu country-menu">
-                        <button type="button" class="choose-country__button choose-country__button--close">Выберите
-                          страну</button>
-                        <div class="country-menu__leters leters">
-                          <ul class="leters__list">
-                            <li class="leters__item">а</li>
-                            <li class="leters__item leters__item--current">б</li>
-                            <li class="leters__item">в</li>
-                            <li class="leters__item">г</li>
-                            <li class="leters__item">д</li>
-                            <li class="leters__item">е</li>
-                            <li class="leters__item">з</li>
-                            <li class="leters__item">и</li>
-                            <li class="leters__item">к</li>
-                            <li class="leters__item">л</li>
-                            <li class="leters__item">м</li>
-                            <li class="leters__item">н</li>
-                            <li class="leters__item">о</li>
-                            <li class="leters__item">п</li>
-                            <li class="leters__item">р</li>
-                            <li class="leters__item">с</li>
-                            <li class="leters__item">т</li>
-                            <li class="leters__item">у</li>
-                            <li class="leters__item">ф</li>
-                            <li class="leters__item">х</li>
-                            <li class="leters__item">ч</li>
-                            <li class="leters__item">ш</li>
-                            <li class="leters__item">э</li>
-                            <li class="leters__item">ю</li>
-                            <li class="leters__item">я</li>
-                          </ul>
-                          <ul class="leters__country-list">
-                            <li class="leters__country">Багамские Острова</li>
-                            <li class="leters__country">Бангладеш</li>
-                            <li class="leters__country">Барбадос</li>
-                            <li class="leters__country">Бахрейн</li>
-                            <li class="leters__country">Бейкер (остров)</li>
-                            <li class="leters__country">Белиз</li>
-                            <li class="leters__country">Белоруссия</li>
-                            <li class="leters__country">Бельгия</li>
-                            <li class="leters__country">Бенилюкс</li>
-                            <li class="leters__country">Бенин</li>
-                            <li class="leters__country">Бермудские Острова</li>
-                            <li class="leters__country">Болгария</li>
-                            <li class="leters__country">Боливия</li>
-                            <li class="leters__country">Бонайре, Синт-Эстатиус и Саба</li>
-                            <li class="leters__country">Бопутатсвана</li>
-                            <li class="leters__country leters__country--current">Босния и Герцеговина</li>
-                            <li class="leters__country">Ботсвана</li>
-                            <li class="leters__country">Бразилия</li>
-                            <li class="leters__country">Британская антарктическая территория</li>
-                            <li class="leters__country">Британская Территория в Индийском Океане</li>
-                            <li class="leters__country">Бруней</li>
-                            <li class="leters__country">Буркина-Фасо</li>
-                            <li class="leters__country">Бурунди</li>
-                            <li class="leters__country">Бутан</li>
-                          </ul>
-                        </div>
-                      </div>
+                <p class="create-plan__desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или
+                  сразу несколько.</p>
+                <div class="choose-country__block">
+                  <button type="button"
+                    class="choose-country__button choose-country__button--active choose-country__button--open">Босния
+                    и Герцеговина</button>
+                  <div class="choose-country__menu country-menu">
+                    <button type="button" class="choose-country__button choose-country__button--close">Выберите
+                      страну</button>
+                    <div class="country-menu__leters leters">
+                      <ul class="leters__list">
+                        <button type="button" class="leters__item">а</button>
+                        <button type="button" class="leters__item leters__item--current">б</button>
+                        <button type="button" class="leters__item">в</button>
+                        <button type="button" class="leters__item">г</button>
+                        <button type="button" class="leters__item">д</button>
+                        <button type="button" class="leters__item">е</button>
+                        <button type="button" class="leters__item">з</button>
+                        <button type="button" class="leters__item">и</button>
+                        <button type="button" class="leters__item">к</button>
+                        <button type="button" class="leters__item">л</button>
+                        <button type="button" class="leters__item">м</button>
+                        <button type="button" class="leters__item">н</button>
+                        <button type="button" class="leters__item">о</button>
+                        <button type="button" class="leters__item">п</button>
+                        <button type="button" class="leters__item">р</button>
+                        <button type="button" class="leters__item">с</button>
+                        <button type="button" class="leters__item">т</button>
+                        <button type="button" class="leters__item">у</button>
+                        <button type="button" class="leters__item">ф</button>
+                        <button type="button" class="leters__item">х</button>
+                        <button type="button" class="leters__item">ч</button>
+                        <button type="button" class="leters__item">ш</button>
+                        <button type="button" class="leters__item">э</button>
+                        <button type="button" class="leters__item">ю</button>
+                        <button type="button" class="leters__item">я</button>
+                      </ul>
+                      <ul class="leters__country-list">
+                        <button type="button" class="leters__country">Багамские Острова</button>
+                        <button type="button" class="leters__country">Бангладеш</button>
+                        <button type="button" class="leters__country">Барбадос</button>
+                        <button type="button" class="leters__country">Бахрейн</button>
+                        <button type="button" class="leters__country">Бейкер (остров)</button>
+                        <button type="button" class="leters__country">Белиз</button>
+                        <button type="button" class="leters__country">Белоруссия</button>
+                        <button type="button" class="leters__country">Бельгия</button>
+                        <button type="button" class="leters__country">Бенилюкс</button>
+                        <button type="button" class="leters__country">Бенин</button>
+                        <button type="button" class="leters__country">Бермудские Острова</button>
+                        <button type="button" class="leters__country">Болгария</button>
+                        <button type="button" class="leters__country">Боливия</button>
+                        <button type="button" class="leters__country">Бонайре, Синт-Эстатиус и Саба</button>
+                        <button type="button" class="leters__country">Бопутатсвана</button>
+                        <button type="button" class="leters__country leters__country--current">Босния и
+                          Герцеговина</button>
+                        <button type="button" class="leters__country">Ботсвана</button>
+                        <button type="button" class="leters__country">Бразилия</button>
+                        <button type="button" class="leters__country">Британская антарктическая территория</button>
+                        <button type="button" class="leters__country">Британская Территория в Индийском Океане</button>
+                        <button type="button" class="leters__country">Бруней</button>
+                        <button type="button" class="leters__country">Буркина-Фасо</button>
+                        <button type="button" class="leters__country">Бурунди</button>
+                        <button type="button" class="leters__country">Бутан</button>
+                      </ul>
                     </div>
-                    <div class="choose-country__block">
-                      <button type="button"
-                        class="choose-country__button choose-country__button--active choose-country__button--open">Чехия</button>
-                      <div class="choose-country__menu country-menu">
-                        <button type="button" class="choose-country__button choose-country__button--close">Выберите
-                          страну</button>
-                        <div class="country-menu__leters leters">
-                          <ul class="leters__list">
-                            <li class="leters__item">а</li>
-                            <li class="leters__item">б</li>
-                            <li class="leters__item">в</li>
-                            <li class="leters__item">г</li>
-                            <li class="leters__item">д</li>
-                            <li class="leters__item">е</li>
-                            <li class="leters__item">з</li>
-                            <li class="leters__item">и</li>
-                            <li class="leters__item">к</li>
-                            <li class="leters__item">л</li>
-                            <li class="leters__item">м</li>
-                            <li class="leters__item">н</li>
-                            <li class="leters__item">о</li>
-                            <li class="leters__item">п</li>
-                            <li class="leters__item">р</li>
-                            <li class="leters__item">с</li>
-                            <li class="leters__item">т</li>
-                            <li class="leters__item">у</li>
-                            <li class="leters__item">ф</li>
-                            <li class="leters__item">х</li>
-                            <li class="leters__item leters__item--current">ч</li>
-                            <li class="leters__item">ш</li>
-                            <li class="leters__item">э</li>
-                            <li class="leters__item">ю</li>
-                            <li class="leters__item">я</li>
-                          </ul>
-                          <ul class="leters__country-list">
-                            <li class="leters__country">Чад</li>
-                            <li class="leters__country">Черногория</li>
-                            <li class="leters__country leters__country--current">Чехия</li>
-                            <li class="leters__country">Чили</li>
-                          </ul>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+                <div class="choose-country__block">
+                  <button type="button"
+                    class="choose-country__button choose-country__button--active choose-country__button--open">Чехия</button>
+                  <div class="choose-country__menu country-menu">
+                    <button type="button" class="choose-country__button choose-country__button--close">Выберите
+                      страну</button>
+                    <div class="country-menu__leters leters">
+                      <ul class="leters__list">
+                        <button type="button" class="leters__item">а</button>
+                        <button type="button" class="leters__item">б</button>
+                        <button type="button" class="leters__item">в</button>
+                        <button type="button" class="leters__item">г</button>
+                        <button type="button" class="leters__item">д</button>
+                        <button type="button" class="leters__item">е</button>
+                        <button type="button" class="leters__item">з</button>
+                        <button type="button" class="leters__item">и</button>
+                        <button type="button" class="leters__item">к</button>
+                        <button type="button" class="leters__item">л</button>
+                        <button type="button" class="leters__item">м</button>
+                        <button type="button" class="leters__item">н</button>
+                        <button type="button" class="leters__item">о</button>
+                        <button type="button" class="leters__item">п</button>
+                        <button type="button" class="leters__item">р</button>
+                        <button type="button" class="leters__item">с</button>
+                        <button type="button" class="leters__item">т</button>
+                        <button type="button" class="leters__item">у</button>
+                        <button type="button" class="leters__item">ф</button>
+                        <button type="button" class="leters__item">х</button>
+                        <button type="button" class="leters__item leters__item--current">ч</button>
+                        <button type="button" class="leters__item">ш</button>
+                        <button type="button" class="leters__item">э</button>
+                        <button type="button" class="leters__item">ю</button>
+                        <button type="button" class="leters__item">я</button>
+                      </ul>
+                      <ul class="leters__country-list">
+                        <button type="button" class="leters__country">Чад</button>
+                        <button type="button" class="leters__country">Черногория</button>
+                        <button type="button" class="leters__country leters__country--current">Чехия</button>
+                        <button type="button" class="leters__country">Чили</button>
+                      </ul>
                     </div>
-                    <div class="choose-country__block">
-                      <button type="button" class="choose-country__button choose-country__button--open">Выберите
-                        страну</button>
-                      <div class="choose-country__menu country-menu">
-                        <button type="button" class="choose-country__button choose-country__button--close">Выберите
-                          страну</button>
-                        <div class="country-menu__leters leters">
-                          <ul class="leters__list">
-                            <li class="leters__item leters__item--current">а</li>
-                            <li class="leters__item">б</li>
-                            <li class="leters__item">в</li>
-                            <li class="leters__item">г</li>
-                            <li class="leters__item">д</li>
-                            <li class="leters__item">е</li>
-                            <li class="leters__item">з</li>
-                            <li class="leters__item">и</li>
-                            <li class="leters__item">к</li>
-                            <li class="leters__item">л</li>
-                            <li class="leters__item">м</li>
-                            <li class="leters__item">н</li>
-                            <li class="leters__item">о</li>
-                            <li class="leters__item">п</li>
-                            <li class="leters__item">р</li>
-                            <li class="leters__item">с</li>
-                            <li class="leters__item">т</li>
-                            <li class="leters__item">у</li>
-                            <li class="leters__item">ф</li>
-                            <li class="leters__item">х</li>
-                            <li class="leters__item">ч</li>
-                            <li class="leters__item">ш</li>
-                            <li class="leters__item">э</li>
-                            <li class="leters__item">ю</li>
-                            <li class="leters__item">я</li>
-                          </ul>
-                          <ul class="leters__country-list">
-                            <li class="leters__country">Австралия</li>
-                            <li class="leters__country">Австрия</li>
-                            <li class="leters__country">Азербайджан</li>
-                            <li class="leters__country">Албания</li>
-                            <li class="leters__country">Алжир</li>
-                            <li class="leters__country">Ангола</li>
-                            <li class="leters__country">Андорра</li>
-                            <li class="leters__country">Антигуа и Барбуда</li>
-                            <li class="leters__country">Аргентина</li>
-                            <li class="leters__country">Армения</li>
-                            <li class="leters__country">Афганистан</li>
-                          </ul>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+                <div class="choose-country__block">
+                  <button type="button" class="choose-country__button choose-country__button--open">Выберите
+                    страну</button>
+                  <div class="choose-country__menu country-menu">
+                    <button type="button" class="choose-country__button choose-country__button--close">Выберите
+                      страну</button>
+                    <div class="country-menu__leters leters">
+                      <ul class="leters__list">
+                        <button type="button" class="leters__item leters__item--current">а</button>
+                        <button type="button" class="leters__item">б</button>
+                        <button type="button" class="leters__item">в</button>
+                        <button type="button" class="leters__item">г</button>
+                        <button type="button" class="leters__item">д</button>
+                        <button type="button" class="leters__item">е</button>
+                        <button type="button" class="leters__item">з</button>
+                        <button type="button" class="leters__item">и</button>
+                        <button type="button" class="leters__item">к</button>
+                        <button type="button" class="leters__item">л</button>
+                        <button type="button" class="leters__item">м</button>
+                        <button type="button" class="leters__item">н</button>
+                        <button type="button" class="leters__item">о</button>
+                        <button type="button" class="leters__item">п</button>
+                        <button type="button" class="leters__item">р</button>
+                        <button type="button" class="leters__item">с</button>
+                        <button type="button" class="leters__item">т</button>
+                        <button type="button" class="leters__item">у</button>
+                        <button type="button" class="leters__item">ф</button>
+                        <button type="button" class="leters__item">х</button>
+                        <button type="button" class="leters__item">ч</button>
+                        <button type="button" class="leters__item">ш</button>
+                        <button type="button" class="leters__item">э</button>
+                        <button type="button" class="leters__item">ю</button>
+                        <button type="button" class="leters__item">я</button>
+                      </ul>
+                      <ul class="leters__country-list">
+                        <button type="button" class="leters__country">Австралия</button>
+                        <button type="button" class="leters__country">Австрия</button>
+                        <button type="button" class="leters__country">Азербайджан</button>
+                        <button type="button" class="leters__country">Албания</button>
+                        <button type="button" class="leters__country">Алжир</button>
+                        <button type="button" class="leters__country">Ангола</button>
+                        <button type="button" class="leters__country">Андорра</button>
+                        <button type="button" class="leters__country">Антигуа и Барбуда</button>
+                        <button type="button" class="leters__country">Аргентина</button>
+                        <button type="button" class="leters__country">Армения</button>
+                        <button type="button" class="leters__country">Афганистан</button>
+                      </ul>
                     </div>
-                    <div class="choose-country__block">
-                      <button type="button" class="choose-country__button" disabled>Выберите
-                        страну</button>
-                    </div>
-                  </li>
-                </ul>
-                <button type="button" class="button next-step">Следующий шаг</button>
-                <button type="button" class="button previous-step">на шаг назад</button>
+                  </div>
+                </div>
+                <div class="choose-country__block">
+                  <button type="button" class="choose-country__button" disabled>Выберите
+                    страну</button>
+                </div>
+                <button type="button" class="button step__button--next">Следующий шаг</button>
+                <button type="button" class="button step__button--previous">на шаг назад</button>
               </div>
             </fieldset>
             <fieldset class="create-plan__fieldset">
               <legend class="create-plan__legend">Шаг 3. Развлечения</legend>
               <div class="create-plan__wrp">
-                <ul class="create-plan__list">
-                  <li class="create-plan__item">
-                    <p class="create-plan__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в
-                      свободной форме и ставить тэги.</p>
-                  </li>
-                  <li class="create-plan__item choosen-country">
-                    <p class="choosen-country__current">Босния и Герцеговина</p>
-                    <label for="action-plan__first">План действий</label>
-                    <textarea name="action-plan__first" id="action-plan__first" cols="30" rows="10"
-                      placeholder="План действий"></textarea>
-                  </li>
-                  <li class="create-plan__item choosen-country">
-                    <p class="choosen-country__current">Чехия</p>
-                    <label for="action-plan__second">План действий</label>
-                    <textarea name="action-plan__second" id="action-plan__second" cols="30" rows="10"
-                      placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-                  </li>
-                </ul>
-                <button type="submit" class="button next-step">Отправить</button>
-                <button type="button" class="button previous-step">на шаг назад</button>
+                  <p class="create-plan__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в
+                    свободной форме и ставить тэги.</p>
+                <div class="create-plan__item choosen-country">
+                  <p class="choosen-country__current">Босния и Герцеговина</p>
+                  <label for="action-plan__bosnia">План действий</label>
+                  <textarea name="action-plan__bosnia" id="action-plan__bosnia" cols="30" rows="9"
+                    placeholder="План действий"></textarea>
+                </div>
+                <div class="create-plan__item choosen-country">
+                  <p class="choosen-country__current">Чехия</p>
+                  <label for="action-plan__czech">План действий</label>
+                  <textarea name="action-plan__czech" id="action-plan__czech" cols="30" rows="9"
+                    placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                </div>
+                <button type="submit" class="button step__button--submit">Отправить</button>
+                <button type="button" class="button step__button--previous">на шаг назад</button>
               </div>
             </fieldset>
           </div>
