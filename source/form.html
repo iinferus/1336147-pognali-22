@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="css/normalize.css">
 </head>
 
-<body class="page-body inner-body">
+<body class="page-body page-body--inner">
 
-  <header class="page-header inner-header">
-    <div class="inner-header__wrapper wrapper"></div>
+  <header class="page-header page-header--inner">
+    <div class="page-header__wrapper wrapper"></div>
     <a href="index.html" class="page-header__logo">
       <svg width="96" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -85,8 +85,8 @@
 
 
 
-  <main class="page-main inner-main">
-    <h1 class="inner-body__title">Направления</h1>
+  <main class="page-main page-main--inner">
+    <h1 class="page-body__title">Направления</h1>
     <section class="profile-card">
       <h2 class="visually-hidden">Профиль</h2>
       <div class="profile-card__wrapper wrapper">
@@ -99,7 +99,6 @@
           <div class="profile-card__item">
             <input type="file" name="upload-avatar" id="upload-avatar" class="button inner-button" title="Cменить фото">
             <label for="upload-avatar" class="visually hidden">сменить фото</label>
-            <button type="button" class="button inner-button upload-image">Сменить фото</button>
           </div>
           <div class="profile-card__item">
             <fieldset class="profile-card__field">
@@ -168,8 +167,8 @@
         <h2 class="inner-section-title">Добавить план:</h2>
         <div class="create-plan__slider slider">
           <button type="button" class="slider__radio slider__radio--current" aria-label="Шаг 1"></button>
-          <button type="button" class="slider__radio slider__radio" aria-label="Шаг 2"></button>
-          <button type="button" class="slider__radio slider__radio" aria-label="Шаг 3"></button>
+          <button type="button" class="slider__radio" aria-label="Шаг 2"></button>
+          <button type="button" class="slider__radio" aria-label="Шаг 3"></button>
         </div>
         <form class="create-plan__form step" action="https://echo.htmlacademy.ru" method="POST" name="plan-form">
           <div class="step__wrapper wrapper">
@@ -336,60 +335,60 @@
                   <div class="choose-country__menu country-menu">
                     <button type="button" class="choose-country__button choose-country__button--close">Выберите
                       страну</button>
-                    <div class="country-menu__leters leters">
-                      <div class="leters__list">
-                        <button type="button" class="leters__item">а</button>
-                        <button type="button" class="leters__item leters__item--current">б</button>
-                        <button type="button" class="leters__item">в</button>
-                        <button type="button" class="leters__item">г</button>
-                        <button type="button" class="leters__item">д</button>
-                        <button type="button" class="leters__item">е</button>
-                        <button type="button" class="leters__item">з</button>
-                        <button type="button" class="leters__item">и</button>
-                        <button type="button" class="leters__item">к</button>
-                        <button type="button" class="leters__item">л</button>
-                        <button type="button" class="leters__item">м</button>
-                        <button type="button" class="leters__item">н</button>
-                        <button type="button" class="leters__item">о</button>
-                        <button type="button" class="leters__item">п</button>
-                        <button type="button" class="leters__item">р</button>
-                        <button type="button" class="leters__item">с</button>
-                        <button type="button" class="leters__item">т</button>
-                        <button type="button" class="leters__item">у</button>
-                        <button type="button" class="leters__item">ф</button>
-                        <button type="button" class="leters__item">х</button>
-                        <button type="button" class="leters__item">ч</button>
-                        <button type="button" class="leters__item">ш</button>
-                        <button type="button" class="leters__item">э</button>
-                        <button type="button" class="leters__item">ю</button>
-                        <button type="button" class="leters__item">я</button>
+                    <div class="country-menu__letters letters">
+                      <div class="letters__list">
+                        <button type="button" class="letters__item">а</button>
+                        <button type="button" class="letters__item letters__item--current">б</button>
+                        <button type="button" class="letters__item">в</button>
+                        <button type="button" class="letters__item">г</button>
+                        <button type="button" class="letters__item">д</button>
+                        <button type="button" class="letters__item">е</button>
+                        <button type="button" class="letters__item">з</button>
+                        <button type="button" class="letters__item">и</button>
+                        <button type="button" class="letters__item">к</button>
+                        <button type="button" class="letters__item">л</button>
+                        <button type="button" class="letters__item">м</button>
+                        <button type="button" class="letters__item">н</button>
+                        <button type="button" class="letters__item">о</button>
+                        <button type="button" class="letters__item">п</button>
+                        <button type="button" class="letters__item">р</button>
+                        <button type="button" class="letters__item">с</button>
+                        <button type="button" class="letters__item">т</button>
+                        <button type="button" class="letters__item">у</button>
+                        <button type="button" class="letters__item">ф</button>
+                        <button type="button" class="letters__item">х</button>
+                        <button type="button" class="letters__item">ч</button>
+                        <button type="button" class="letters__item">ш</button>
+                        <button type="button" class="letters__item">э</button>
+                        <button type="button" class="letters__item">ю</button>
+                        <button type="button" class="letters__item">я</button>
                       </div>
-                      <div class="leters__country-list">
-                        <button type="button" class="leters__country">Багамские Острова</button>
-                        <button type="button" class="leters__country">Бангладеш</button>
-                        <button type="button" class="leters__country">Барбадос</button>
-                        <button type="button" class="leters__country">Бахрейн</button>
-                        <button type="button" class="leters__country">Бейкер (остров)</button>
-                        <button type="button" class="leters__country">Белиз</button>
-                        <button type="button" class="leters__country">Белоруссия</button>
-                        <button type="button" class="leters__country">Бельгия</button>
-                        <button type="button" class="leters__country">Бенилюкс</button>
-                        <button type="button" class="leters__country">Бенин</button>
-                        <button type="button" class="leters__country">Бермудские Острова</button>
-                        <button type="button" class="leters__country">Болгария</button>
-                        <button type="button" class="leters__country">Боливия</button>
-                        <button type="button" class="leters__country">Бонайре, Синт-Эстатиус и Саба</button>
-                        <button type="button" class="leters__country">Бопутатсвана</button>
-                        <button type="button" class="leters__country leters__country--current">Босния и
+                      <div class="letters__country-list">
+                        <button type="button" class="letters__country">Багамские Острова</button>
+                        <button type="button" class="letters__country">Бангладеш</button>
+                        <button type="button" class="letters__country">Барбадос</button>
+                        <button type="button" class="letters__country">Бахрейн</button>
+                        <button type="button" class="letters__country">Бейкер (остров)</button>
+                        <button type="button" class="letters__country">Белиз</button>
+                        <button type="button" class="letters__country">Белоруссия</button>
+                        <button type="button" class="letters__country">Бельгия</button>
+                        <button type="button" class="letters__country">Бенилюкс</button>
+                        <button type="button" class="letters__country">Бенин</button>
+                        <button type="button" class="letters__country">Бермудские Острова</button>
+                        <button type="button" class="letters__country">Болгария</button>
+                        <button type="button" class="letters__country">Боливия</button>
+                        <button type="button" class="letters__country">Бонайре, Синт-Эстатиус и Саба</button>
+                        <button type="button" class="letters__country">Бопутатсвана</button>
+                        <button type="button" class="letters__country letters__country--current">Босния и
                           Герцеговина</button>
-                        <button type="button" class="leters__country">Ботсвана</button>
-                        <button type="button" class="leters__country">Бразилия</button>
-                        <button type="button" class="leters__country">Британская антарктическая территория</button>
-                        <button type="button" class="leters__country">Британская Территория в Индийском Океане</button>
-                        <button type="button" class="leters__country">Бруней</button>
-                        <button type="button" class="leters__country">Буркина-Фасо</button>
-                        <button type="button" class="leters__country">Бурунди</button>
-                        <button type="button" class="leters__country">Бутан</button>
+                        <button type="button" class="letters__country">Ботсвана</button>
+                        <button type="button" class="letters__country">Бразилия</button>
+                        <button type="button" class="letters__country">Британская антарктическая территория</button>
+                        <button type="button" class="letters__country">Британская Территория в Индийском Океане</button>
+                        <button type="button" class="letters__country">Бруней</button>
+                        <button type="button" class="letters__country">Буркина-Фасо</button>
+                        <button type="button" class="letters__country">Бурунди</button>
+                        <button type="button" class="letters__country">Бутан</button>
                       </div>
                     </div>
                   </div>
@@ -400,39 +399,39 @@
                   <div class="choose-country__menu country-menu">
                     <button type="button" class="choose-country__button choose-country__button--close">Выберите
                       страну</button>
-                    <div class="country-menu__leters leters">
-                      <div class="leters__list">
-                        <button type="button" class="leters__item">а</button>
-                        <button type="button" class="leters__item">б</button>
-                        <button type="button" class="leters__item">в</button>
-                        <button type="button" class="leters__item">г</button>
-                        <button type="button" class="leters__item">д</button>
-                        <button type="button" class="leters__item">е</button>
-                        <button type="button" class="leters__item">з</button>
-                        <button type="button" class="leters__item">и</button>
-                        <button type="button" class="leters__item">к</button>
-                        <button type="button" class="leters__item">л</button>
-                        <button type="button" class="leters__item">м</button>
-                        <button type="button" class="leters__item">н</button>
-                        <button type="button" class="leters__item">о</button>
-                        <button type="button" class="leters__item">п</button>
-                        <button type="button" class="leters__item">р</button>
-                        <button type="button" class="leters__item">с</button>
-                        <button type="button" class="leters__item">т</button>
-                        <button type="button" class="leters__item">у</button>
-                        <button type="button" class="leters__item">ф</button>
-                        <button type="button" class="leters__item">х</button>
-                        <button type="button" class="leters__item leters__item--current">ч</button>
-                        <button type="button" class="leters__item">ш</button>
-                        <button type="button" class="leters__item">э</button>
-                        <button type="button" class="leters__item">ю</button>
-                        <button type="button" class="leters__item">я</button>
+                    <div class="country-menu__letters letters">
+                      <div class="letters__list">
+                        <button type="button" class="letters__item">а</button>
+                        <button type="button" class="letters__item">б</button>
+                        <button type="button" class="letters__item">в</button>
+                        <button type="button" class="letters__item">г</button>
+                        <button type="button" class="letters__item">д</button>
+                        <button type="button" class="letters__item">е</button>
+                        <button type="button" class="letters__item">з</button>
+                        <button type="button" class="letters__item">и</button>
+                        <button type="button" class="letters__item">к</button>
+                        <button type="button" class="letters__item">л</button>
+                        <button type="button" class="letters__item">м</button>
+                        <button type="button" class="letters__item">н</button>
+                        <button type="button" class="letters__item">о</button>
+                        <button type="button" class="letters__item">п</button>
+                        <button type="button" class="letters__item">р</button>
+                        <button type="button" class="letters__item">с</button>
+                        <button type="button" class="letters__item">т</button>
+                        <button type="button" class="letters__item">у</button>
+                        <button type="button" class="letters__item">ф</button>
+                        <button type="button" class="letters__item">х</button>
+                        <button type="button" class="letters__item letters__item--current">ч</button>
+                        <button type="button" class="letters__item">ш</button>
+                        <button type="button" class="letters__item">э</button>
+                        <button type="button" class="letters__item">ю</button>
+                        <button type="button" class="letters__item">я</button>
                       </div>
-                      <div class="leters__country-list">
-                        <button type="button" class="leters__country">Чад</button>
-                        <button type="button" class="leters__country">Черногория</button>
-                        <button type="button" class="leters__country leters__country--current">Чехия</button>
-                        <button type="button" class="leters__country">Чили</button>
+                      <div class="letters__country-list">
+                        <button type="button" class="letters__country">Чад</button>
+                        <button type="button" class="letters__country">Черногория</button>
+                        <button type="button" class="letters__country letters__country--current">Чехия</button>
+                        <button type="button" class="letters__country">Чили</button>
                       </div>
                     </div>
                   </div>
@@ -443,46 +442,46 @@
                   <div class="choose-country__menu country-menu">
                     <button type="button" class="choose-country__button choose-country__button--close">Выберите
                       страну</button>
-                    <div class="country-menu__leters leters">
-                      <div class="leters__list">
-                        <button type="button" class="leters__item leters__item--current">а</button>
-                        <button type="button" class="leters__item">б</button>
-                        <button type="button" class="leters__item">в</button>
-                        <button type="button" class="leters__item">г</button>
-                        <button type="button" class="leters__item">д</button>
-                        <button type="button" class="leters__item">е</button>
-                        <button type="button" class="leters__item">з</button>
-                        <button type="button" class="leters__item">и</button>
-                        <button type="button" class="leters__item">к</button>
-                        <button type="button" class="leters__item">л</button>
-                        <button type="button" class="leters__item">м</button>
-                        <button type="button" class="leters__item">н</button>
-                        <button type="button" class="leters__item">о</button>
-                        <button type="button" class="leters__item">п</button>
-                        <button type="button" class="leters__item">р</button>
-                        <button type="button" class="leters__item">с</button>
-                        <button type="button" class="leters__item">т</button>
-                        <button type="button" class="leters__item">у</button>
-                        <button type="button" class="leters__item">ф</button>
-                        <button type="button" class="leters__item">х</button>
-                        <button type="button" class="leters__item">ч</button>
-                        <button type="button" class="leters__item">ш</button>
-                        <button type="button" class="leters__item">э</button>
-                        <button type="button" class="leters__item">ю</button>
-                        <button type="button" class="leters__item">я</button>
+                    <div class="country-menu__letters letters">
+                      <div class="letters__list">
+                        <button type="button" class="letters__item letters__item--current">а</button>
+                        <button type="button" class="letters__item">б</button>
+                        <button type="button" class="letters__item">в</button>
+                        <button type="button" class="letters__item">г</button>
+                        <button type="button" class="letters__item">д</button>
+                        <button type="button" class="letters__item">е</button>
+                        <button type="button" class="letters__item">з</button>
+                        <button type="button" class="letters__item">и</button>
+                        <button type="button" class="letters__item">к</button>
+                        <button type="button" class="letters__item">л</button>
+                        <button type="button" class="letters__item">м</button>
+                        <button type="button" class="letters__item">н</button>
+                        <button type="button" class="letters__item">о</button>
+                        <button type="button" class="letters__item">п</button>
+                        <button type="button" class="letters__item">р</button>
+                        <button type="button" class="letters__item">с</button>
+                        <button type="button" class="letters__item">т</button>
+                        <button type="button" class="letters__item">у</button>
+                        <button type="button" class="letters__item">ф</button>
+                        <button type="button" class="letters__item">х</button>
+                        <button type="button" class="letters__item">ч</button>
+                        <button type="button" class="letters__item">ш</button>
+                        <button type="button" class="letters__item">э</button>
+                        <button type="button" class="letters__item">ю</button>
+                        <button type="button" class="letters__item">я</button>
                       </div>
-                      <div class="leters__country-list">
-                        <button type="button" class="leters__country">Австралия</button>
-                        <button type="button" class="leters__country">Австрия</button>
-                        <button type="button" class="leters__country">Азербайджан</button>
-                        <button type="button" class="leters__country">Албания</button>
-                        <button type="button" class="leters__country">Алжир</button>
-                        <button type="button" class="leters__country">Ангола</button>
-                        <button type="button" class="leters__country">Андорра</button>
-                        <button type="button" class="leters__country">Антигуа и Барбуда</button>
-                        <button type="button" class="leters__country">Аргентина</button>
-                        <button type="button" class="leters__country">Армения</button>
-                        <button type="button" class="leters__country">Афганистан</button>
+                      <div class="letters__country-list">
+                        <button type="button" class="letters__country">Австралия</button>
+                        <button type="button" class="letters__country">Австрия</button>
+                        <button type="button" class="letters__country">Азербайджан</button>
+                        <button type="button" class="letters__country">Албания</button>
+                        <button type="button" class="letters__country">Алжир</button>
+                        <button type="button" class="letters__country">Ангола</button>
+                        <button type="button" class="letters__country">Андорра</button>
+                        <button type="button" class="letters__country">Антигуа и Барбуда</button>
+                        <button type="button" class="letters__country">Аргентина</button>
+                        <button type="button" class="letters__country">Армения</button>
+                        <button type="button" class="letters__country">Афганистан</button>
                       </div>
                     </div>
                   </div>
