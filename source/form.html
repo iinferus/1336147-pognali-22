@@ -118,8 +118,8 @@
                   <label for="icon__plane" class="visually-hidden">Самолетом</label>
                 </li>
                 <li class="transport__item">
-                  <input type="checkbox" name="icon__bus" id="icon__bus" class="transport__checkbox transport__checkbox--bus"
-                    checked>
+                  <input type="checkbox" name="icon__bus" id="icon__bus"
+                    class="transport__checkbox transport__checkbox--bus" checked>
                   <label for="icon__bus" class="visually-hidden">Автобусом</label>
                 </li>
                 <li class="transport__item">
@@ -128,8 +128,8 @@
                   <label for="icon__bicycle" class="visually-hidden">Велосипедом</label>
                 </li>
                 <li class="transport__item">
-                  <input type="checkbox" name="icon__run" id="icon__run" class="transport__checkbox transport__checkbox--run"
-                    checked>
+                  <input type="checkbox" name="icon__run" id="icon__run"
+                    class="transport__checkbox transport__checkbox--run" checked>
                   <label for="icon__run" class="visually-hidden">Пешком</label>
                 </li>
               </ul>
@@ -172,7 +172,7 @@
         </div>
         <form class="create-plan__form step" action="https://echo.htmlacademy.ru" method="POST" name="plan-form">
           <div class="step__wrapper wrapper">
-            <fieldset class="create-plan__fieldset slide slide--current">
+            <fieldset class="create-plan__fieldset slide slide--current" id="step1">
               <legend class="create-plan__legend">Шаг 1. Даты пребывания</legend>
               <div class="create-plan__wrp">
                 <p class="create-plan__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы
@@ -320,10 +320,10 @@
                     </button>
                   </div>
                 </div>
-                <button type="button" class="button step__button step__button--next">Следующий шаг</button>
+                <a href="#step2" type="button" class="button step__button step__button--next">Следующий шаг</a>
               </div>
             </fieldset>
-            <fieldset class="create-plan__fieldset">
+            <fieldset class="create-plan__fieldset" id="step2">
               <legend class="create-plan__legend">Шаг 2. Маршрут</legend>
               <div class="create-plan__wrp choose-country">
                 <p class="create-plan__desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или
@@ -364,31 +364,27 @@
                         <button type="button" class="letters__item">я</button>
                       </div>
                       <div class="letters__country-list">
-                        <button type="button" class="letters__country">Багамские Острова</button>
-                        <button type="button" class="letters__country">Бангладеш</button>
-                        <button type="button" class="letters__country">Барбадос</button>
-                        <button type="button" class="letters__country">Бахрейн</button>
-                        <button type="button" class="letters__country">Бейкер (остров)</button>
-                        <button type="button" class="letters__country">Белиз</button>
-                        <button type="button" class="letters__country">Белоруссия</button>
-                        <button type="button" class="letters__country">Бельгия</button>
-                        <button type="button" class="letters__country">Бенилюкс</button>
-                        <button type="button" class="letters__country">Бенин</button>
-                        <button type="button" class="letters__country">Бермудские Острова</button>
-                        <button type="button" class="letters__country">Болгария</button>
-                        <button type="button" class="letters__country">Боливия</button>
-                        <button type="button" class="letters__country">Бонайре, Синт-Эстатиус и Саба</button>
-                        <button type="button" class="letters__country">Бопутатсвана</button>
-                        <button type="button" class="letters__country letters__country--current">Босния и
-                          Герцеговина</button>
-                        <button type="button" class="letters__country">Ботсвана</button>
-                        <button type="button" class="letters__country">Бразилия</button>
-                        <button type="button" class="letters__country">Британская антарктическая территория</button>
-                        <button type="button" class="letters__country">Британская Территория в Индийском Океане</button>
-                        <button type="button" class="letters__country">Бруней</button>
-                        <button type="button" class="letters__country">Буркина-Фасо</button>
-                        <button type="button" class="letters__country">Бурунди</button>
-                        <button type="button" class="letters__country">Бутан</button>
+                        <a href="/islands/bahamas.html" class="letters__country">Багамские Острова</a>
+                        <a href="/asia/bangladesh.html" class="letters__country">Бангладеш</a>
+                        <a href="/islands/barbados.html" class="letters__country">Барбадос</a>
+                        <a href="/asia/bahrain.html" class="letters__country">Бахрейн</a>
+                        <a href="/islands/baker.html" class="letters__country">Бейкер (остров)</a>
+                        <a href="/america/belize.html" class="letters__country">Белиз</a>
+                        <a href="/europe/belarus.html" class="letters__country">Белоруссия</a>
+                        <a href="/europe/belgium.html" class="letters__country">Бельгия</a>
+                        <a href="/africa/benin.html" class="letters__country">Бенин</a>
+                        <a href="/islands/bermuda.html" class="letters__country">Бермудские Острова</a>
+                        <a href="/europe/bulgaria.html" class="letters__country">Болгария</a>
+                        <a href="/africa/bolivia.html" class="letters__country">Боливия</a>
+                        <a href="/islands/bonaire.html" class="letters__country">Бонайре, Синт-Эстатиус и Саба</a>
+                        <a href="/europe/bosnia-and-herzegovina.html"
+                          class="letters__country letters__country--current">Босния и Герцеговина</a>
+                        <a href="/africa/botswana.html" class="letters__country">Ботсвана</a>
+                        <a href="/america/brazil.html" class="letters__country">Бразилия</a>
+                        <a href="/islands/brunei.html" class="letters__country">Бруней</a>
+                        <a href="/africa/burkina-faso.html" class="letters__country">Буркина-Фасо</a>
+                        <a href="/africa/burundi.html" class="letters__country">Бурунди</a>
+                        <a href="/asia/butane.html" class="letters__country">Бутан</a>
                       </div>
                     </div>
                   </div>
@@ -428,10 +424,10 @@
                         <button type="button" class="letters__item">я</button>
                       </div>
                       <div class="letters__country-list">
-                        <button type="button" class="letters__country">Чад</button>
-                        <button type="button" class="letters__country">Черногория</button>
-                        <button type="button" class="letters__country letters__country--current">Чехия</button>
-                        <button type="button" class="letters__country">Чили</button>
+                        <a href="/africa/chad.html" class="letters__country">Чад</a>
+                        <a href="/europe/montenegro.html" class="letters__country">Черногория</a>
+                        <a href="/europe/czech.html" class="letters__country letters__country--current">Чехия</a>
+                        <a href="/america/chile.html" class="letters__country">Чили</a>
                       </div>
                     </div>
                   </div>
@@ -471,17 +467,17 @@
                         <button type="button" class="letters__item">я</button>
                       </div>
                       <div class="letters__country-list">
-                        <button type="button" class="letters__country">Австралия</button>
-                        <button type="button" class="letters__country">Австрия</button>
-                        <button type="button" class="letters__country">Азербайджан</button>
-                        <button type="button" class="letters__country">Албания</button>
-                        <button type="button" class="letters__country">Алжир</button>
-                        <button type="button" class="letters__country">Ангола</button>
-                        <button type="button" class="letters__country">Андорра</button>
-                        <button type="button" class="letters__country">Антигуа и Барбуда</button>
-                        <button type="button" class="letters__country">Аргентина</button>
-                        <button type="button" class="letters__country">Армения</button>
-                        <button type="button" class="letters__country">Афганистан</button>
+                        <a href="/australia/australia.html" class="letters__country">Австралия</a>
+                        <a href="/europe/austria.html" class="letters__country">Австрия</a>
+                        <a href="/asia/azerbaijan.html" class="letters__country">Азербайджан</a>
+                        <a href="/europe/albania.html" class="letters__country">Албания</a>
+                        <a href="/africa/algeria.html" class="letters__country">Алжир</a>
+                        <a href="/africa/angola.html" class="letters__country">Ангола</a>
+                        <a href="/europe/andorra.html" class="letters__country">Андорра</a>
+                        <a href="/islands/antigua-and-Barbuda.html" class="letters__country">Антигуа и Барбуда</a>
+                        <a href="/america/argentina.html" class="letters__country">Аргентина</a>
+                        <a href="/asia/armenia.html" class="letters__country">Армения</a>
+                        <a href="/asia/afghanistan.html" class="letters__country">Афганистан</a>
                       </div>
                     </div>
                   </div>
@@ -490,11 +486,11 @@
                   <button type="button" class="choose-country__button" disabled>Выберите
                     страну</button>
                 </div>
-                <button type="button" class="button step__button step__button--next">Следующий шаг</button>
-                <button type="button" class="button step__button step__button--previous">на шаг назад</button>
+                <a href="#step3" class="button step__button step__button--next">Следующий шаг</a>
+                <a href="#step2" class="button step__button step__button--previous">на шаг назад</a>
               </div>
             </fieldset>
-            <fieldset class="create-plan__fieldset">
+            <fieldset class="create-plan__fieldset" id="step3">
               <legend class="create-plan__legend">Шаг 3. Развлечения</legend>
               <div class="create-plan__wrp">
                 <p class="create-plan__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в
@@ -512,7 +508,7 @@
                     placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </div>
                 <button type="submit" class="button step__button step__button--submit">Отправить</button>
-                <button type="button" class="button step__button step__button--previous">на шаг назад</button>
+                <a href="#step2" class="button step__button step__button--previous">на шаг назад</a>
               </div>
             </fieldset>
           </div>

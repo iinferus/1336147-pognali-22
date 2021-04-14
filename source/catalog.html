@@ -95,6 +95,8 @@
             <button class="continents__button continents__button--active" type="button">Европа</button>
             <button class="continents__button" type="button">Азия</button>
             <button class="continents__button" type="button">Америка</button>
+            <button class="continents__button visually-hidden" type="button">Африка</button>
+            <button class="continents__button visually-hidden" type="button">Австралия</button>
             <button class="continents__button" type="button">острова</button>
           </div>
           <div class="country-menu__letters letters">
@@ -126,17 +128,17 @@
               <button type="button" class="letters__item">я</button>
             </div>
             <div class="letters__country-list">
-              <button type="button" class="letters__country">Австралия</button>
-              <button type="button" class="letters__country">Австрия</button>
-              <button type="button" class="letters__country">Азербайджан</button>
-              <button type="button" class="letters__country">Албания</button>
-              <button type="button" class="letters__country">Алжир</button>
-              <button type="button" class="letters__country">Ангола</button>
-              <button type="button" class="letters__country">Андорра</button>
-              <button type="button" class="letters__country">Антигуа и Барбуда</button>
-              <button type="button" class="letters__country">Аргентина</button>
-              <button type="button" class="letters__country">Армения</button>
-              <button type="button" class="letters__country">Афганистан</button>
+              <a href="/australia/australia.html" class="letters__country">Австралия</a>
+              <a href="/europe/austria.html" class="letters__country">Австрия</a>
+              <a href="/asia/azerbaijan.html" class="letters__country">Азербайджан</a>
+              <a href="/europe/albania.html" class="letters__country">Албания</a>
+              <a href="/africa/algeria.html" class="letters__country">Алжир</a>
+              <a href="/africa/angola.html" class="letters__country">Ангола</a>
+              <a href="/europe/andorra.html" class="letters__country">Андорра</a>
+              <a href="/islands/antigua-and-Barbuda.html" class="letters__country">Антигуа и Барбуда</a>
+              <a href="/america/argentina.html" class="letters__country">Аргентина</a>
+              <a href="/asia/armenia.html" class="letters__country">Армения</a>
+              <a href="/asia/afghanistan.html" class="letters__country">Афганистан</a>
             </div>
           </div>
         </div>
@@ -148,58 +150,58 @@
         <h2 class="filter-companion__title">Подберите идеального попутчика</h2>
         <form action="https://echo.htmlacademy.ru" name="card-form" method="POST">
           <fieldset class="filter-companion__field">
-            <legend class="filter-companion__legeng">Хобби</legend>
+            <button type="button" class="filter-companion__button">Хобби</button>
             <ul class="filter-companion__list">
               <li class="filter-companion__item">
-                <input class="visually-hidden" type="checkbox" name="hobby-gym" id="companion-hobby__gym" checked>
-                <label for="companion-hobby__gym">Спортзал</label>
+                <input class="filter-companion__checkbox" type="checkbox" name="hobby-gym" id="companion-hobby__gym" checked>
+                <label class="filter-companion__checkbox-label" for="companion-hobby__gym">Спортзал</label>
               </li>
               <li class="filter-companion__item">
-                <input class="visually-hidden" type="checkbox" name="hobby-hookah" id="companion-hobby__hookah">
-                <label for="companion-hobby__hookah">Кальян</label>
+                <input class="filter-companion__checkbox" type="checkbox" name="hobby-hookah" id="companion-hobby__hookah">
+                <label class="filter-companion__checkbox-label" for="companion-hobby__hookah">Кальян</label>
               </li>
               <li class="filter-companion__item">
-                <input class="visually-hidden" type="checkbox" name="hobby-sofa" id="companion-hobby__sofa">
-                <label for="companion-hobby__sofa">Диван</label>
+                <input class="filter-companion__checkbox" type="checkbox" name="hobby-sofa" id="companion-hobby__sofa">
+                <label class="filter-companion__checkbox-label" for="companion-hobby__sofa">Диван</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-companion__field">
-            <legend class="filter-companion__legeng">Музыка</legend>
+            <button type="button" class="filter-companion__button">Музыка</button>
             <ul class="filter-companion__list">
               <li class="filter-companion__item">
-                <input class="visually-hidden" type="checkbox" name="music-rock" id="companion-music__rock" checked>
-                <label for="companion-music__rock">Тяжелый рок</label>
+                <input class="filter-companion__checkbox" type="checkbox" name="music-rock" id="companion-music__rock" checked>
+                <label class="filter-companion__checkbox-label" for="companion-music__rock">Тяжелый рок</label>
               </li>
               <li class="filter-companion__item">
-                <input class="visually-hidden" type="checkbox" name="music-rap" id="companion-music__rap" checked>
-                <label for="companion-music__rap">Русский рэп</label>
+                <input class="filter-companion__checkbox" type="checkbox" name="music-rap" id="companion-music__rap" checked>
+                <label class="filter-companion__checkbox-label" for="companion-music__rap">Русский рэп</label>
               </li>
               <li class="filter-companion__item">
-                <input class="visually-hidden" type="checkbox" name="music-dance" id="companion-music__dance">
-                <label for="companion-music__dance">Евроденс</label>
+                <input class="filter-companion__checkbox" type="checkbox" name="music-dance" id="companion-music__dance">
+                <label class="filter-companion__checkbox-label" for="companion-music__dance">Евроденс</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-companion__field">
-            <legend class="filter-companion__legeng">Еда</legend>
+            <button type="button" class="filter-companion__button">Еда</button>
             <ul class="filter-companion__list">
               <li class="filter-companion__item">
-                <input class="visually-hidden" type="checkbox" name="food-meat" id="companion-food__meat" checked>
-                <label for="companion-food__meat">Мясоед</label>
+                <input class="filter-companion__checkbox" type="checkbox" name="food-meat" id="companion-food__meat" checked>
+                <label class="filter-companion__checkbox-label" for="companion-food__meat">Мясоед</label>
               </li>
               <li class="filter-companion__item">
-                <input class="visually-hidden" type="checkbox" name="food-pn" id="companion-food__pn">
-                <label for="companion-food__pn">Сидит на ПП</label>
+                <input class="filter-companion__checkbox" type="checkbox" name="food-pn" id="companion-food__pn">
+                <label class="filter-companion__checkbox-label" for="companion-food__pn">Сидит на ПП</label>
               </li>
               <li class="filter-companion__item">
-                <input class="visually-hidden" type="checkbox" name="food-vegan" id="companion-food__vegan">
-                <label for="companion-food__vegan">Веган-сыроед</label>
+                <input class="filter-companion__checkbox" type="checkbox" name="food-vegan" id="companion-food__vegan">
+                <label class="filter-companion__checkbox-label" for="companion-food__vegan">Веган-сыроед</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-companion__field field-transport">
-            <legend class="filter-companion__legend">Транспорт</legend>
+            <button type="button" class="filter-companion__button">Транспорт</button>
             <ul class="field-transport__list">
               <li class="field-transport__item">
                 <input type="checkbox" name="icon__plane" id="icon__plane"
@@ -224,7 +226,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter-companion__field">
-            <legend class="filter-companion__legend">Левел</legend>
+            <button type="button" class="filter-companion__button">Левел</button>
             <div class="filter-companion__level level">
               <div class="level__control">
                 <div class="level__scale">
@@ -253,8 +255,8 @@
             <div class="companion__card card">
               <div class="card__wrapper">
                 <div class="card__info">
-                  <img class="card__photo" src="img/avatar-1.jpg" alt="Таня Фирсова" width="70" height="70">
-                  <h3 class="card__name">Таня Фирсова</h3>
+                  <a href=""><img class="card__photo" src="img/avatar-1.jpg" alt="Таня Фирсова" width="70" height="70"></a>
+                  <h3 class="card__name"><a href="">Таня Фирсова</a></h3>
                   <button type="button" class="card__like-button card__like-button--active">1,5 М</button>
                 </div>
                 <ul class="card__tags tags">
@@ -351,14 +353,14 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="button companion__button">Позвать!</button>
+            <a href="" class="button companion__button">Позвать!</a>
           </li>
           <li class="companion__item">
             <div class="companion__card card">
               <div class="card__wrapper">
                 <div class="card__info">
-                  <img class="card__photo" src="img/avatar-2.jpg" alt="Петя Демин" width="70" height="70">
-                  <h3 class="card__name">Петя Демин</h3>
+                  <a href=""><img class="card__photo" src="img/avatar-2.jpg" alt="Петя Демин" width="70" height="70"></a>
+                  <h3 class="card__name"><a href="">Петя Демин</a></h3>
                   <button type="button" class="card__like-button">1500</button>
                 </div>
                 <ul class="card__tags tags">
@@ -451,14 +453,14 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="button companion__button">Позвать!</button>
+            <a href="" class="button companion__button">Позвать!</a>
           </li>
           <li class="companion__item">
             <div class="companion__card card">
               <div class="card__wrapper">
                 <div class="card__info">
-                  <img class="card__photo" src="img/avatar-3.jpg" alt="Марк Смолов" width="70" height="70">
-                  <h3 class="card__name">Марк Смолов</h3>
+                  <a href=""><img class="card__photo" src="img/avatar-3.jpg" alt="Марк Смолов" width="70" height="70"></a>
+                  <h3 class="card__name"><a href="">Марк Смолов</a></h3>
                   <button type="button" class="card__like-button">170</button>
                 </div>
                 <ul class="card__tags tags">
@@ -552,14 +554,14 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="button companion__button">Позвать!</button>
+            <a href="" class="button companion__button">Позвать!</a>
           </li>
           <li class="companion__item">
             <div class="companion__card card">
               <div class="card__wrapper">
                 <div class="card__info">
-                  <img class="card__photo" src="img/avatar-4.jpg" alt="Лариса Роговая" width="70" height="70">
-                  <h3 class="card__name">Лариса Роговая</h3>
+                  <a href=""><img class="card__photo" src="img/avatar-4.jpg" alt="Лариса Роговая" width="70" height="70"></a>
+                  <h3 class="card__name"> <a href="">Лариса Роговая</a></h3>
                   <button type="button" class="card__like-button">23</button>
                 </div>
                 <ul class="card__tags tags">
@@ -649,11 +651,11 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="button companion__button">Позвать!</button>
+            <a href="" class="button companion__button">Позвать!</a>
           </li>
         </ul>
         <div class="companion__pagination pagination">
-          <button class="inner-button">Показать всех</button>
+          <a href="" class="inner-button">Показать еще</a>
           <a class="pagination__button pagination__button--prev pagination__button--disable"></a>
           <a class="pagination__button pagination__button--next"></a>
         </div>
