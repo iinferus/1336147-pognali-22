@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html class="page inner" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta content="true" name="HandheldFriendly" />
+  <meta content="width" name="MobileOptimized" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body class="page-body inner-body">
+
+  <header class="page-header inner-header">
+    <div class="inner-header__wrapper wrapper"></div>
+    <a href="index.html" class="page-header__logo">
+      <svg width="96" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <mask id="a" maskunits="userSpaceOnUse" x="0" y="0" width="96" height="15">
+          <path fill="url(#pattern0)" d="M0 0h96v15H0z" />
+        </mask>
+        <g mask="url(#a)">
+          <path fill="#1D2E5B" d="M0 0h96v15H0z" />
+        </g>
+        <defs>
+          <pattern id="pattern0" patterncontentunits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0" transform="scale(.00787 .05)" />
+          </pattern>
+          <image id="image0" width="127" height="20"
+            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAAUCAYAAACkjuKKAAAFjUlEQVRoge2Ze4hXRRTHP6u59rAsy8xeaqFGZWmrpj3UwspCioge9iCyJ0GlkRWkPUgqsrAS/GMpwkijrDTL0h6Wm7U9rAxMqk17KoTS1oZbi7kbh74XhuHM3d9v9yqL7Rcu/H7nzpw5M2fmnO+cW9F3wPgW2o9hwJoC9HSi/TgKuBE4ExgAVAK/AR8CTwFLgGYbpUvnYu9SmA6sBW4CBsvxhl7ARGAR8BbQm07n71Iwx98PdG1lUqcDbwDdO52/a2AgcG9iJtsdWZVFh90SHc7PWZLZQP//4wp3YExyTvwG5f1fgJnAbdH7ySnnL86ZZ2qHpbAHcLTyTKOM2dBB17EC6AfsD2wGfuoANpWCI5w284D1+n234/xBOzLsjxazrAdWK8+slEE/A/eJiMR4UjeH1PMxcHvQ5zygRvpHJGyxsPgyUAtc47w3YjQN+BH4Xvba76+Bq7QpzgXeBZYBJ0b9h7dis/dMC/pPDHSflJjDOK2nzf9BoEfw7hOn/argdz/nfUvqqleRMABN4vhIFl71LPw8AkzJ0ZFhE3BxZOh7wNgS+o4HfgW+DIhrvVJSQ9Cui5w4MJCdrYU29AReA07JGcvanhGE1niccXJeOXhcazRYDD2Lwg3SXR/oOgt4PSLoNRrX/NcNmANcpmuchflZalelKHBMZNuqHXHy55boeMPBwJsysFz0AcZEC7KfszEPiRyPGG+Gea043jAhyqneOG3FqMDxhn0i3bZG852b2RhFV8M24AZgb23mWdowXymKxY43zCza+acB1zly2511KjbEME5QXea1c7V4SaXzLiY+3tUn6zdBacPDJnGUFFq7UpWKvChrYzwnDuLhyITcNvwr4loxLDJMBZYX7fxbHdk6VZ0GifTd7LQ5ATg5oXOjKlXZcxgwMscxQxUOs2dUjr1e/rcUMUQLaJxkRk7/PEyVYytkd1swQyc8hdQGtPXs7shXKFo8RhRuisB4R8dFwLf63azcNExEKoRdS953+v8D/FCGbbPLaOuF+wu0YQ1Nyp9DNI+diXHt2Hify/ZwAxhhfTVsVOTJt1OyeyTboLwTY6kj61ugLaWgq3hDiLrA8SEW7WTbLEIucAheqdioG0SNUuTVseMp+ORvdWS9NIHmSN7TabutQFtKwXaN2S1ou6/CdHwD6lGe6nahSSkjPAzLxIvyUkCMt3VzqkylyCJPfpNTFLHFnBzJuifyfl1BdnwgspM9S6NrU4g4nfRWtSyERbNbcsazNTxQxasQf7fR/sqAxaNTfIWzIfPQVYy/QYfSNsHhcfuic/5ix7FzdW9dqkW6w7kmtchRRWC6Jpuhvwo3HpY518CnJVsOHATcCRyb6L+nTtho5513sykFIfu3iHkpsKVMHVOiit5YFbmGh42KZvsPA39FMgurd+l78uLEQoWlyJ2JJ0QoQ1SqhF2rXB9X80JMSswH5dpSkHei7ykz12e40JFVxWVgc/6fUaMG8vGH8zbrs1HFhnKwVjkuQ6y/KUfX744sno/HRbI08J1OdluwVUUVD8uj7xeeDVlk+DSh4x3ggVZ0ePPH4ViuvIvqxCFmJjpmeCj6TPhCNNFngHP0YaQ1PA+cGk2iOjKyOkfHEm24DB8BX0RtNsvGDLZRnw3+P6pvBSnCuUXFoHAcq69/Bix0QrJVLC93bFgY2TBfv9c5PvgmKNVmWKmDkqFOY3lY4MhqY45jtX1U7hypDwQrEgpDHKf6+HqFRu+b8V7AldoIQ1USbdRHnRqF+thRGUbIpjU6RXnoo+8DjaqGeSekm0KhlUpfSnAAK0Jdr/x4gJxqi2t1A3OeyS4RkQvHOVS6bQ0staXCfWjDiw7ZtA86VnewyqLlZ4+h2y0p+3xrNqR4hfEGSxmW+y06Gbe5Vrr/A/Avocc+F49G4KEAAAAASUVORK5CYII=" />
+        </defs>
+      </svg>
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+      </button>
+      <div class="main-nav__wrapper wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#about">
+              О сервисе
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#direction">
+              Направления
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#companion">
+              Попутчики
+            </a>
+          </li>
+        </ul>
+        <div class="main-nav__user user">
+          <div class="user__list auth-list">
+            <a href="#" class="auth-list__button button">Авторизация</a>
+          </div>
+          <ul class="user__list contact-list">
+            <li class="contact-list__item">
+              <a class="contact-list__link contact-list__link--phone" href="tel:+88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contact-list__item">
+              <a class="contact-list__link contact-list__link--mail"
+                href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="main-nav__list social-list">
+          <li class="social-list__item">
+            <a class="social-list__button" href="#" title="Facebook"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__button" href="#" title="VK"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__button" href="#" title="Twitter"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="page-main inner-main">
+    <h1 class="inner-body__title">Попутчики</h1>
+    <section class="filter-country">
+      <div class="filter-country__wrapper wrapper">
+        <h2 class="filter-country__title">Фильтрация по странам:</h2>
+        <button type="button" class="filter-country__expand" aria-label="Открыть фильтр"></button>
+        <div class="filter-country__menu country-menu">
+          <div class="filter-country__continents continents">
+            <button class="continents__button continents__button--active" type="button">Европа</button>
+            <button class="continents__button" type="button">Азия</button>
+            <button class="continents__button" type="button">Америка</button>
+            <button class="continents__button visually-hidden" type="button">Африка</button>
+            <button class="continents__button visually-hidden" type="button">Австралия</button>
+            <button class="continents__button" type="button">острова</button>
+          </div>
+          <div class="country-menu__letters letters">
+            <div class="letters__list">
+              <button type="button" class="letters__item letters__item--current">а</button>
+              <button type="button" class="letters__item">б</button>
+              <button type="button" class="letters__item">в</button>
+              <button type="button" class="letters__item">г</button>
+              <button type="button" class="letters__item">д</button>
+              <button type="button" class="letters__item">е</button>
+              <button type="button" class="letters__item">з</button>
+              <button type="button" class="letters__item">и</button>
+              <button type="button" class="letters__item">к</button>
+              <button type="button" class="letters__item">л</button>
+              <button type="button" class="letters__item">м</button>
+              <button type="button" class="letters__item">н</button>
+              <button type="button" class="letters__item">о</button>
+              <button type="button" class="letters__item">п</button>
+              <button type="button" class="letters__item">р</button>
+              <button type="button" class="letters__item">с</button>
+              <button type="button" class="letters__item">т</button>
+              <button type="button" class="letters__item">у</button>
+              <button type="button" class="letters__item">ф</button>
+              <button type="button" class="letters__item">х</button>
+              <button type="button" class="letters__item">ч</button>
+              <button type="button" class="letters__item">ш</button>
+              <button type="button" class="letters__item">э</button>
+              <button type="button" class="letters__item">ю</button>
+              <button type="button" class="letters__item">я</button>
+            </div>
+            <div class="letters__country-list">
+              <a href="/australia/australia.html" class="letters__country">Австралия</a>
+              <a href="/europe/austria.html" class="letters__country">Австрия</a>
+              <a href="/asia/azerbaijan.html" class="letters__country">Азербайджан</a>
+              <a href="/europe/albania.html" class="letters__country">Албания</a>
+              <a href="/africa/algeria.html" class="letters__country">Алжир</a>
+              <a href="/africa/angola.html" class="letters__country">Ангола</a>
+              <a href="/europe/andorra.html" class="letters__country">Андорра</a>
+              <a href="/islands/antigua-and-Barbuda.html" class="letters__country">Антигуа и Барбуда</a>
+              <a href="/america/argentina.html" class="letters__country">Аргентина</a>
+              <a href="/asia/armenia.html" class="letters__country">Армения</a>
+              <a href="/asia/afghanistan.html" class="letters__country">Афганистан</a>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="inner-button inner-button--filter">Свернуть</button>
+      </div>
+    </section>
+    <section class="filter-companion">
+      <div class="filter-companion__wrapper wrapper">
+        <h2 class="filter-companion__title">Подберите идеального попутчика</h2>
+        <form action="https://echo.htmlacademy.ru" name="card-form" method="POST">
+          <fieldset class="filter-companion__field">
+            <button type="button" class="filter-companion__button">Хобби</button>
+            <ul class="filter-companion__list">
+              <li class="filter-companion__item">
+                <input class="filter-companion__checkbox" type="checkbox" name="hobby-gym" id="companion-hobby__gym" checked>
+                <label class="filter-companion__checkbox-label" for="companion-hobby__gym">Спортзал</label>
+              </li>
+              <li class="filter-companion__item">
+                <input class="filter-companion__checkbox" type="checkbox" name="hobby-hookah" id="companion-hobby__hookah">
+                <label class="filter-companion__checkbox-label" for="companion-hobby__hookah">Кальян</label>
+              </li>
+              <li class="filter-companion__item">
+                <input class="filter-companion__checkbox" type="checkbox" name="hobby-sofa" id="companion-hobby__sofa">
+                <label class="filter-companion__checkbox-label" for="companion-hobby__sofa">Диван</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-companion__field">
+            <button type="button" class="filter-companion__button">Музыка</button>
+            <ul class="filter-companion__list">
+              <li class="filter-companion__item">
+                <input class="filter-companion__checkbox" type="checkbox" name="music-rock" id="companion-music__rock" checked>
+                <label class="filter-companion__checkbox-label" for="companion-music__rock">Тяжелый рок</label>
+              </li>
+              <li class="filter-companion__item">
+                <input class="filter-companion__checkbox" type="checkbox" name="music-rap" id="companion-music__rap" checked>
+                <label class="filter-companion__checkbox-label" for="companion-music__rap">Русский рэп</label>
+              </li>
+              <li class="filter-companion__item">
+                <input class="filter-companion__checkbox" type="checkbox" name="music-dance" id="companion-music__dance">
+                <label class="filter-companion__checkbox-label" for="companion-music__dance">Евроденс</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-companion__field">
+            <button type="button" class="filter-companion__button">Еда</button>
+            <ul class="filter-companion__list">
+              <li class="filter-companion__item">
+                <input class="filter-companion__checkbox" type="checkbox" name="food-meat" id="companion-food__meat" checked>
+                <label class="filter-companion__checkbox-label" for="companion-food__meat">Мясоед</label>
+              </li>
+              <li class="filter-companion__item">
+                <input class="filter-companion__checkbox" type="checkbox" name="food-pn" id="companion-food__pn">
+                <label class="filter-companion__checkbox-label" for="companion-food__pn">Сидит на ПП</label>
+              </li>
+              <li class="filter-companion__item">
+                <input class="filter-companion__checkbox" type="checkbox" name="food-vegan" id="companion-food__vegan">
+                <label class="filter-companion__checkbox-label" for="companion-food__vegan">Веган-сыроед</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-companion__field field-transport">
+            <button type="button" class="filter-companion__button">Транспорт</button>
+            <ul class="field-transport__list">
+              <li class="field-transport__item">
+                <input type="checkbox" name="icon__plane" id="icon__plane"
+                  class="field-transport__checkbox field-transport__checkbox--plane" checked>
+                <label for="icon__plane" class="visually-hidden">Самолетом</label>
+              </li>
+              <li class="field-transport__item">
+                <input type="checkbox" name="icon__bus" id="icon__bus"
+                  class="field-transport__checkbox field-transport__checkbox--bus" checked>
+                <label for="icon__bus" class="visually-hidden">Автобусом</label>
+              </li>
+              <li class="field-transport__item">
+                <input type="checkbox" name="icon__bicycle" id="icon__bicycle"
+                  class="field-transport__checkbox field-transport__checkbox--bicycle">
+                <label for="icon__bicycle" class="visually-hidden">Велосипедом</label>
+              </li>
+              <li class="field-transport__item">
+                <input type="checkbox" name="icon__run" id="icon__run"
+                  class="field-transport__checkbox field-transport__checkbox--run" checked>
+                <label for="icon__run" class="visually-hidden">Пешком</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-companion__field">
+            <button type="button" class="filter-companion__button">Левел</button>
+            <div class="filter-companion__level level">
+              <div class="level__control">
+                <div class="level__scale">
+                  <div class="level__bar"></div>
+                </div>
+                <div class="level__toggle level__toggle--min" tabindex="0"></div>
+                <div class="level__toggle level__toggle--max" tabindex="0"></div>
+              </div>
+              <label class="level__range level__range--min">
+                <input type="number" id="price-min" class="custom-range" value="30">
+              </label>
+              <label class="level__range level__range--max">
+                <input type="number" id="price-max" class="custom-range" value="100">
+              </label>
+            </div>
+          </fieldset>
+          <button type="submit" class="button filter-companion__button">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <section class="companion">
+      <div class="companion__wrapper wrapper">
+        <h2 class="visually-hidden">Попутчики</h2>
+        <ul class="companion__list">
+          <li class="companion__item">
+            <div class="companion__card card">
+              <div class="card__wrapper">
+                <div class="card__info">
+                  <a href=""><img class="card__photo" src="img/avatar-1.jpg" alt="Таня Фирсова" width="70" height="70"></a>
+                  <h3 class="card__name"><a href="">Таня Фирсова</a></h3>
+                  <button type="button" class="card__like-button card__like-button--active">1,5 М</button>
+                </div>
+                <ul class="card__tags tags">
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#ЗОЖ</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#ПП</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#Фитнес</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#пляж</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#авокадо</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#смузи</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__visit-country visit-country">
+                <h4 class="card__title">хочет посетить:</h4>
+                <div class="card__wrapper">
+                  <ul class="visit-country__list">
+                    <li class="visit-country__item visit-country__item--sri-lanka">Шри-Ланка</li>
+                    <li class="visit-country__item visit-country__item--thailand">Таиланд</li>
+                    <li class="visit-country__item visit-country__item--seychelles">Сейшелы</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__transport transport">
+                <h4 class="card__title">транспорт:</h4>
+                <div class="card__wrapper">
+                  <ul class="transport__list">
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--active" width="23" height="22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M18.49 1.18c-.8.18-1.6.36-1.9.86L14.28 6.4 1.86 9.21l-.5 1.4 9.5.85-1.61 3.8-3.6.8-.9 1.5 2.59.26.3 1.22c.13.43.6.72 1 .63l1.2-.27 1.38 2.25.9-1.49-.88-3.65 2.6-3.16 4.98 8.3 1-1.08-3.05-12.58 2.8-4.06c.31-.5.11-1.3-.09-2.12-.1-.4-.6-.72-1-.63z"
+                            fill="#1D2E5B" />
+                        </g>
+                        <defs>
+                          <clippath id="clip0">
+                            <path fill="#fff" transform="translate(.08)" d="M0 0h22.85v22H0z" />
+                          </clippath>
+                        </defs>
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--disable" width="19" height="20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M4.84 13.57c0-.4-.16-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.31.28-.46.62-.46 1.01 0 .4.15.73.45 1.01.3.28.68.42 1.1.42.44 0 .8-.14 1.1-.42.31-.28.47-.61.47-1zm12.47 0c0-.4-.15-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.3.28-.46.62-.46 1.01 0 .4.15.73.46 1.01.3.28.67.42 1.1.42.43 0 .8-.14 1.1-.42.3-.28.46-.61.46-1zm-.56-4.42l-.88-4.28a.72.72 0 00-.27-.42.8.8 0 00-.5-.16H3.92a.8.8 0 00-.5.16.72.72 0 00-.27.42l-.87 4.28c-.04.22.01.42.17.6.15.16.35.25.6.25h12.93c.25 0 .44-.09.6-.26a.66.66 0 00.17-.59zM14 2.32a.5.5 0 00-.17-.38.6.6 0 00-.42-.15h-7.8a.6.6 0 00-.4.15.5.5 0 00-.18.38c0 .15.06.28.17.38.11.1.25.16.41.16h7.8a.6.6 0 00.42-.16.5.5 0 00.17-.38zm4.87 8.1v6.72H17.3v1.43c0 .4-.15.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.3-.28-.46-.61-.46-1v-1.44H4.84v1.43c0 .4-.16.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.31-.28-.46-.61-.46-1v-1.44H.16v-6.73c0-.83.1-1.66.3-2.49l1.26-5.06c.07-.58.47-1.1 1.18-1.53a8.5 8.5 0 012.8-1C6.87.11 8.13 0 9.52 0c1.4 0 2.66.11 3.81.33a8.5 8.5 0 012.8 1c.72.44 1.12.95 1.19 1.53l1.28 5.06c.19.76.28 1.6.28 2.5z"
+                            fill="#1D2E5B" />
+                        </g>
+                        <defs>
+                          <clippath id="clip1">
+                            <path fill="#fff" transform="translate(.15)" d="M0 0h18.72v20H0z" />
+                          </clippath>
+                        </defs>
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--disable" width="26" height="25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M19.7 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.71-2.02 4.33 4.33 0 011.01-4.9 4.85 4.85 0 015.1-.97c.84.34 1.57.92 2.09 1.66a4.37 4.37 0 01-.58 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.19.17-1.69.5-.5.32-.9.78-1.12 1.31a2.82 2.82 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.03-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.16-.86zM6.3 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.72-2.02A4.33 4.33 0 013 14.2a4.85 4.85 0 015.1-.97c.85.34 1.58.92 2.1 1.66a4.37 4.37 0 01-.6 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.2.17-1.7.5-.5.32-.89.78-1.12 1.31a2.83 2.83 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.04-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.15-.86zM16.25 6.25a1.68 1.68 0 001.15-.46 1.55 1.55 0 00.36-1.7 1.54 1.54 0 00-.88-.85c-.2-.08-.4-.12-.62-.11a1.68 1.68 0 00-1.15.45 1.56 1.56 0 00-.48 1.1 1.51 1.51 0 00.47 1.1 1.63 1.63 0 001.15.47z"
+                          fill="#1D2E5B" />
+                        <path
+                          d="M18.66 9.38h-2.22a.2.2 0 01-.1-.03.2.2 0 01-.08-.08l-1.6-2.84a1.6 1.6 0 00-2.5-.38L8.58 9.5c-.3.3-.47.69-.47 1.1 0 .85.63 1.15.93 1.32 1.45.8 2.47 1.39 3.03 1.71a.2.2 0 01.1.17v3.37a.81.81 0 001.1.76.82.82 0 00.46-.43c.04-.1.06-.2.06-.3v-4.2a.76.76 0 00-.34-.64l-1.87-1.3a.2.2 0 01-.09-.14.19.19 0 01.06-.15l2.13-2.19a.2.2 0 01.17-.06.2.2 0 01.15.1l1.11 1.93a.8.8 0 00.3.29c.13.07.27.1.41.1h2.85a.84.84 0 00.59-.23.78.78 0 00.22-.58c-.02-.42-.4-.74-.84-.74z"
+                          fill="#1D2E5B" />
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--disable" width="23" height="24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.19 6c1.04 0 1.89-.9 1.89-2s-.85-2-1.9-2c-1.04 0-1.88.9-1.88 2s.84 2 1.89 2zM15.03 10.97c.22.34.53.6.9.75.36.15.75.18 1.13.08l3.14-.83-.46-1.94-3.13.83-1.3-2.07a1.9 1.9 0 00-1.21-.85l-3.64-.77a1.8 1.8 0 00-1.2.16c-.37.2-.67.51-.86.9l-1.57 3.32 1.7.9 1.56-3.32 1.86.4L7.15 17h-4.2v2h4.2c.65 0 1.28-.37 1.62-.97l1.8-3.2 4.9 1.04 1.71 5.45 1.8-.64-1.72-5.45c-.1-.33-.3-.63-.54-.86-.25-.24-.56-.4-.88-.46l-2.88-.61 1.68-2.96.4.63z"
+                          fill="#1D2E5B" />
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__level level">
+                <h4 class="card__title">левел:</h4>
+                <div class="card__wrapper">
+                  <span class="level__nubmer">99</span>
+                </div>
+              </div>
+            </div>
+            <a href="" class="button companion__button">Позвать!</a>
+          </li>
+          <li class="companion__item">
+            <div class="companion__card card">
+              <div class="card__wrapper">
+                <div class="card__info">
+                  <a href=""><img class="card__photo" src="img/avatar-2.jpg" alt="Петя Демин" width="70" height="70"></a>
+                  <h3 class="card__name"><a href="">Петя Демин</a></h3>
+                  <button type="button" class="card__like-button">1500</button>
+                </div>
+                <ul class="card__tags tags">
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#бургер</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#бар</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#футбол</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#концерт</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#крафт</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__visit-country visit-country">
+                <h4 class="card__title">хочет посетить:</h4>
+                <div class="card__wrapper">
+                  <ul class="visit-country__list">
+                    <li class="visit-country__item visit-country__item--belgium">Бельгия</li>
+                    <li class="visit-country__item visit-country__item--czech">Чехия</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__transport transport">
+                <h4 class="card__title">транспорт:</h4>
+                <div class="card__wrapper">
+                  <ul class="transport__list">
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--active" width="23" height="22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M18.49 1.18c-.8.18-1.6.36-1.9.86L14.28 6.4 1.86 9.21l-.5 1.4 9.5.85-1.61 3.8-3.6.8-.9 1.5 2.59.26.3 1.22c.13.43.6.72 1 .63l1.2-.27 1.38 2.25.9-1.49-.88-3.65 2.6-3.16 4.98 8.3 1-1.08-3.05-12.58 2.8-4.06c.31-.5.11-1.3-.09-2.12-.1-.4-.6-.72-1-.63z"
+                            fill="#1D2E5B" />
+                        </g>
+                        <defs>
+                          <clippath id="clip02">
+                            <path fill="#fff" transform="translate(.08)" d="M0 0h22.85v22H0z" />
+                          </clippath>
+                        </defs>
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--disable" width="19" height="20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M4.84 13.57c0-.4-.16-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.31.28-.46.62-.46 1.01 0 .4.15.73.45 1.01.3.28.68.42 1.1.42.44 0 .8-.14 1.1-.42.31-.28.47-.61.47-1zm12.47 0c0-.4-.15-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.3.28-.46.62-.46 1.01 0 .4.15.73.46 1.01.3.28.67.42 1.1.42.43 0 .8-.14 1.1-.42.3-.28.46-.61.46-1zm-.56-4.42l-.88-4.28a.72.72 0 00-.27-.42.8.8 0 00-.5-.16H3.92a.8.8 0 00-.5.16.72.72 0 00-.27.42l-.87 4.28c-.04.22.01.42.17.6.15.16.35.25.6.25h12.93c.25 0 .44-.09.6-.26a.66.66 0 00.17-.59zM14 2.32a.5.5 0 00-.17-.38.6.6 0 00-.42-.15h-7.8a.6.6 0 00-.4.15.5.5 0 00-.18.38c0 .15.06.28.17.38.11.1.25.16.41.16h7.8a.6.6 0 00.42-.16.5.5 0 00.17-.38zm4.87 8.1v6.72H17.3v1.43c0 .4-.15.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.3-.28-.46-.61-.46-1v-1.44H4.84v1.43c0 .4-.16.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.31-.28-.46-.61-.46-1v-1.44H.16v-6.73c0-.83.1-1.66.3-2.49l1.26-5.06c.07-.58.47-1.1 1.18-1.53a8.5 8.5 0 012.8-1C6.87.11 8.13 0 9.52 0c1.4 0 2.66.11 3.81.33a8.5 8.5 0 012.8 1c.72.44 1.12.95 1.19 1.53l1.28 5.06c.19.76.28 1.6.28 2.5z"
+                            fill="#1D2E5B" />
+                        </g>
+                        <defs>
+                          <clippath id="clip12">
+                            <path fill="#fff" transform="translate(.15)" d="M0 0h18.72v20H0z" />
+                          </clippath>
+                        </defs>
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--disable" width="26" height="25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M19.7 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.71-2.02 4.33 4.33 0 011.01-4.9 4.85 4.85 0 015.1-.97c.84.34 1.57.92 2.09 1.66a4.37 4.37 0 01-.58 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.19.17-1.69.5-.5.32-.9.78-1.12 1.31a2.82 2.82 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.03-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.16-.86zM6.3 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.72-2.02A4.33 4.33 0 013 14.2a4.85 4.85 0 015.1-.97c.85.34 1.58.92 2.1 1.66a4.37 4.37 0 01-.6 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.2.17-1.7.5-.5.32-.89.78-1.12 1.31a2.83 2.83 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.04-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.15-.86zM16.25 6.25a1.68 1.68 0 001.15-.46 1.55 1.55 0 00.36-1.7 1.54 1.54 0 00-.88-.85c-.2-.08-.4-.12-.62-.11a1.68 1.68 0 00-1.15.45 1.56 1.56 0 00-.48 1.1 1.51 1.51 0 00.47 1.1 1.63 1.63 0 001.15.47z"
+                          fill="#1D2E5B" />
+                        <path
+                          d="M18.66 9.38h-2.22a.2.2 0 01-.1-.03.2.2 0 01-.08-.08l-1.6-2.84a1.6 1.6 0 00-2.5-.38L8.58 9.5c-.3.3-.47.69-.47 1.1 0 .85.63 1.15.93 1.32 1.45.8 2.47 1.39 3.03 1.71a.2.2 0 01.1.17v3.37a.81.81 0 001.1.76.82.82 0 00.46-.43c.04-.1.06-.2.06-.3v-4.2a.76.76 0 00-.34-.64l-1.87-1.3a.2.2 0 01-.09-.14.19.19 0 01.06-.15l2.13-2.19a.2.2 0 01.17-.06.2.2 0 01.15.1l1.11 1.93a.8.8 0 00.3.29c.13.07.27.1.41.1h2.85a.84.84 0 00.59-.23.78.78 0 00.22-.58c-.02-.42-.4-.74-.84-.74z"
+                          fill="#1D2E5B" />
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--disable" width="23" height="24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.19 6c1.04 0 1.89-.9 1.89-2s-.85-2-1.9-2c-1.04 0-1.88.9-1.88 2s.84 2 1.89 2zM15.03 10.97c.22.34.53.6.9.75.36.15.75.18 1.13.08l3.14-.83-.46-1.94-3.13.83-1.3-2.07a1.9 1.9 0 00-1.21-.85l-3.64-.77a1.8 1.8 0 00-1.2.16c-.37.2-.67.51-.86.9l-1.57 3.32 1.7.9 1.56-3.32 1.86.4L7.15 17h-4.2v2h4.2c.65 0 1.28-.37 1.62-.97l1.8-3.2 4.9 1.04 1.71 5.45 1.8-.64-1.72-5.45c-.1-.33-.3-.63-.54-.86-.25-.24-.56-.4-.88-.46l-2.88-.61 1.68-2.96.4.63z"
+                          fill="#1D2E5B" />
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__level level">
+                <h4 class="card__title">левел:</h4>
+                <div class="card__wrapper">
+                  <span class="level__nubmer">80</span>
+                </div>
+              </div>
+            </div>
+            <a href="" class="button companion__button">Позвать!</a>
+          </li>
+          <li class="companion__item">
+            <div class="companion__card card">
+              <div class="card__wrapper">
+                <div class="card__info">
+                  <a href=""><img class="card__photo" src="img/avatar-3.jpg" alt="Марк Смолов" width="70" height="70"></a>
+                  <h3 class="card__name"><a href="">Марк Смолов</a></h3>
+                  <button type="button" class="card__like-button">170</button>
+                </div>
+                <ul class="card__tags tags">
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#рэп</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#тату</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#хайпбист</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#кроссовки</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#суприм</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__visit-country visit-country">
+                <h4 class="card__title">хочет посетить:</h4>
+                <div class="card__wrapper">
+                  <ul class="visit-country__list">
+                    <li class="visit-country__item visit-country__item--usa">США</li>
+                    <li class="visit-country__item visit-country__item--australia">Австралия</li>
+                    <li class="visit-country__item visit-country__item--dominica">Доминика</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__transport transport">
+                <h4 class="card__title">транспорт:</h4>
+                <div class="card__wrapper">
+                  <ul class="transport__list">
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--active" width="23" height="22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M18.49 1.18c-.8.18-1.6.36-1.9.86L14.28 6.4 1.86 9.21l-.5 1.4 9.5.85-1.61 3.8-3.6.8-.9 1.5 2.59.26.3 1.22c.13.43.6.72 1 .63l1.2-.27 1.38 2.25.9-1.49-.88-3.65 2.6-3.16 4.98 8.3 1-1.08-3.05-12.58 2.8-4.06c.31-.5.11-1.3-.09-2.12-.1-.4-.6-.72-1-.63z"
+                            fill="#1D2E5B" />
+                        </g>
+                        <defs>
+                          <clippath id="clip03">
+                            <path fill="#fff" transform="translate(.08)" d="M0 0h22.85v22H0z" />
+                          </clippath>
+                        </defs>
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--disable" width="19" height="20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M4.84 13.57c0-.4-.16-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.31.28-.46.62-.46 1.01 0 .4.15.73.45 1.01.3.28.68.42 1.1.42.44 0 .8-.14 1.1-.42.31-.28.47-.61.47-1zm12.47 0c0-.4-.15-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.3.28-.46.62-.46 1.01 0 .4.15.73.46 1.01.3.28.67.42 1.1.42.43 0 .8-.14 1.1-.42.3-.28.46-.61.46-1zm-.56-4.42l-.88-4.28a.72.72 0 00-.27-.42.8.8 0 00-.5-.16H3.92a.8.8 0 00-.5.16.72.72 0 00-.27.42l-.87 4.28c-.04.22.01.42.17.6.15.16.35.25.6.25h12.93c.25 0 .44-.09.6-.26a.66.66 0 00.17-.59zM14 2.32a.5.5 0 00-.17-.38.6.6 0 00-.42-.15h-7.8a.6.6 0 00-.4.15.5.5 0 00-.18.38c0 .15.06.28.17.38.11.1.25.16.41.16h7.8a.6.6 0 00.42-.16.5.5 0 00.17-.38zm4.87 8.1v6.72H17.3v1.43c0 .4-.15.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.3-.28-.46-.61-.46-1v-1.44H4.84v1.43c0 .4-.16.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.31-.28-.46-.61-.46-1v-1.44H.16v-6.73c0-.83.1-1.66.3-2.49l1.26-5.06c.07-.58.47-1.1 1.18-1.53a8.5 8.5 0 012.8-1C6.87.11 8.13 0 9.52 0c1.4 0 2.66.11 3.81.33a8.5 8.5 0 012.8 1c.72.44 1.12.95 1.19 1.53l1.28 5.06c.19.76.28 1.6.28 2.5z"
+                            fill="#1D2E5B" />
+                        </g>
+                        <defs>
+                          <clippath id="clip13">
+                            <path fill="#fff" transform="translate(.15)" d="M0 0h18.72v20H0z" />
+                          </clippath>
+                        </defs>
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--disable" width="26" height="25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M19.7 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.71-2.02 4.33 4.33 0 011.01-4.9 4.85 4.85 0 015.1-.97c.84.34 1.57.92 2.09 1.66a4.37 4.37 0 01-.58 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.19.17-1.69.5-.5.32-.9.78-1.12 1.31a2.82 2.82 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.03-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.16-.86zM6.3 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.72-2.02A4.33 4.33 0 013 14.2a4.85 4.85 0 015.1-.97c.85.34 1.58.92 2.1 1.66a4.37 4.37 0 01-.6 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.2.17-1.7.5-.5.32-.89.78-1.12 1.31a2.83 2.83 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.04-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.15-.86zM16.25 6.25a1.68 1.68 0 001.15-.46 1.55 1.55 0 00.36-1.7 1.54 1.54 0 00-.88-.85c-.2-.08-.4-.12-.62-.11a1.68 1.68 0 00-1.15.45 1.56 1.56 0 00-.48 1.1 1.51 1.51 0 00.47 1.1 1.63 1.63 0 001.15.47z"
+                          fill="#1D2E5B" />
+                        <path
+                          d="M18.66 9.38h-2.22a.2.2 0 01-.1-.03.2.2 0 01-.08-.08l-1.6-2.84a1.6 1.6 0 00-2.5-.38L8.58 9.5c-.3.3-.47.69-.47 1.1 0 .85.63 1.15.93 1.32 1.45.8 2.47 1.39 3.03 1.71a.2.2 0 01.1.17v3.37a.81.81 0 001.1.76.82.82 0 00.46-.43c.04-.1.06-.2.06-.3v-4.2a.76.76 0 00-.34-.64l-1.87-1.3a.2.2 0 01-.09-.14.19.19 0 01.06-.15l2.13-2.19a.2.2 0 01.17-.06.2.2 0 01.15.1l1.11 1.93a.8.8 0 00.3.29c.13.07.27.1.41.1h2.85a.84.84 0 00.59-.23.78.78 0 00.22-.58c-.02-.42-.4-.74-.84-.74z"
+                          fill="#1D2E5B" />
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--disable" width="23" height="24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.19 6c1.04 0 1.89-.9 1.89-2s-.85-2-1.9-2c-1.04 0-1.88.9-1.88 2s.84 2 1.89 2zM15.03 10.97c.22.34.53.6.9.75.36.15.75.18 1.13.08l3.14-.83-.46-1.94-3.13.83-1.3-2.07a1.9 1.9 0 00-1.21-.85l-3.64-.77a1.8 1.8 0 00-1.2.16c-.37.2-.67.51-.86.9l-1.57 3.32 1.7.9 1.56-3.32 1.86.4L7.15 17h-4.2v2h4.2c.65 0 1.28-.37 1.62-.97l1.8-3.2 4.9 1.04 1.71 5.45 1.8-.64-1.72-5.45c-.1-.33-.3-.63-.54-.86-.25-.24-.56-.4-.88-.46l-2.88-.61 1.68-2.96.4.63z"
+                          fill="#1D2E5B" />
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__level level">
+                <h4 class="card__title">левел:</h4>
+                <div class="card__wrapper">
+                  <span class="level__nubmer">25</span>
+                </div>
+              </div>
+            </div>
+            <a href="" class="button companion__button">Позвать!</a>
+          </li>
+          <li class="companion__item">
+            <div class="companion__card card">
+              <div class="card__wrapper">
+                <div class="card__info">
+                  <a href=""><img class="card__photo" src="img/avatar-4.jpg" alt="Лариса Роговая" width="70" height="70"></a>
+                  <h3 class="card__name"> <a href="">Лариса Роговая</a></h3>
+                  <button type="button" class="card__like-button">23</button>
+                </div>
+                <ul class="card__tags tags">
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#образование</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#карьера</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#учеба</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="" class="tags__link">#линкедин</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__visit-country visit-country">
+                <h4 class="card__title">хочет посетить:</h4>
+                <div class="card__wrapper">
+                  <ul class="visit-country__list">
+                    <li class="visit-country__item visit-country__item--great-britain">Великобритания</li>
+                    <li class="visit-country__item visit-country__item--germany">Германия</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__transport transport">
+                <h4 class="card__title">транспорт:</h4>
+                <div class="card__wrapper">
+                  <ul class="transport__list">
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--active" width="23" height="22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M18.49 1.18c-.8.18-1.6.36-1.9.86L14.28 6.4 1.86 9.21l-.5 1.4 9.5.85-1.61 3.8-3.6.8-.9 1.5 2.59.26.3 1.22c.13.43.6.72 1 .63l1.2-.27 1.38 2.25.9-1.49-.88-3.65 2.6-3.16 4.98 8.3 1-1.08-3.05-12.58 2.8-4.06c.31-.5.11-1.3-.09-2.12-.1-.4-.6-.72-1-.63z"
+                            fill="#1D2E5B" />
+                        </g>
+                        <defs>
+                          <clippath id="clip04">
+                            <path fill="#fff" transform="translate(.08)" d="M0 0h22.85v22H0z" />
+                          </clippath>
+                        </defs>
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--disable" width="19" height="20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M4.84 13.57c0-.4-.16-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.31.28-.46.62-.46 1.01 0 .4.15.73.45 1.01.3.28.68.42 1.1.42.44 0 .8-.14 1.1-.42.31-.28.47-.61.47-1zm12.47 0c0-.4-.15-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.3.28-.46.62-.46 1.01 0 .4.15.73.46 1.01.3.28.67.42 1.1.42.43 0 .8-.14 1.1-.42.3-.28.46-.61.46-1zm-.56-4.42l-.88-4.28a.72.72 0 00-.27-.42.8.8 0 00-.5-.16H3.92a.8.8 0 00-.5.16.72.72 0 00-.27.42l-.87 4.28c-.04.22.01.42.17.6.15.16.35.25.6.25h12.93c.25 0 .44-.09.6-.26a.66.66 0 00.17-.59zM14 2.32a.5.5 0 00-.17-.38.6.6 0 00-.42-.15h-7.8a.6.6 0 00-.4.15.5.5 0 00-.18.38c0 .15.06.28.17.38.11.1.25.16.41.16h7.8a.6.6 0 00.42-.16.5.5 0 00.17-.38zm4.87 8.1v6.72H17.3v1.43c0 .4-.15.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.3-.28-.46-.61-.46-1v-1.44H4.84v1.43c0 .4-.16.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.31-.28-.46-.61-.46-1v-1.44H.16v-6.73c0-.83.1-1.66.3-2.49l1.26-5.06c.07-.58.47-1.1 1.18-1.53a8.5 8.5 0 012.8-1C6.87.11 8.13 0 9.52 0c1.4 0 2.66.11 3.81.33a8.5 8.5 0 012.8 1c.72.44 1.12.95 1.19 1.53l1.28 5.06c.19.76.28 1.6.28 2.5z"
+                            fill="#1D2E5B" />
+                        </g>
+                        <defs>
+                          <clippath id="clip14">
+                            <path fill="#fff" transform="translate(.15)" d="M0 0h18.72v20H0z" />
+                          </clippath>
+                        </defs>
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--disable" width="26" height="25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M19.7 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.71-2.02 4.33 4.33 0 011.01-4.9 4.85 4.85 0 015.1-.97c.84.34 1.57.92 2.09 1.66a4.37 4.37 0 01-.58 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.19.17-1.69.5-.5.32-.9.78-1.12 1.31a2.82 2.82 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.03-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.16-.86zM6.3 21.88a4.8 4.8 0 01-2.6-.76 4.54 4.54 0 01-1.72-2.02A4.33 4.33 0 013 14.2a4.85 4.85 0 015.1-.97c.85.34 1.58.92 2.1 1.66a4.37 4.37 0 01-.6 5.67 4.77 4.77 0 01-3.3 1.32zm0-7.43c-.6 0-1.2.17-1.7.5-.5.32-.89.78-1.12 1.31a2.83 2.83 0 00.66 3.2 3.16 3.16 0 003.32.64c.56-.23 1.04-.6 1.37-1.09a2.85 2.85 0 00-.38-3.7 3.11 3.11 0 00-2.15-.86zM16.25 6.25a1.68 1.68 0 001.15-.46 1.55 1.55 0 00.36-1.7 1.54 1.54 0 00-.88-.85c-.2-.08-.4-.12-.62-.11a1.68 1.68 0 00-1.15.45 1.56 1.56 0 00-.48 1.1 1.51 1.51 0 00.47 1.1 1.63 1.63 0 001.15.47z"
+                          fill="#1D2E5B" />
+                        <path
+                          d="M18.66 9.38h-2.22a.2.2 0 01-.1-.03.2.2 0 01-.08-.08l-1.6-2.84a1.6 1.6 0 00-2.5-.38L8.58 9.5c-.3.3-.47.69-.47 1.1 0 .85.63 1.15.93 1.32 1.45.8 2.47 1.39 3.03 1.71a.2.2 0 01.1.17v3.37a.81.81 0 001.1.76.82.82 0 00.46-.43c.04-.1.06-.2.06-.3v-4.2a.76.76 0 00-.34-.64l-1.87-1.3a.2.2 0 01-.09-.14.19.19 0 01.06-.15l2.13-2.19a.2.2 0 01.17-.06.2.2 0 01.15.1l1.11 1.93a.8.8 0 00.3.29c.13.07.27.1.41.1h2.85a.84.84 0 00.59-.23.78.78 0 00.22-.58c-.02-.42-.4-.74-.84-.74z"
+                          fill="#1D2E5B" />
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__icon transport__icon--disable" width="23" height="24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.19 6c1.04 0 1.89-.9 1.89-2s-.85-2-1.9-2c-1.04 0-1.88.9-1.88 2s.84 2 1.89 2zM15.03 10.97c.22.34.53.6.9.75.36.15.75.18 1.13.08l3.14-.83-.46-1.94-3.13.83-1.3-2.07a1.9 1.9 0 00-1.21-.85l-3.64-.77a1.8 1.8 0 00-1.2.16c-.37.2-.67.51-.86.9l-1.57 3.32 1.7.9 1.56-3.32 1.86.4L7.15 17h-4.2v2h4.2c.65 0 1.28-.37 1.62-.97l1.8-3.2 4.9 1.04 1.71 5.45 1.8-.64-1.72-5.45c-.1-.33-.3-.63-.54-.86-.25-.24-.56-.4-.88-.46l-2.88-.61 1.68-2.96.4.63z"
+                          fill="#1D2E5B" />
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__level level">
+                <h4 class="card__title">левел:</h4>
+                <div class="card__wrapper">
+                  <span class="level__nubmer">25</span>
+                </div>
+              </div>
+            </div>
+            <a href="" class="button companion__button">Позвать!</a>
+          </li>
+        </ul>
+        <div class="companion__pagination pagination">
+          <a href="" class="inner-button">Показать еще</a>
+          <a class="pagination__button pagination__button--prev pagination__button--disable"></a>
+          <a class="pagination__button pagination__button--next"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="page-footer">
+    <a class="page-footer__logo">
+      <svg width="96" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <mask id="af" maskunits="userSpaceOnUse" x="0" y="0" width="96" height="15">
+          <path fill="url(#pattern0)" d="M0 0h96v15H0z" />
+        </mask>
+        <g mask="url(#a)">
+          <path fill="#1D2E5B" d="M0 0h96v15H0z" />
+        </g>
+        <defs>
+          <pattern id="pattern0f" patterncontentunits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0" transform="scale(.00787 .05)" />
+          </pattern>
+          <image id="image0f" width="127" height="20"
+            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAAUCAYAAACkjuKKAAAFjUlEQVRoge2Ze4hXRRTHP6u59rAsy8xeaqFGZWmrpj3UwspCioge9iCyJ0GlkRWkPUgqsrAS/GMpwkijrDTL0h6Wm7U9rAxMqk17KoTS1oZbi7kbh74XhuHM3d9v9yqL7Rcu/H7nzpw5M2fmnO+cW9F3wPgW2o9hwJoC9HSi/TgKuBE4ExgAVAK/AR8CTwFLgGYbpUvnYu9SmA6sBW4CBsvxhl7ARGAR8BbQm07n71Iwx98PdG1lUqcDbwDdO52/a2AgcG9iJtsdWZVFh90SHc7PWZLZQP//4wp3YExyTvwG5f1fgJnAbdH7ySnnL86ZZ2qHpbAHcLTyTKOM2dBB17EC6AfsD2wGfuoANpWCI5w284D1+n234/xBOzLsjxazrAdWK8+slEE/A/eJiMR4UjeH1PMxcHvQ5zygRvpHJGyxsPgyUAtc47w3YjQN+BH4Xvba76+Bq7QpzgXeBZYBJ0b9h7dis/dMC/pPDHSflJjDOK2nzf9BoEfw7hOn/argdz/nfUvqqleRMABN4vhIFl71LPw8AkzJ0ZFhE3BxZOh7wNgS+o4HfgW+DIhrvVJSQ9Cui5w4MJCdrYU29AReA07JGcvanhGE1niccXJeOXhcazRYDD2Lwg3SXR/oOgt4PSLoNRrX/NcNmANcpmuchflZalelKHBMZNuqHXHy55boeMPBwJsysFz0AcZEC7KfszEPiRyPGG+Gea043jAhyqneOG3FqMDxhn0i3bZG852b2RhFV8M24AZgb23mWdowXymKxY43zCza+acB1zly2511KjbEME5QXea1c7V4SaXzLiY+3tUn6zdBacPDJnGUFFq7UpWKvChrYzwnDuLhyITcNvwr4loxLDJMBZYX7fxbHdk6VZ0GifTd7LQ5ATg5oXOjKlXZcxgwMscxQxUOs2dUjr1e/rcUMUQLaJxkRk7/PEyVYytkd1swQyc8hdQGtPXs7shXKFo8RhRuisB4R8dFwLf63azcNExEKoRdS953+v8D/FCGbbPLaOuF+wu0YQ1Nyp9DNI+diXHt2Hify/ZwAxhhfTVsVOTJt1OyeyTboLwTY6kj61ugLaWgq3hDiLrA8SEW7WTbLEIucAheqdioG0SNUuTVseMp+ORvdWS9NIHmSN7TabutQFtKwXaN2S1ou6/CdHwD6lGe6nahSSkjPAzLxIvyUkCMt3VzqkylyCJPfpNTFLHFnBzJuifyfl1BdnwgspM9S6NrU4g4nfRWtSyERbNbcsazNTxQxasQf7fR/sqAxaNTfIWzIfPQVYy/QYfSNsHhcfuic/5ix7FzdW9dqkW6w7kmtchRRWC6Jpuhvwo3HpY518CnJVsOHATcCRyb6L+nTtho5513sykFIfu3iHkpsKVMHVOiit5YFbmGh42KZvsPA39FMgurd+l78uLEQoWlyJ2JJ0QoQ1SqhF2rXB9X80JMSswH5dpSkHei7ykz12e40JFVxWVgc/6fUaMG8vGH8zbrs1HFhnKwVjkuQ6y/KUfX744sno/HRbI08J1OdluwVUUVD8uj7xeeDVlk+DSh4x3ggVZ0ePPH4ViuvIvqxCFmJjpmeCj6TPhCNNFngHP0YaQ1PA+cGk2iOjKyOkfHEm24DB8BX0RtNsvGDLZRnw3+P6pvBSnCuUXFoHAcq69/Bix0QrJVLC93bFgY2TBfv9c5PvgmKNVmWKmDkqFOY3lY4MhqY45jtX1U7hypDwQrEgpDHKf6+HqFRu+b8V7AldoIQ1USbdRHnRqF+thRGUbIpjU6RXnoo+8DjaqGeSekm0KhlUpfSnAAK0Jdr/x4gJxqi2t1A3OeyS4RkQvHOVS6bQ0staXCfWjDiw7ZtA86VnewyqLlZ4+h2y0p+3xrNqR4hfEGSxmW+y06Gbe5Vrr/A/Avocc+F49G4KEAAAAASUVORK5CYII=" />
+        </defs>
+      </svg>
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Facebook"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="VK"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Twitter"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 60 60" width="27" height="34">
+          <path fill="#2E368F"
+            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
