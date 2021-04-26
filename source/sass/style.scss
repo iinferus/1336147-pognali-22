@@ -1,1 +1,18 @@
-// Начните писать стили здесь
+@import "global/fonts.scss";
+@import "global/color.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "blocks/button.scss";
+@import "blocks/section.scss";
+@import "blocks/page-header.scss";
+@import "blocks/quote.scss";
+@import "blocks/tips.scss";
+@import "blocks/about.scss";
+@import "blocks/direction.scss";
+@import "blocks/companion.scss";
+@import "blocks/profile-rate.scss";
+@import "blocks/info.scss";
+@import "blocks/address.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+@import "blocks/modal.scss";
