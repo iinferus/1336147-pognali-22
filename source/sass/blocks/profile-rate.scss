@@ -1,0 +1,77 @@
+.profile-rate {
+  background: $bg-lightness-blue;
+  margin-top: -25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-bottom: 39px;
+  position: relative;
+  z-index: 3;
+}
+
+.profile-rate__wrapper {
+  padding-top: 76px;
+  background: url("../../img/rates.png") right 62px no-repeat;
+  padding-left: 25px;
+}
+
+.profile-rate__title {
+  padding-right: 130px;
+  margin-bottom: 57px;
+}
+
+.profile-rate__list {
+  @include list-none;
+  counter-reset: number;
+  margin-bottom: 41px;
+}
+
+.profile-rate__item {
+  margin-bottom: 28px;
+  position: relative;
+
+  &::after {
+    @include font(16px, 16px, 400, $basic-white);
+    counter-increment: number;
+    content: counter(number) "";
+    position: absolute;
+    top: -9px;
+    right: 0;
+    border-radius: 50%;
+    padding: 9px 13px 8px 14px;
+  }
+
+  &:first-child::after {
+    background-color: $basic-orange;
+  }
+
+  &:nth-child(2)::after {
+    background-color: $special-yellow-dark;
+  }
+
+  &:last-child::after {
+    background-color: $basic-yellow;
+  }
+}
+
+.profile-rate__name,
+.profile-rate__cost {
+  @include font(16px, 16px, 300, $special-grey);
+  margin: 0;
+}
+
+.profile-rate__name {
+  margin-bottom: 6px;
+}
+
+.profile-rate__button {
+  @include font(16px, 16px, 700, $basic-button);
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

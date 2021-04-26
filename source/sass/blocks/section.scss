@@ -1,0 +1,19 @@
+.section-title {
+  @include font(24px, 24px, 700, $basic-orange);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.section-desc {
+  @include font(16px, 22px, 300, $basic-white);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.section-tagline {
+  @include font(16px, 22px, 700, $basic-white);
+  padding: 0;
+  margin: 0;
+}

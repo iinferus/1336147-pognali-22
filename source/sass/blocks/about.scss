@@ -1,0 +1,17 @@
+.about {
+  background: url("../../img/about-mobile.png") 20px center no-repeat $basic-blue;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-bottom: 82px;
+  position: relative;
+  z-index: 6;
+}
+
+.about__wrapper {
+  padding-top: 30px;
+  margin: 0 49px;
+}
+
+.about__desc {
+  padding-right: 13px;
+}

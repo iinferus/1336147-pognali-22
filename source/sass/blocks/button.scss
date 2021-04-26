@@ -1,0 +1,33 @@
+.button {
+  @include font(18px, 18px, 700, $basic-blue-light);
+  background-color: $basic-yellow;
+  border-radius: 10px;
+  padding: 20px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 1px 6px 10px;
+    border-color: transparent transparent transparent $basic-blue-light;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: rgba($color: $basic-blue-light, $alpha: 0.3);
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+

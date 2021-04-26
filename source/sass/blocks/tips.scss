@@ -1,0 +1,48 @@
+.tips {
+  @include font(18px, 18px, 700, $bg-blue);
+  margin-top: -80px;
+  padding-bottom: 40px;
+  background-color: $basic-blue;
+}
+
+.tips__list {
+  @include list-none;
+  counter-reset: number;
+  display: flex;
+  flex-direction: column;
+}
+
+.tips__item {
+  padding: 20px 105px 40px 24px;
+  border-radius: 10px;
+  margin-top: -16px;
+  position: relative;
+
+  &::after {
+    counter-increment: number;
+    content: counter(number) "\a0";
+    position: absolute;
+    top: 21px;
+    right: 15px;
+    color: $basic-white;
+  }
+
+  &:first-child {
+    background-color: $basic-orange;
+    margin-top: 0;
+  }
+
+  &:nth-child(2) {
+    background-color: $basic-orange-light;
+  }
+
+  &:nth-child(3) {
+    background-color: $special-yellow-dark;
+  }
+
+  &:last-child {
+    background-color: $basic-yellow;
+    padding-bottom: 24px;
+  }
+}
+

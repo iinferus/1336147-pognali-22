@@ -1,0 +1,53 @@
+.address {
+  background: $basic-yellow;
+  margin-top: -41px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-bottom: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+.address__wrapper {
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.address__address {
+  @include font(16px, 22px, 700, $basic-blue-light);
+  text-transform: uppercase;
+  padding: 0 61px;
+  position: relative;
+  margin-bottom: 34px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    top: 0;
+    left: 0;
+    background: url("../../img/svg/map_mark.svg");
+  }
+}
+
+.address__button {
+  border: 3px solid $basic-blue;
+  padding: 18px 21px 20px 20px;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-blue;
+    color: $basic-white;
+
+    &::after {
+      border-color: transparent transparent transparent $basic-white;
+    }
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
+}
