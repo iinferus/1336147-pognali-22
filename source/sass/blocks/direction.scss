@@ -4,8 +4,6 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   padding-bottom: 34px;
-  position: relative;
-  z-index: 5;
 }
 
 .direction__wrapper {
@@ -32,6 +30,14 @@
 
 .direction__item {
   margin-bottom: 11px;
+
+  &:nth-child(2) {
+    margin-bottom: 10px;
+  }
+
+  &:last-child {
+    margin-bottom: 12px;
+  }
 }
 
 .direction__image {

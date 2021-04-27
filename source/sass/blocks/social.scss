@@ -1,0 +1,74 @@
+// Page-Header
+
+.social-list {
+  @include list-none;
+  display: flex;
+  margin: 14px 84px 20px;
+}
+
+.social-list__item:first-child {
+  margin-right: 27px;
+}
+
+.social-list__item:nth-child(2) {
+  margin-right: 26px;
+}
+
+.social-list__item:last-child {
+  padding-top: 2px;
+}
+
+.social-list__button:hover,
+.social-list__button:focus {
+  opacity: 0.6;
+}
+
+.social-list__button:active {
+  opacity: 0.3;
+}
+
+// Page-footer
+
+.footer-social__list {
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+.footer-social__item:first-child,
+.footer-social__item:nth-child(2),
+.footer-social__item:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social__item:last-child {
+  padding-top: 2px;
+}
+
+.footer-social__button {
+  background-color: $basic-yellow;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $special-yellow-dark;
+    opacity: 1;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+}
+
+.footer-social__button--facebook {
+  padding: 14px 17px 6px;
+}
+
+.footer-social__button--vk {
+  padding: 11px;
+  padding-top: 10px;
+}
+
+.footer-social__button--insta {
+  padding: 12px 14px 8px;
+}

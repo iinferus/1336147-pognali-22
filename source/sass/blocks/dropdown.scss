@@ -1,0 +1,46 @@
+
+.main-nav__wrapper {
+  margin-top: 66px;
+  flex: auto;
+}
+
+.main-nav__wrapper--disable {
+  margin: 0;
+  position: absolute;
+
+  .site-list,
+  .social-list {
+    display: none;
+  }
+}
+
+.page-header--inner .user {
+  display: none;
+}
+
+.site-list {
+  @include list-none;
+  margin-bottom: 54px;
+  text-align: center;
+}
+
+.site-list__link {
+  @include font(30px, 35px, 500, $basic-blue);
+}
+
+.user__button {
+  display: block;
+  border-radius: 25px;
+  padding: 15px;
+  padding-bottom: 17px;
+  text-align: center;
+
+  &::after {
+    border: none;
+  }
+}
+
+.main-nav__user {
+  display: flex;
+  flex-direction: column;
+}

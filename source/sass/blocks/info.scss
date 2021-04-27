@@ -4,8 +4,6 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   padding-bottom: 26px;
-  position: relative;
-  z-index: 2;
 }
 
 .info__wrapper {
@@ -22,7 +20,7 @@
   margin-bottom: 28px;
 }
 
-.base-link {
+.info__auth-link {
   color: $basic-yellow;
   text-decoration: underline;
 

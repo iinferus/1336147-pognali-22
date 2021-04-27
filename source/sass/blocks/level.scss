@@ -1,0 +1,65 @@
+.level {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  background-color: rgba($basic-black, 0.6);
+  border: 4px solid $basic-orange;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  align-items: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("../../img/Ellipse-99.png");
+  }
+}
+
+.level__nubmer {
+  @include font(24px, 23px, 700, $basic-white);
+  margin: 9px 13px 0;
+  position: relative;
+  padding-bottom: 2px;
+
+  &::after {
+    display: block;
+    content: "";
+    border-bottom: 1px solid rgba($basic-white, 0.3);
+  }
+}
+
+.level__text {
+  @include font(14px, 14px, 400, $basic-white);
+  margin-bottom: 3px;
+  padding-right: 2px;
+}
+
+.profile-card__level {
+  position: relative;
+  top: 0;
+  left: 0;
+  grid-column: 1/ 2;
+  justify-self: center;
+  background-color: transparent;
+  text-align: center;
+}
+
+.profile-card__level-nubmer {
+  @include font(38px, 34px, 700, $bg-blue);
+  margin: 12px 22px 0;
+
+  &::after {
+    background-color: $special-grey;
+    padding: 0 26px;
+    border-bottom: 1px solid rgba($special-grey, 0.3);
+    margin-top: 5px;
+    margin-left: -3px;
+  }
+}
+
+.profile-card__level-text {
+  @include font(18px, 26px, 400, $bg-blue);
+  margin-bottom: 12px;
+}

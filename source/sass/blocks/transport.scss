@@ -1,0 +1,94 @@
+.transport {
+  @include list-none;
+  display: flex;
+  justify-content: center;
+  order: 4;
+}
+
+.transport__item {
+  padding-right: 8px;
+  position: relative;
+}
+
+.transport__item:nth-child(2) .transport__tooltip {
+  right: -67px;
+  padding-left: 25px;
+  padding-right: 24px;
+}
+
+.transport__item:nth-child(3) .transport__tooltip {
+  right: -43px;
+}
+
+.transport__item:last-child .transport__tooltip {
+  right: -34px;
+  padding-left: 23px;
+  padding-right: 22px;
+
+  &::before {
+    right: 46%;
+  }
+}
+
+.transport__item:hover .transport__tooltip {
+  visibility: visible;
+}
+
+.transport__icon--disable path {
+  opacity: 0.15;
+}
+
+.profile-transport__list {
+  @include list-none;
+  display: flex;
+  padding-bottom: 8px;
+}
+
+.profile-transport__item {
+  padding: 0;
+}
+
+.profile-transport__item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  background-color: $basic-white;
+  border-radius: 50%;
+  padding: 8px 7px 7px;
+}
+
+
+.profile-transport__checkbox:checked + label path {
+  fill: $basic-blue-light;
+}
+
+.profile-transport__checkbox + label path {
+  fill: $checkbox;
+}
+
+.profile-transport__checkbox:checked:hover + label path,
+.profile-transport__checkbox:checked:focus + label path {
+  opacity: 0.7;
+}
+
+.profile-transport__checkbox:hover + label path,
+.profile-transport__checkbox:focus + label path {
+  fill: $special-checkbox;
+}
+
+.profile-transport__checkbox:hover + label,
+.profile-transport__checkbox:focus + label {
+  filter: drop-shadow(0 2px 6px rgba(22, 28, 53, 0.17));
+}
+
+.profile-transport__checkbox:active + label {
+  background-color: $bg-checkbox;
+  filter: none;
+  fill: $basic-blue-light;
+  fill-opacity: 0.1;
+}
+
+.profile-transport__checkbox:checked:active + label {
+  fill-opacity: 0.3;
+}

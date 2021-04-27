@@ -1,0 +1,53 @@
+.page-body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  min-height: 100%;
+  max-width: 320px;
+  background: url("../../img/globe-back-mobile.jpg") center top no-repeat $basic-grey;
+}
+
+.page-main--inner {
+  background: $bg-light-blue;
+}
+
+.page-main__title {
+  @include font(36px, 40px, 700, $basic-white);
+  text-align: center;
+  margin: 0 40px;
+  padding-top: 19px;
+  padding-bottom: 266px;
+  background: url("../../img/traveller-illustration-mobile-1.png") no-repeat right 8px bottom;
+}
+
+.page-main__category {
+  background-color: $basic-yellow;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+}
+
+.page-main__title--inner {
+  line-height: 36px;
+  text-align: start;
+  background: $bg-dark-blue;
+  margin: 0;
+  padding: 20px 80px 0 25px;
+  position: relative;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    border: 2px solid $basic-orange;
+    border-radius: 4px;
+    margin-top: 11px;
+  }
+}
+
+.wrapper {
+  margin: 0 25px;
+}
