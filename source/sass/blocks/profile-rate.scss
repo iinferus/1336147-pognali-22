@@ -1,15 +1,13 @@
 .profile-rate {
   background: $bg-lightness-blue;
-  margin-top: -25px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  padding-bottom: 39px;
 }
 
 .profile-rate__wrapper {
+  @include wrapper;
   padding-top: 76px;
   background: url("../../img/rates.png") right 62px no-repeat;
   padding-left: 25px;
+  padding-bottom: 39px;
 }
 
 .profile-rate__title {

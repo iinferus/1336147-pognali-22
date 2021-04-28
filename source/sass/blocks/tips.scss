@@ -1,8 +1,11 @@
 .tips {
   @include font(18px, 18px, 700, $bg-blue);
-  margin-top: -80px;
-  padding-bottom: 40px;
   background-color: $basic-blue;
+}
+
+.tips__wrapper {
+  @include wrapper;
+  padding-bottom: 40px;
 }
 
 .tips__list {

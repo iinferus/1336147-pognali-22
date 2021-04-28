@@ -1,0 +1,9 @@
+.site-list {
+  @include list-none;
+  margin-bottom: 54px;
+  text-align: center;
+}
+
+.site-list__link {
+  @include font(30px, 35px, 500, $basic-blue);
+}

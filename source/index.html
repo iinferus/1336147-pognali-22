@@ -15,7 +15,7 @@
 
   <header class="page-header">
     <nav class="main-nav">
-      <a class="page-header__logo">
+      <a class="main-nav__logo">
         <svg width="96" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
           <mask id="a" maskunits="userSpaceOnUse" x="0" y="0" width="96" height="15">
@@ -55,13 +55,12 @@
         </ul>
         <div class="main-nav__user user user--title">
           <a href="authorization.html" class="user__button button">Авторизация</a>
-          <ul class="user__list contact-list">
-            <li class="contact-list__item">
-              <a class="contact-list__link contact-list__link--phone" href="tel:+88005558628">8 800 555-86-28</a>
+          <ul class="user__list">
+            <li class="user__item">
+              <a class="user__link user__link--phone" href="tel:+88005558628">8 800 555-86-28</a>
             </li>
-            <li class="contact-list__item">
-              <a class="contact-list__link contact-list__link--mail"
-                href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <li class="user__item">
+              <a class="user__link user__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
         </div>
@@ -102,7 +101,7 @@
     <h1 class="page-main__title">В путешествие с крутыми попутчиками!</h1>
     <section class="quote">
       <h2 class="visually-hidden">Цытата</h2>
-      <figure class="quote__wrapper wrapper">
+      <figure class="quote__wrapper">
         <blockquote class="quote__block">
           <p class="quote__text">«Лучшее приложение, что я видел в жизни!»</p>
         </blockquote>
@@ -110,7 +109,7 @@
       </figure>
     </section>
     <section class="tips">
-      <div class="tips__wrapper wrapper">
+      <div class="tips__wrapper">
         <h2 class="visually-hidden">Советы</h2>
         <ol class="tips__list">
           <li class="tips__item">Выберите направление</li>
@@ -121,20 +120,26 @@
       </div>
     </section>
     <section class="about" id="about">
-      <div class="about__wrapper wrapper">
-        <h2 class="section-title">О сервисе</h2>
-        <p class="about__desc section-desc">Любое путешествие веселее<br> с попутчиками, которые на одной волне с тобой!
-          Делитесь своими
-          идеями путешествий и черпайте вдохновение в чужих.</p>
-        <p class="section-tagline">А если найдете кого-то близкого по духу &#8212; скорее зовите в совместный трип!</p>
+      <div class="about__wrapper">
+        <div class="section">
+          <h2 class="section__title">О сервисе</h2>
+          <p class="about__desc section__desc">Любое путешествие веселее<br> с попутчиками, которые на одной волне с
+            тобой!
+            Делитесь своими
+            идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p class="section__tagline">А если найдете кого-то близкого по духу &#8212; скорее зовите в совместный трип!
+          </p>
+        </div>
       </div>
     </section>
     <section class="direction" id="direction">
-      <div class="direction__wrapper wrapper">
-        <h2 class="direction__title section-title">Направления</h2>
-        <p class="direction__desc section-desc">Мы не продаем туры<br> и ничего не рекламируем. Люди сами пишут о
-          странах, куда хотели бы
-          отправиться и чем можно там заняться.</p>
+      <div class="direction__wrapper">
+        <div class="section">
+          <h2 class="direction__title section__title">Направления</h2>
+          <p class="direction__desc section__desc">Мы не продаем туры<br> и ничего не рекламируем. Люди сами пишут о
+            странах, куда хотели бы
+            отправиться и чем можно там заняться.</p>
+        </div>
         <ul class="direction__list">
           <li class="direction__item">
             <img class="direction__image" src="img/thailand-mobile.jpg" alt="Тайланд" width="270" height="110">
@@ -165,13 +170,16 @@
       </div>
     </section>
     <section class="companion" id="companion">
-      <div class="companion__wrapper wrapper">
-        <h2 class="section-title companion__title">Попутчики</h2>
-        <p class="section-desc companion__desc">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
-          нужен пляж и
-          коктейль, а другому маршрут для хайкинга.</p>
-        <p class="section-tagline companion__tagline">Теперь можно легко найти
-          единомышленников!</p>
+      <div class="companion__wrapper">
+        <div class="section">
+          <h2 class="section__title companion__title">Попутчики</h2>
+          <p class="section__desc companion__desc">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+            Одному
+            нужен пляж и
+            коктейль, а другому маршрут для хайкинга.</p>
+          <p class="section__tagline companion__tagline">Теперь можно легко найти
+            единомышленников!</p>
+        </div>
         <ul class="companion__list">
           <li class="companion__item card">
             <img class="card__photo" src="img/avatar-1.jpg" alt="Таня Фирсова" width="270" height="270">
@@ -183,15 +191,18 @@
               <h3 class="card__title"><a class="card__name" href="">Таня Фирсова</a></h3>
               <ul class="card__list card-countries">
                 <li class="card-countries__item">
-                  <img class="card-countries__flag" src="img/flags/SriLanka.jpg" alt="Флаг Шри-Ланки" width="35" height="25">
+                  <img class="card-countries__flag" src="img/flags/SriLanka.jpg" alt="Флаг Шри-Ланки" width="35"
+                    height="25">
                   <span class="card-countries__tooltip tooltip">Шри-Ланка</span>
                 </li>
                 <li class="card-countries__item">
-                  <img class="card-countries__flag" src="img/flags/Thailand.jpg" alt="Флаг Тайланда" width="35" height="25">
+                  <img class="card-countries__flag" src="img/flags/Thailand.jpg" alt="Флаг Тайланда" width="35"
+                    height="25">
                   <span class="card-countries__tooltip tooltip">Тайланд</span>
                 </li>
                 <li class="card-countries__item">
-                  <img class="card-countries__flag" src="img/flags/Seychelles.jpg" alt="Флаг Сейшел" width="35" height="25">
+                  <img class="card-countries__flag" src="img/flags/Seychelles.jpg" alt="Флаг Сейшел" width="35"
+                    height="25">
                   <span class="card-countries__tooltip tooltip">Сейшелы</span>
                 </li>
               </ul>
@@ -281,7 +292,8 @@
               <h3 class="card__title"><a class="card__name" href="">Петя Демин</a></h3>
               <ul class="card__list card-countries">
                 <li class="card-countries__item">
-                  <img class="card-countries__flag" src="img/flags/Belgium.jpg" alt="Флаг Бельгии" width="35" height="25">
+                  <img class="card-countries__flag" src="img/flags/Belgium.jpg" alt="Флаг Бельгии" width="35"
+                    height="25">
                   <span class="card-countries__tooltip tooltip">Бельгия</span>
                 </li>
                 <li class="card-countries__item">
@@ -323,8 +335,7 @@
                   <span class="transport__tooltip tooltip">Авиаперелет</span>
                 </li>
                 <li class="transport__item">
-                  <svg class="transport__icon" width="19" height="20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg class="transport__icon" width="19" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
                       <path
                         d="M4.84 13.57c0-.4-.16-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.31.28-.46.62-.46 1.01 0 .4.15.73.45 1.01.3.28.68.42 1.1.42.44 0 .8-.14 1.1-.42.31-.28.47-.61.47-1zm12.47 0c0-.4-.15-.73-.46-1-.3-.29-.67-.43-1.1-.43-.43 0-.8.14-1.1.42-.3.28-.46.62-.46 1.01 0 .4.15.73.46 1.01.3.28.67.42 1.1.42.43 0 .8-.14 1.1-.42.3-.28.46-.61.46-1zm-.56-4.42l-.88-4.28a.72.72 0 00-.27-.42.8.8 0 00-.5-.16H3.92a.8.8 0 00-.5.16.72.72 0 00-.27.42l-.87 4.28c-.04.22.01.42.17.6.15.16.35.25.6.25h12.93c.25 0 .44-.09.6-.26a.66.66 0 00.17-.59zM14 2.32a.5.5 0 00-.17-.38.6.6 0 00-.42-.15h-7.8a.6.6 0 00-.4.15.5.5 0 00-.18.38c0 .15.06.28.17.38.11.1.25.16.41.16h7.8a.6.6 0 00.42-.16.5.5 0 00.17-.38zm4.87 8.1v6.72H17.3v1.43c0 .4-.15.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.3-.28-.46-.61-.46-1v-1.44H4.84v1.43c0 .4-.16.73-.46 1.01-.3.28-.67.42-1.1.42-.43 0-.8-.14-1.1-.42-.31-.28-.46-.61-.46-1v-1.44H.16v-6.73c0-.83.1-1.66.3-2.49l1.26-5.06c.07-.58.47-1.1 1.18-1.53a8.5 8.5 0 012.8-1C6.87.11 8.13 0 9.52 0c1.4 0 2.66.11 3.81.33a8.5 8.5 0 012.8 1c.72.44 1.12.95 1.19 1.53l1.28 5.06c.19.76.28 1.6.28 2.5z"
@@ -351,8 +362,7 @@
                   <span class="transport__tooltip tooltip">Велосипед</span>
                 </li>
                 <li class="transport__item">
-                  <svg class="transport__icon" width="23" height="25" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg class="transport__icon" width="23" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M16.19 6c1.04 0 1.89-.9 1.89-2s-.85-2-1.9-2c-1.04 0-1.88.9-1.88 2s.84 2 1.89 2zM15.03 10.97c.22.34.53.6.9.75.36.15.75.18 1.13.08l3.14-.83-.46-1.94-3.13.83-1.3-2.07a1.9 1.9 0 00-1.21-.85l-3.64-.77a1.8 1.8 0 00-1.2.16c-.37.2-.67.51-.86.9l-1.57 3.32 1.7.9 1.56-3.32 1.86.4L7.15 17h-4.2v2h4.2c.65 0 1.28-.37 1.62-.97l1.8-3.2 4.9 1.04 1.71 5.45 1.8-.64-1.72-5.45c-.1-.33-.3-.63-.54-.86-.25-.24-.56-.4-.88-.46l-2.88-.61 1.68-2.96.4.63z"
                       fill="#1D2E5B" />
@@ -367,62 +377,66 @@
       </div>
     </section>
     <section class="profile-rate">
-      <div class="profile-rate__wrapper wrapper">
-        <h2 class="profile-rate__title section-title">Добавьте свой профиль</h2>
-        <ol class="profile-rate__list">
-          <li class="profile-rate__item">
-            <p class="profile-rate__name">Базовое размещение</p>
-            <p class="profile-rate__cost">Бесплатно</p>
-          </li>
-          <li class="profile-rate__item">
-            <p class="profile-rate__name">Вывод на первых позициях</p>
-            <p class="profile-rate__cost">99 руб./мес</p>
-          </li>
-          <li class="profile-rate__item">
-            <p class="profile-rate__name">Кастомный цвет карточки</p>
-            <p class="profile-rate__cost">59 руб./мес</p>
-          </li>
-        </ol>
+      <div class="profile-rate__wrapper">
+        <div class="section">
+          <h2 class="profile-rate__title section__title">Добавьте свой профиль</h2>
+          <ol class="profile-rate__list">
+            <li class="profile-rate__item">
+              <p class="profile-rate__name">Базовое размещение</p>
+              <p class="profile-rate__cost">Бесплатно</p>
+            </li>
+            <li class="profile-rate__item">
+              <p class="profile-rate__name">Вывод на первых позициях</p>
+              <p class="profile-rate__cost">99 руб./мес</p>
+            </li>
+            <li class="profile-rate__item">
+              <p class="profile-rate__name">Кастомный цвет карточки</p>
+              <p class="profile-rate__cost">59 руб./мес</p>
+            </li>
+          </ol>
+        </div>
         <a class="inner-button profile-rate__button" href="">Показать тарифы для бизнеса</a>
       </div>
     </section>
     <section class="info">
-      <div class="info__wrapper wrapper">
-        <h2 class="section-title">Заинтересовались?</h2>
-        <p class="info__desc section-desc">
-          <span class="info__registration">Зарегистрируйтесь,<br> это быстро и бесплатно!</span><br>
-          <span class="info__auth">Уже зарегистрированы? Тогда скорее <a class="info__auth-link"
-              href="authorization.html">авторизуйтесь</a>.</span>
-        </p>
-        <form action="https://echo.htmlacademy.ru" method="POST" name="info__registration">
-          <div class="info__form">
-            <input class="info__input" type="email" name="email" id="info__email" placeholder="E-mail" required>
-            <label for="info__email" class="visually-hidden">E-mail</label>
-            <button class="info__button button" type="submit" aria-label="Отправить"></button>
-          </div>
-        </form>
-        <p class="info__tagline section-desc">Остались вопросы?<br> Мы с радостью на них ответим!</p>
-        <ul class="info__contact contact-list">
-          <li class="info__item contact-list__item">
-            <a class="info__link info__link--phone contact-list__link contact-list__link--phone" href="tel:+88005558628">8 800
+      <div class="info__wrapper">
+        <div class="section">
+          <h2 class="info__title section__title">Заинтересовались?</h2>
+          <p class="info__desc section__desc">
+            <span class="info__registration">Зарегистрируйтесь,<br> это быстро и бесплатно!</span><br>
+            <span class="info__auth">Уже зарегистрированы? Тогда скорее <a class="info__auth-link"
+                href="authorization.html">авторизуйтесь</a>.</span>
+          </p>
+          <form action="https://echo.htmlacademy.ru" method="POST" name="info__registration">
+            <div class="info__form">
+              <input class="info__input" type="email" name="email" id="info__email" placeholder="E-mail" required>
+              <label for="info__email" class="visually-hidden">E-mail</label>
+              <button class="info__button button" type="submit" aria-label="Отправить"></button>
+            </div>
+          </form>
+          <p class="info__tagline section__desc">Остались вопросы?<br> Мы с радостью на них ответим!</p>
+        </div>
+        <ul class="info__contact user">
+          <li class="info__item user__item">
+            <a class="info__link info__link--phone user__link user__link--phone" href="tel:+88005558628">8 800
               555-86-28</a>
           </li>
-          <li class="info__item contact-list__item">
-            <a class="info__link info__link--mail contact-list__link contact-list__link--mail"
+          <li class="info__item user__item">
+            <a class="info__link info__link--mail user__link user__link--mail"
               href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
       </div>
     </section>
     <section class="address">
-      <div class="address__wrapper wrapper">
+      <div class="address__wrapper">
         <h2 class="visually-hidden">Как добраться</h2>
         <p class="address__address">ул. Большая Конюшенная, 19/8</p>
         <a class="button address__button" href="">Проложить маршрут</a>
       </div>
     </section>
     <div class="map">
-      <iframe class="gmap"
+      <iframe class="map__google"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1619115674609!5m2!1sru!2sua"
         width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy">
       </iframe>
@@ -430,7 +444,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper wrapper">
+    <div class="page-footer__wrapper">
       <a class="page-footer__logo">
         <svg width="96" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -482,13 +496,16 @@
       <div class="page-footer__copyright copyright">
         <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewbox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewbox="0 0 60 60">
+            <path fill="#2E368F"
+              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+          </svg>
         </a>
       </div>
     </div>
   </footer>
 
-  <div class="modal business-rates">
+  <div class="business-rates">
     <div class="business-rates__wrapper">
       <h2 class="business-rates__title section-title">Бизнес-тарифы</h2>
       <ul class="business-rates__list">

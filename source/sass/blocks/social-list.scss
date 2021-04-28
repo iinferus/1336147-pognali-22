@@ -1,0 +1,26 @@
+.social-list {
+  @include list-none;
+  display: flex;
+  margin: 14px 84px 20px;
+}
+
+.social-list__item:first-child {
+  margin-right: 27px;
+}
+
+.social-list__item:nth-child(2) {
+  margin-right: 26px;
+}
+
+.social-list__item:last-child {
+  padding-top: 2px;
+}
+
+.social-list__button:hover,
+.social-list__button:focus {
+  opacity: 0.6;
+}
+
+.social-list__button:active {
+  opacity: 0.3;
+}

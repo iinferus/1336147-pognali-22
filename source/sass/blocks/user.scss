@@ -1,21 +1,21 @@
-.contact-list {
+.user__list {
   @include list-none;
   margin-top: 38px;
   margin-bottom: 40px;
 }
 
-.contact-list__item {
+.user__item {
   padding-top: 24px;
   position: relative;
 }
 
-.contact-list__link {
+.user__link {
   @include font(16px, 18px, 700, $basic-blue);
   position: relative;
   padding-left: 60px;
 }
 
-.contact-list__link::before {
+.user__link::before {
   content: "";
   position: absolute;
   width: 45px;
@@ -25,11 +25,11 @@
   border-radius: 50%;
 }
 
-.contact-list__link--phone::before {
+.user__link--phone::before {
   background: url("../../img/svg/icon_telephone.svg") center center no-repeat $special-blue;
 }
 
-.contact-list__link--mail::before {
+.user__link--mail::before {
   background: url("../../img/svg/icon-mail.svg") center center no-repeat $special-blue;
 }
 
@@ -47,32 +47,32 @@
     padding: 12px 33px 10px 40px;
   }
 
-  .contact-list {
+  .user__list {
     display: flex;
     flex-direction: row;
     margin: 0;
   }
 
-  .contact-list__item {
+  .user__item {
     padding: 0;
   }
 
-  .contact-list__item:last-child {
+  .user__item:last-child {
     padding-left: 40px;
     padding-right: 39px;
   }
 
-  .contact-list__link {
+  .user__link {
     font-size: 0;
     padding: 0;
   }
 
-  .contact-list__link::before {
+  .user__link::before {
     width: 40px;
     height: 40px;
   }
 
-  .contact-list__link--phone {
+  .user__link--phone {
     &::before {
       background: url("../../img/svg/icon_call.svg") center center no-repeat $basic-orange;
       z-index: 3;
@@ -87,7 +87,7 @@
     }
   }
 
-  .contact-list__link--mail {
+  .user__link--mail {
     &::before {
       background: url("../../img/svg/icon-inner-mail.svg") center center no-repeat $special-yellow-dark;
     }
@@ -101,4 +101,20 @@
       background-image: url("../../img/svg/icon_mail--transparent.svg");
     }
   }
+}
+
+.user__button {
+  display: block;
+  border-radius: 25px;
+  padding: 15px;
+  padding-bottom: 17px;
+  text-align: center;
+
+  &::after {
+    border: none;
+  }
+}
+
+.page-header--inner .user {
+  display: none;
 }

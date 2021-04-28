@@ -1,0 +1,32 @@
+
+.card-countries {
+  @include list-none;
+  display: flex;
+  order: 1;
+  margin-top: -37px;
+  margin-bottom: 9px;
+}
+
+.card-countries__item {
+  position: relative;
+  padding-right: 20px;
+
+  &:last-child {
+    padding: 0;
+  }
+}
+
+.card-countries__flag {
+  border-radius: 4px;
+}
+
+.card-countries__item:hover .card-countries__tooltip {
+  visibility: visible;
+}
+
+.card-countries__tooltip {
+  width: 140px;
+  left: 50%;
+  margin-left: -75px;
+  right: 0;
+}

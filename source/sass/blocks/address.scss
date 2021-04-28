@@ -1,15 +1,13 @@
 .address {
   background: $basic-yellow;
-  margin-top: -41px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  padding-bottom: 35px;
 }
 
 .address__wrapper {
+  @include wrapper;
   padding-top: 56px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 35px;
 }
 
 .address__address {

@@ -10,3 +10,7 @@
   font-weight: $font-weight;
   color: $color;
 }
+
+@mixin wrapper {
+  margin: 0 25px;
+}

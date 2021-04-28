@@ -1,0 +1,76 @@
+.page-header {
+  z-index: 2;
+  position: relative;
+}
+
+.page-main__title {
+  z-index: 1;
+  position: relative;
+  margin: 0 40px;
+}
+
+.quote {
+  position: relative;
+}
+
+.tips {
+  margin-top: -80px;
+}
+
+.about {
+  position: relative;
+  z-index: 6;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.direction {
+  position: relative;
+  z-index: 5;
+  margin-top: -20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.companion {
+  position: relative;
+  z-index: 4;
+  margin-top: -25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.profile-rate {
+  position: relative;
+  z-index: 3;
+  margin-top: -25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.info {
+  position: relative;
+  z-index: 2;
+  margin-top: -25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.address {
+  position: relative;
+  margin-top: -41px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.map {
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.page-footer {
+  position: relative;
+  margin-top: -103px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}

@@ -1,9 +1,5 @@
 .companion {
   background: url("../../img/companion_bg.png") left 59px no-repeat $basic-blue;
-  margin-top: -25px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  padding-bottom: 31px;
 
   &__title,
   &__desc,
@@ -13,7 +9,9 @@
 }
 
 .companion__wrapper {
+  @include wrapper;
   padding-top: 91px;
+  padding-bottom: 31px;
   display: flex;
   flex-direction: column;
 }

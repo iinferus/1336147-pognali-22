@@ -1,0 +1,13 @@
+.tags {
+  @include list-none;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  order: 3;
+}
+
+.tags__link {
+  @include font(16px, 16px, 400, $special-grey);
+  padding-right: 3px;
+}

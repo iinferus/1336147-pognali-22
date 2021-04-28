@@ -1,13 +1,11 @@
 .direction {
   background: $bg-light-blue;
-  margin-top: -20px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  padding-bottom: 34px;
 }
 
 .direction__wrapper {
+  @include wrapper;
   padding-top: 89px;
+  padding-bottom: 34px;
   display: flex;
   flex-direction: column;
 }

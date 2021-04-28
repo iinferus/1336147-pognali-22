@@ -1,16 +1,13 @@
 .page-footer {
   background: $basic-white;
-  margin-top: -103px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  padding-bottom: 15px;
-  padding-top: 37px;
 }
 
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 15px;
+  padding-top: 37px;
 }
 
 .page-footer__logo {

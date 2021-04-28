@@ -1,17 +1,19 @@
 .info {
   background: $basic-blue;
-  margin-top: -25px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  padding-bottom: 26px;
+}
+
+.info__title {
+  text-align: center;
 }
 
 .info__wrapper {
+  @include wrapper;
   padding-top: 95px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 26px;
 }
 
 .info__desc {
@@ -94,6 +96,7 @@
 }
 
 .info__contact {
+  @include list-none;
   align-self: flex-start;
   margin: 0;
 }
