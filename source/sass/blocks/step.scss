@@ -1,0 +1,132 @@
+.step {
+  margin-bottom: 10px;
+}
+
+.step__fieldset {
+  background-color: $basic-white;
+  border-radius: 10px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.step__legend {
+  font-weight: 700;
+  color: $basic-blue-light;
+  padding: 22px 0;
+  padding-bottom: 17px;
+}
+
+.step__desc {
+  @include font(16px, 22px, 400, $special-grey);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.step__field {
+  margin-bottom: 19px;
+}
+
+.step__quantity {
+  @include font(16px, 16px, 500, $basic-blue-light);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.step__qunit {
+  opacity: 0.3;
+}
+
+.step__quantity-wrapper {
+  position: relative;
+}
+
+.step__companion {
+  @include font(15px, 14px, 500, $basic-blue-light);
+  text-align: center;
+  width: 100%;
+  padding: 12px 13px 12px 30px;
+}
+
+.step__switch {
+  background: transparent;
+  border: none;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 23px;
+  transform: translate(-50%, -50%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid $basic-grey;
+    width: 100%;
+    top: 6px;
+    left: 0;
+    transform: translate(50%, -50%);
+  }
+}
+
+.minus {
+  left: 14px;
+}
+
+.plus {
+  right: 14px;
+}
+
+.plus::before {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid $basic-grey;
+  width: 100%;
+  top: 6px;
+  left: 0;
+  transform: translate(50%, -50%) rotate(90deg);
+}
+
+.step__checkbox-label {
+  @include font(15px, 15px, 400, $basic-blue-light);
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 39px;
+  padding-top: 8px;
+}
+
+.step__checkbox + .step__checkbox-label::before {
+  content: "";
+  position: absolute;
+  margin-top: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $special-border;
+  border-radius: 4px;
+}
+
+.step__checkbox:checked + .step__checkbox-label::before {
+  background: url("../../img/svg/icon_check-mark.svg") center center no-repeat;
+}
+
+.step__button {
+  justify-content: center;
+  border-radius: 20px;
+  text-transform: uppercase;
+  padding: 5px 7px;
+  font-size: 17px;
+  line-height: 30px;
+  margin-bottom: 23px;
+
+  &::after {
+    content: none;
+  }
+}
