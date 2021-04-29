@@ -30,3 +30,14 @@ a {
   overflow: hidden;
   visibility: hidden;
 }
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+}

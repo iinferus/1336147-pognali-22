@@ -3,4 +3,24 @@
   border-radius: 4px;
   padding: 13px 10px 13px;
   background-color: transparent;
+
+  &:hover {
+    border-color: $inner-border;
+
+    ~ .step__switch::before,
+    ~ .step__switch::after {
+      border-color: $inner-border;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    outline-offset: 0;
+    border-color: $bg-blue;
+
+    ~ .step__switch::before,
+    ~ .step__switch::after {
+      border-color: $bg-blue;
+    }
+  }
 }

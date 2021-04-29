@@ -9,26 +9,23 @@
   padding-bottom: 40px;
 }
 
-.inner-section-title {
-  @include font(24px, 24px, 700, $basic-blue-light);
-  margin: 0;
-  padding-left: 1px;
-  margin-bottom: 31px;
+.profile-plan__wrapper {
+  @include wrapper;
 }
 
-.plan {
+.profile-plan__list {
   @include list-none;
   counter-reset: number;
 }
 
-.plan__item {
+.profile-plan__item {
   background-color: $basic-white;
   padding: 24px 26px 22px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
-.plan__item:last-child .plan__title {
+.profile-plan__item:last-child .profile-plan__title {
   padding-left: 18px;
 
   &::before {
@@ -36,7 +33,7 @@
   }
 }
 
-.plan__title {
+.profile-plan__title {
   @include font(16px, 16px, 700, $basic-blue-light);
   margin: 0;
   position: relative;
@@ -54,11 +51,11 @@
   }
 }
 
-.plan__content {
+.profile-plan__content {
   margin-bottom: 20px;
 }
 
-.plan__content p {
+.profile-plan__content p {
   @include font(14px, 14px, 500, $basic-blue-light);
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -66,8 +63,17 @@
   margin-bottom: 4px;
 }
 
-.plan__button {
+.profile-plan__button {
   @include font(14px, 14px, 500, rgba($basic-black, 0.3));
   text-transform: uppercase;
   letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    color: rgba($basic-black, 0.6);
+  }
+
+  &:active {
+    color: rgba($basic-black, 0.1);
+  }
 }

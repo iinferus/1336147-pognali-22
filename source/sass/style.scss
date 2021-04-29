@@ -3,6 +3,7 @@
 @import "global/variables.scss";
 @import "global/global.scss";
 // Global blocks
+@import "blocks/geometry.scss";
 @import "blocks/page-body.scss";
 @import "blocks/page-main.scss";
 @import "blocks/button.scss";
@@ -17,7 +18,6 @@
 @import "blocks/copyright.scss";
 @import "blocks/input.scss";
 // Index page
-@import "blocks/geometry.scss";
 @import "blocks/quote.scss";
 @import "blocks/tips.scss";
 @import "blocks/about.scss";
@@ -35,10 +35,13 @@
 @import "blocks/map.scss";
 @import "blocks/business-rates.scss";
 // Inner page
-@import "blocks/calendar.scss";
-@import "blocks/create-plan.scss";
 @import "blocks/profile-card.scss";
-@import "blocks/profile-plan.scss";
 @import "blocks/profile-transport.scss";
+@import "blocks/profile-plan.scss";
+@import "blocks/create-plan.scss";
 @import "blocks/slider.scss";
 @import "blocks/step.scss";
+@import "blocks/calendar.scss";
+@import "blocks/choose-country.scss";
+@import "blocks/letters.scss";
+@import "blocks/choosen-country.scss";

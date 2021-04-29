@@ -2,6 +2,17 @@
   margin-bottom: 10px;
 }
 
+.step__wrapper {
+  @include wrapper;
+  padding-bottom: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.step__fieldset--date .step__wrapper {
+  padding-bottom: 18px;
+}
+
 .step__fieldset {
   background-color: $basic-white;
   border-radius: 10px;
@@ -22,6 +33,10 @@
   @include font(16px, 22px, 400, $special-grey);
   margin: 0;
   margin-bottom: 20px;
+}
+
+.step__fieldset--entertainment .step__desc {
+  padding-right: 10px;
 }
 
 .step__field {
@@ -49,7 +64,7 @@
   @include font(15px, 14px, 500, $basic-blue-light);
   text-align: center;
   width: 100%;
-  padding: 12px 13px 12px 30px;
+  padding: 12px 13px 11px 15px;
 }
 
 .step__switch {
@@ -58,8 +73,8 @@
   width: 14px;
   height: 14px;
   position: absolute;
-  top: 23px;
-  transform: translate(-50%, -50%);
+  top: 15px;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -68,27 +83,43 @@
     width: 100%;
     top: 6px;
     left: 0;
-    transform: translate(50%, -50%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid $basic-grey;
+    width: 100%;
+    top: 6px;
+    left: 0;
+    transform: rotate(90deg);
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:hover::before,
+  &:focus::before {
+    border-color: $inner-border-dark;
+  }
+
+  &:active::after,
+  &:active::before {
+    border-color: $inner-border-light;
   }
 }
 
-.minus {
+.step__switch--minus {
   left: 14px;
+
+  &::before {
+    content: none;
+  }
 }
 
-.plus {
+.step__switch--plus {
   right: 14px;
 }
 
-.plus::before {
-  content: "";
-  position: absolute;
-  border-bottom: 2px solid $basic-grey;
-  width: 100%;
-  top: 6px;
-  left: 0;
-  transform: translate(50%, -50%) rotate(90deg);
-}
 
 .step__checkbox-label {
   @include font(15px, 15px, 400, $basic-blue-light);
@@ -114,7 +145,20 @@
 }
 
 .step__checkbox:checked + .step__checkbox-label::before {
-  background: url("../../img/svg/icon_check-mark.svg") center center no-repeat;
+  background-image: url("../../img/svg/icon_check-mark.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.step__checkbox-label:hover::before {
+  border-color: $inner-border;
+}
+
+.step__checkbox + .step__checkbox-label:active::before,
+.step__checkbox:checked + .step__checkbox-label:active::before {
+  background-color: $bg-checkbox;
+  border: none;
 }
 
 .step__button {
@@ -124,9 +168,20 @@
   padding: 5px 7px;
   font-size: 17px;
   line-height: 30px;
-  margin-bottom: 23px;
+  margin-bottom: 5px;
 
   &::after {
     content: none;
+  }
+
+  &--previous {
+    background-color: transparent;
+    margin: 0;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+      background-color: transparent;
+    }
   }
 }
