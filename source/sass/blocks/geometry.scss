@@ -1,30 +1,30 @@
-.page-header {
+.geometry__header {
   z-index: 2;
   position: relative;
 }
 
-.page-main__title {
+.geometry__main-title {
   z-index: 1;
   position: relative;
   margin: 0 40px;
 }
 
-.quote {
+.geometry__quote {
   position: relative;
 }
 
-.tips {
+.geometry__tips {
   margin-top: -80px;
 }
 
-.about {
+.geometry__about {
   position: relative;
   z-index: 6;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
-.direction {
+.geometry__direction {
   position: relative;
   z-index: 5;
   margin-top: -20px;
@@ -32,7 +32,7 @@
   border-bottom-right-radius: 30px;
 }
 
-.companion {
+.geometry__companion {
   position: relative;
   z-index: 4;
   margin-top: -25px;
@@ -40,7 +40,7 @@
   border-bottom-right-radius: 30px;
 }
 
-.profile-rate {
+.geometry__profile-rate {
   position: relative;
   z-index: 3;
   margin-top: -25px;
@@ -48,7 +48,7 @@
   border-bottom-right-radius: 30px;
 }
 
-.info {
+.geometry__info {
   position: relative;
   z-index: 2;
   margin-top: -25px;
@@ -56,21 +56,50 @@
   border-bottom-right-radius: 30px;
 }
 
-.address {
+.geometry__address {
   position: relative;
   margin-top: -41px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
-.map {
+.geometry__map {
   margin-top: -50px;
   margin-bottom: 50px;
 }
 
-.page-footer {
+.geometry__footer {
   position: relative;
   margin-top: -103px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  z-index: 4;
+}
+
+.geometry__profile-plan {
+  position: relative;
+  margin-top: 14px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  z-index: 2;
+}
+
+.geometry__create-plan {
+  position: relative;
+  margin-top: -20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  z-index: 3;
+}
+
+.geometry__filter-country {
+  position: relative;
+  margin-top: -45px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.geometry__filter-companion {
+  margin-top: 21px;
+  border-radius: 20px;
 }
