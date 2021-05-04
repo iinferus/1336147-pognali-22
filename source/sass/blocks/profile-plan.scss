@@ -1,0 +1,81 @@
+.profile-plan {
+  background: $special-button-dark;
+  padding-top: 26px;
+  padding-bottom: 40px;
+}
+
+.profile-plan__wrapper {
+  @include wrapper;
+}
+
+.profile-plan__main-title {
+  @include font(24px, 24px, 700, $basic-blue-light);
+  padding-left: 1px;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.profile-plan__list {
+  @include list-none;
+  counter-reset: number;
+}
+
+.profile-plan__item {
+  background-color: $basic-white;
+  padding: 24px 26px 22px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-plan__item:last-child .profile-plan__title {
+  padding-left: 18px;
+
+  &::before {
+    left: 0;
+  }
+}
+
+.profile-plan__title {
+  @include font(16px, 16px, 700, $basic-blue-light);
+  margin: 0;
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 20px;
+
+  &::before {
+    @include font(16px, 16px, 500, $basic-blue-light);
+    font-family: inherit;
+    counter-increment: number;
+    content: counter(number) ".";
+    position: absolute;
+    top: -1px;
+    left: -2px;
+  }
+}
+
+.profile-plan__content {
+  margin-bottom: 20px;
+}
+
+.profile-plan__content p {
+  @include font(14px, 14px, 500, $basic-blue-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.profile-plan__button {
+  @include font(14px, 14px, 500, rgba($basic-black, 0.3));
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    color: rgba($basic-black, 0.6);
+  }
+
+  &:active {
+    color: rgba($basic-black, 0.1);
+  }
+}
