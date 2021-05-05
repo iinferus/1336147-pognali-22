@@ -2,9 +2,6 @@
 .card-countries {
   @include list-none;
   display: flex;
-  order: 1;
-  margin-top: -37px;
-  margin-bottom: 9px;
 }
 
 .card-countries__item {

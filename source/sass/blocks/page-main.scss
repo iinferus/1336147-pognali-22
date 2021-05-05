@@ -12,9 +12,16 @@
 }
 
 .page-main__category {
-  background-color: $basic-yellow;
   padding-bottom: 4px;
   margin-bottom: 20px;
+
+  &--form {
+    background-color: $basic-yellow;
+  }
+
+  &--catalog {
+    margin-bottom: 0;
+  }
 }
 
 .page-main__title--inner {
@@ -34,4 +41,12 @@
     border-radius: 4px;
     margin-top: 11px;
   }
+}
+
+.page-main__category--catalog .page-main__title--inner {
+  padding-right: 123px;
+}
+
+.page-main__wrapper {
+  @include wrapper;
 }

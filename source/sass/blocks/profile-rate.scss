@@ -12,25 +12,27 @@
 
 .profile-rate__title {
   padding-right: 130px;
-  margin-bottom: 57px;
+  margin-bottom: 45px;
 }
 
 .profile-rate__list {
   @include list-none;
   counter-reset: number;
-  margin-bottom: 41px;
+  margin-bottom: 26px;
 }
 
 .profile-rate__item {
-  margin-bottom: 28px;
+  margin-bottom: 15px;
   position: relative;
+  border-top: 1px solid $inner-border;
+  padding-top: 12px;
 
   &::after {
     @include font(16px, 16px, 400, $basic-white);
     counter-increment: number;
     content: counter(number) "";
     position: absolute;
-    top: -9px;
+    top: 3px;
     right: 0;
     border-radius: 50%;
     padding: 9px 13px 8px 14px;
@@ -44,8 +46,13 @@
     background-color: $special-yellow-dark;
   }
 
-  &:last-child::after {
-    background-color: $basic-yellow;
+  &:last-child {
+    border-bottom: 1px solid $inner-border;
+    padding-bottom: 14px;
+
+    &::after {
+      background-color: $basic-yellow;
+    }
   }
 }
 

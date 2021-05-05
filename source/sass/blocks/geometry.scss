@@ -1,6 +1,18 @@
+.page-body {
+  margin: 0 auto;
+}
+
 .page__header {
   z-index: 2;
   position: relative;
+}
+
+.page__site-list {
+  margin-bottom: 54px;
+}
+
+.page__social {
+  margin: 14px 84px 20px;
 }
 
 .page__main-title {
@@ -76,6 +88,11 @@
   z-index: 4;
 }
 
+.page__footer-social {
+  margin: 0;
+  margin-bottom: 45px;
+}
+
 .page__profile-plan {
   position: relative;
   margin-top: 14px;
@@ -108,4 +125,44 @@
   margin: 0 25px;
   margin-top: 20px;
   position: fixed;
+  top: 25%;
+  z-index: 10;
 }
+
+.page__card {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.page__level {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  border-radius: 50%;
+}
+
+.page__countries {
+  order: 1;
+  margin-top: -37px;
+  margin-bottom: 9px;
+}
+
+.page__tags {
+  margin-bottom: 15px;
+  order: 3;
+}
+
+.page__tooltip {
+  position: absolute;
+  top: 135%;
+  right: -54px;
+  z-index: 8;
+}
+
+.page__transport {
+  order: 4;
+}
+

@@ -1,7 +1,6 @@
 .social-list {
   @include list-none;
   display: flex;
-  margin: 14px 84px 20px;
 }
 
 .social-list__item:first-child {

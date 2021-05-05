@@ -1,0 +1,53 @@
+.country-menu {
+  display: none;
+
+  &--active {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+  }
+}
+
+.country-menu__wrapper {
+  @include wrapper;
+}
+
+.country-menu__continents-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.country-menu__continents {
+  @include font(16px, 18px, 700, rgba($basic-blue, 0.3));
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0 0 9px;
+}
+
+.country-menu__button {
+  @include font(16px, 20px, 700, $basic-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  background: $bg-blue-button;
+  border-radius: 20px;
+  padding: 11px 0 8px;
+  padding-left: 27px;
+  position: relative;
+  margin-top: 23px;
+  margin-bottom: 13px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 84px;
+    width: 14px;
+    height: 14px;
+    background: url("../../img/svg/icon_close-btn.svg") center center no-repeat;
+  }
+}

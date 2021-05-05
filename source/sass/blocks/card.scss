@@ -1,11 +1,6 @@
 .card {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
   position: relative;
-  margin-bottom: 9px;
-
-  &:last-child {
-    margin-bottom: 20px;
-  }
 }
 
 .card:hover .card__photo {
