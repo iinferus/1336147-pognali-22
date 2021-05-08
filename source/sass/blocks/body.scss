@@ -1,42 +1,38 @@
-.page-body {
-  margin: 0 auto;
-}
-
-.page__header {
+.body__header {
   z-index: 2;
   position: relative;
 }
 
-.page__site-list {
+.body__site-list {
   margin-bottom: 54px;
 }
 
-.page__social {
+.body__social {
   margin: 14px 84px 20px;
 }
 
-.page__main-title {
+.body__main-title {
   z-index: 1;
   position: relative;
   margin: 0 40px;
 }
 
-.page__quote {
+.body__quote {
   position: relative;
 }
 
-.page__tips {
+.body__tips {
   margin-top: -80px;
 }
 
-.page__about {
+.body__about {
   position: relative;
   z-index: 6;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
-.page__direction {
+.body__direction {
   position: relative;
   z-index: 5;
   margin-top: -20px;
@@ -44,7 +40,7 @@
   border-bottom-right-radius: 30px;
 }
 
-.page__companion {
+.body__companion {
   position: relative;
   z-index: 4;
   margin-top: -25px;
@@ -52,7 +48,7 @@
   border-bottom-right-radius: 30px;
 }
 
-.page__profile-rate {
+.body__profile-rate {
   position: relative;
   z-index: 3;
   margin-top: -25px;
@@ -60,7 +56,7 @@
   border-bottom-right-radius: 30px;
 }
 
-.page__info {
+.body__info {
   position: relative;
   z-index: 2;
   margin-top: -25px;
@@ -68,19 +64,19 @@
   border-bottom-right-radius: 30px;
 }
 
-.page__address {
+.body__address {
   position: relative;
   margin-top: -41px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
-.page__map {
+.body__map {
   margin-top: -50px;
   margin-bottom: 50px;
 }
 
-.page__footer {
+.body__footer {
   position: relative;
   margin-top: -103px;
   border-top-left-radius: 30px;
@@ -88,12 +84,12 @@
   z-index: 4;
 }
 
-.page__footer-social {
+.body__footer-social {
   margin: 0;
   margin-bottom: 45px;
 }
 
-.page__profile-plan {
+.body__profile-plan {
   position: relative;
   margin-top: 14px;
   border-top-left-radius: 30px;
@@ -101,7 +97,7 @@
   z-index: 2;
 }
 
-.page__create-plan {
+.body__create-plan {
   position: relative;
   margin-top: -20px;
   border-top-left-radius: 30px;
@@ -109,19 +105,19 @@
   z-index: 3;
 }
 
-.page__filter-country {
+.body__filter-country {
   position: relative;
   margin-top: -45px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-.page__filter-companion {
+.body__filter-companion {
   margin-top: 21px;
   border-radius: 20px;
 }
 
-.page__modal {
+.body__modal {
   margin: 0 25px;
   margin-top: 20px;
   position: fixed;
@@ -129,7 +125,7 @@
   z-index: 10;
 }
 
-.page__card {
+.body__card {
   margin-bottom: 9px;
 
   &:last-child {
@@ -137,31 +133,31 @@
   }
 }
 
-.page__level {
+.body__level {
   position: absolute;
   top: 17px;
   left: 17px;
   border-radius: 50%;
 }
 
-.page__countries {
+.body__countries {
   order: 1;
   margin-top: -37px;
   margin-bottom: 9px;
 }
 
-.page__tags {
+.body__tags {
   margin-bottom: 15px;
   order: 3;
 }
 
-.page__tooltip {
+.body__tooltip {
   position: absolute;
   top: 135%;
   right: -54px;
   z-index: 8;
 }
 
-.page__transport {
+.body__transport {
   order: 4;
 }

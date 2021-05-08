@@ -11,9 +11,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body page">
+<body class="page-body page-body--center body">
 
-  <header class="page-header page__header">
+  <header class="page-header body__header">
     <nav class="main-nav">
       <a class="main-nav__logo">
         <svg width="96" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
       </button>
       <div class="main-nav__wrapper main-nav__wrapper--disable">
-        <ul class="main-nav__list site-list page__site-list">
+        <ul class="main-nav__list site-list body__site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="#about">
               О сервисе
@@ -64,7 +64,7 @@
             </li>
           </ul>
         </div>
-        <ul class="main-nav__list social-list page__social">
+        <ul class="main-nav__list social-list body__social">
           <li class="social-list__item">
             <a class="social-list__button social-list__button--facebook" href="#" title="Facebook"><svg width="11"
                 height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,8 +98,8 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title page__main-title">В путешествие с крутыми попутчиками!</h1>
-    <section class="quote page__quote">
+    <h1 class="page-main__title body__main-title">В путешествие с крутыми попутчиками!</h1>
+    <section class="quote body__quote">
       <h2 class="visually-hidden">Цытата</h2>
       <figure class="quote__wrapper">
         <blockquote class="quote__block">
@@ -108,7 +108,7 @@
         <figcaption class="quote__author">Мурат Эльтазин главный редактор газеты &#171;гаджетлайф&#187;</figcaption>
       </figure>
     </section>
-    <section class="tips page__tips">
+    <section class="tips body__tips">
       <div class="tips__wrapper">
         <h2 class="visually-hidden">Советы</h2>
         <ol class="tips__list">
@@ -119,7 +119,7 @@
         </ol>
       </div>
     </section>
-    <section class="about page__about" id="about">
+    <section class="about body__about" id="about">
       <div class="about__wrapper section">
         <h2 class="section__title">О сервисе</h2>
         <p class="about__desc section__desc">Любое путешествие веселее<br> с попутчиками, которые на одной волне с
@@ -130,7 +130,7 @@
         </p>
       </div>
     </section>
-    <section class="direction page__direction" id="direction">
+    <section class="direction body__direction" id="direction">
       <div class="direction__wrapper section">
         <h2 class="direction__title section__title">Направления</h2>
         <p class="direction__desc section__desc">Мы не продаем туры<br> и ничего не рекламируем. Люди сами пишут о
@@ -165,7 +165,7 @@
         <a href="form.html" class="button direction__button">Показать все</a>
       </div>
     </section>
-    <section class="companion page__companion" id="companion">
+    <section class="companion body__companion" id="companion">
       <div class="companion__wrapper section">
         <h2 class="section__title companion__title">Попутчики</h2>
         <p class="section__desc companion__desc">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
@@ -175,32 +175,32 @@
         <p class="section__tagline companion__tagline">Теперь можно легко найти
           единомышленников!</p>
         <ul class="companion__list">
-          <li class="companion__item card page__card">
+          <li class="companion__item card body__card">
             <img class="card__photo" src="img/avatar-1.jpg" alt="Таня Фирсова" width="270" height="270">
             <div class="card__wrapper">
-              <div class="card__item level page__level">
+              <div class="card__item level body__level">
                 <span class="level__nubmer">99</span>
                 <span class="level__text">level</span>
               </div>
               <h3 class="card__title"><a class="card__name" href="">Таня Фирсова</a></h3>
-              <ul class="card__list card-countries page__countries">
+              <ul class="card__list card-countries body__countries">
                 <li class="card-countries__item">
                   <img class="card-countries__flag" src="img/flags/SriLanka.jpg" alt="Флаг Шри-Ланки" width="35"
                     height="25">
-                  <span class="card-countries__tooltip tooltip page__tooltip">Шри-Ланка</span>
+                  <span class="card-countries__tooltip tooltip body__tooltip">Шри-Ланка</span>
                 </li>
                 <li class="card-countries__item">
                   <img class="card-countries__flag" src="img/flags/Thailand.jpg" alt="Флаг Тайланда" width="35"
                     height="25">
-                  <span class="card-countries__tooltip tooltip page__tooltip">Тайланд</span>
+                  <span class="card-countries__tooltip tooltip body__tooltip">Тайланд</span>
                 </li>
                 <li class="card-countries__item">
                   <img class="card-countries__flag" src="img/flags/Seychelles.jpg" alt="Флаг Сейшел" width="35"
                     height="25">
-                  <span class="card-countries__tooltip tooltip page__tooltip">Сейшелы</span>
+                  <span class="card-countries__tooltip tooltip body__tooltip">Сейшелы</span>
                 </li>
               </ul>
-              <ul class="card__list page__tags tags">
+              <ul class="card__list body__tags tags">
                 <li class="tags__item">
                   <a href="" class="tags__link">&#35;ЗОЖ</a>
                 </li>
@@ -220,7 +220,7 @@
                   <a href="" class="tags__link">&#35;смузи</a>
                 </li>
               </ul>
-              <ul class="card__list transport page__transport">
+              <ul class="card__list transport body__transport">
                 <li class="transport__item">
                   <svg class="transport__icon" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
@@ -234,7 +234,7 @@
                       </clippath>
                     </defs>
                   </svg>
-                  <span class="transport__tooltip tooltip page__tooltip page__tooltip">Авиаперелет</span>
+                  <span class="transport__tooltip tooltip body__tooltip body__tooltip">Авиаперелет</span>
                 </li>
                 <li class="transport__item">
                   <svg class="transport__icon transport__icon--disable" width="19" height="20" fill="none"
@@ -250,7 +250,7 @@
                       </clippath>
                     </defs>
                   </svg>
-                  <span class="transport__tooltip tooltip page__tooltip page__tooltip">Автотранспорт</span>
+                  <span class="transport__tooltip tooltip body__tooltip body__tooltip">Автотранспорт</span>
                 </li>
                 <li class="transport__item">
                   <svg class="transport__icon transport__icon--disable" width="26" height="25" fill="none"
@@ -262,7 +262,7 @@
                       d="M18.66 9.38h-2.22a.2.2 0 01-.1-.03.2.2 0 01-.08-.08l-1.6-2.84a1.6 1.6 0 00-2.5-.38L8.58 9.5c-.3.3-.47.69-.47 1.1 0 .85.63 1.15.93 1.32 1.45.8 2.47 1.39 3.03 1.71a.2.2 0 01.1.17v3.37a.81.81 0 001.1.76.82.82 0 00.46-.43c.04-.1.06-.2.06-.3v-4.2a.76.76 0 00-.34-.64l-1.87-1.3a.2.2 0 01-.09-.14.19.19 0 01.06-.15l2.13-2.19a.2.2 0 01.17-.06.2.2 0 01.15.1l1.11 1.93a.8.8 0 00.3.29c.13.07.27.1.41.1h2.85a.84.84 0 00.59-.23.78.78 0 00.22-.58c-.02-.42-.4-.74-.84-.74z"
                       fill="#1D2E5B" />
                   </svg>
-                  <span class="transport__tooltip tooltip page__tooltip">Велосипед</span>
+                  <span class="transport__tooltip tooltip body__tooltip">Велосипед</span>
                 </li>
                 <li class="transport__item">
                   <svg class="transport__icon transport__icon--disable" width="23" height="25" fill="none"
@@ -271,31 +271,31 @@
                       d="M16.19 6c1.04 0 1.89-.9 1.89-2s-.85-2-1.9-2c-1.04 0-1.88.9-1.88 2s.84 2 1.89 2zM15.03 10.97c.22.34.53.6.9.75.36.15.75.18 1.13.08l3.14-.83-.46-1.94-3.13.83-1.3-2.07a1.9 1.9 0 00-1.21-.85l-3.64-.77a1.8 1.8 0 00-1.2.16c-.37.2-.67.51-.86.9l-1.57 3.32 1.7.9 1.56-3.32 1.86.4L7.15 17h-4.2v2h4.2c.65 0 1.28-.37 1.62-.97l1.8-3.2 4.9 1.04 1.71 5.45 1.8-.64-1.72-5.45c-.1-.33-.3-.63-.54-.86-.25-.24-.56-.4-.88-.46l-2.88-.61 1.68-2.96.4.63z"
                       fill="#1D2E5B" />
                   </svg>
-                  <span class="transport__tooltip tooltip page__tooltip">Пешком</span>
+                  <span class="transport__tooltip tooltip body__tooltip">Пешком</span>
                 </li>
               </ul>
             </div>
           </li>
-          <li class="companion__item card page__card">
+          <li class="companion__item card body__card">
             <img class="card__photo" src="img/avatar-2.jpg" alt="Петя Демин" width="270" height="270">
             <div class="card__wrapper">
-              <div class="card__item level page__level">
+              <div class="card__item level body__level">
                 <span class="level__nubmer">80</span>
                 <span class="level__text">level</span>
               </div>
               <h3 class="card__title"><a class="card__name" href="">Петя Демин</a></h3>
-              <ul class="card__list card-countries page__countries">
+              <ul class="card__list card-countries body__countries">
                 <li class="card-countries__item">
                   <img class="card-countries__flag" src="img/flags/Belgium.jpg" alt="Флаг Бельгии" width="35"
                     height="25">
-                  <span class="card-countries__tooltip tooltip page__tooltip">Бельгия</span>
+                  <span class="card-countries__tooltip tooltip body__tooltip">Бельгия</span>
                 </li>
                 <li class="card-countries__item">
                   <img class="card-countries__flag" src="img/flags/Czech.jpg" alt="Флаг Чехии" width="35" height="25">
-                  <span class="card-countries__tooltip tooltip page__tooltip">Чехия</span>
+                  <span class="card-countries__tooltip tooltip body__tooltip">Чехия</span>
                 </li>
               </ul>
-              <ul class="card__list page__tags tags">
+              <ul class="card__list body__tags tags">
                 <li class="tags__item">
                   <a href="" class="tags__link">&#35;бургер</a>
                 </li>
@@ -312,7 +312,7 @@
                   <a href="" class="tags__link">&#35;крафт</a>
                 </li>
               </ul>
-              <ul class="card__list transport page__transport">
+              <ul class="card__list transport body__transport">
                 <li class="transport__item">
                   <svg class="transport__icon" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
@@ -326,7 +326,7 @@
                       </clippath>
                     </defs>
                   </svg>
-                  <span class="transport__tooltip tooltip page__tooltip">Авиаперелет</span>
+                  <span class="transport__tooltip tooltip body__tooltip">Авиаперелет</span>
                 </li>
                 <li class="transport__item">
                   <svg class="transport__icon" width="19" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -341,7 +341,7 @@
                       </clippath>
                     </defs>
                   </svg>
-                  <span class="transport__tooltip tooltip page__tooltip">Автотранспорт</span>
+                  <span class="transport__tooltip tooltip body__tooltip">Автотранспорт</span>
                 </li>
                 <li class="transport__item">
                   <svg class="transport__icon transport__icon--disable" width="26" height="25" fill="none"
@@ -353,7 +353,7 @@
                       d="M18.66 9.38h-2.22a.2.2 0 01-.1-.03.2.2 0 01-.08-.08l-1.6-2.84a1.6 1.6 0 00-2.5-.38L8.58 9.5c-.3.3-.47.69-.47 1.1 0 .85.63 1.15.93 1.32 1.45.8 2.47 1.39 3.03 1.71a.2.2 0 01.1.17v3.37a.81.81 0 001.1.76.82.82 0 00.46-.43c.04-.1.06-.2.06-.3v-4.2a.76.76 0 00-.34-.64l-1.87-1.3a.2.2 0 01-.09-.14.19.19 0 01.06-.15l2.13-2.19a.2.2 0 01.17-.06.2.2 0 01.15.1l1.11 1.93a.8.8 0 00.3.29c.13.07.27.1.41.1h2.85a.84.84 0 00.59-.23.78.78 0 00.22-.58c-.02-.42-.4-.74-.84-.74z"
                       fill="#1D2E5B" />
                   </svg>
-                  <span class="transport__tooltip tooltip page__tooltip">Велосипед</span>
+                  <span class="transport__tooltip tooltip body__tooltip">Велосипед</span>
                 </li>
                 <li class="transport__item">
                   <svg class="transport__icon" width="23" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -361,7 +361,7 @@
                       d="M16.19 6c1.04 0 1.89-.9 1.89-2s-.85-2-1.9-2c-1.04 0-1.88.9-1.88 2s.84 2 1.89 2zM15.03 10.97c.22.34.53.6.9.75.36.15.75.18 1.13.08l3.14-.83-.46-1.94-3.13.83-1.3-2.07a1.9 1.9 0 00-1.21-.85l-3.64-.77a1.8 1.8 0 00-1.2.16c-.37.2-.67.51-.86.9l-1.57 3.32 1.7.9 1.56-3.32 1.86.4L7.15 17h-4.2v2h4.2c.65 0 1.28-.37 1.62-.97l1.8-3.2 4.9 1.04 1.71 5.45 1.8-.64-1.72-5.45c-.1-.33-.3-.63-.54-.86-.25-.24-.56-.4-.88-.46l-2.88-.61 1.68-2.96.4.63z"
                       fill="#1D2E5B" />
                   </svg>
-                  <span class="transport__tooltip tooltip page__tooltip">Пешком</span>
+                  <span class="transport__tooltip tooltip body__tooltip">Пешком</span>
                 </li>
               </ul>
             </div>
@@ -370,7 +370,7 @@
         <a href="catalog.html" class="companion__button button">Показать всех</a>
       </div>
     </section>
-    <section class="profile-rate page__profile-rate">
+    <section class="profile-rate body__profile-rate">
       <div class="profile-rate__wrapper section">
         <h2 class="profile-rate__title section__title">Добавьте свой профиль</h2>
         <ol class="profile-rate__list">
@@ -390,7 +390,7 @@
         <a class="inner-button profile-rate__button" href="">Показать тарифы для бизнеса</a>
       </div>
     </section>
-    <section class="info page__info">
+    <section class="info body__info">
       <div class="info__wrapper section">
         <h2 class="info__title section__title">Заинтересовались?</h2>
         <p class="info__desc section__desc">
@@ -418,14 +418,14 @@
         </ul>
       </div>
     </section>
-    <section class="address page__address">
+    <section class="address body__address">
       <div class="address__wrapper">
         <h2 class="visually-hidden">Как добраться</h2>
         <p class="address__address">ул. Большая Конюшенная, 19/8</p>
         <a class="button address__button" href="">Проложить маршрут</a>
       </div>
     </section>
-    <div class="map page__map">
+    <div class="map body__map">
       <iframe class="map__google"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1619115674609!5m2!1sru!2sua"
         width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy">
@@ -433,7 +433,7 @@
     </div>
   </main>
 
-  <footer class="page-footer page__footer">
+  <footer class="page-footer body__footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
         <svg width="96" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -453,7 +453,7 @@
           </defs>
         </svg>
       </a>
-      <ul class="page-footer__list social-list page__footer-social footer-social">
+      <ul class="page-footer__list social-list body__footer-social footer-social">
         <li class="social-list__item footer-social__item">
           <a class="social-list__button social-list__button--facebook footer-social__button footer-social__button--facebook"
             href="#" title="Facebook"><svg width="11" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -495,7 +495,7 @@
     </div>
   </footer>
 
-  <div class="business-rates page__modal">
+  <div class="business-rates body__modal">
     <div class="business-rates__wrapper section">
       <h2 class="business-rates__title section-title">Бизнес-тарифы</h2>
       <ul class="business-rates__list">
