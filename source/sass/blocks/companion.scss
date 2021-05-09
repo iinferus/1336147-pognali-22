@@ -1,0 +1,37 @@
+.companion {
+  background: url("../../img/companion_bg.png") left 59px no-repeat $basic-blue;
+
+  &__title,
+  &__desc,
+  &__tagline {
+    padding: 0 24px;
+  }
+}
+
+.companion__wrapper {
+  @include wrapper;
+  padding-top: 91px;
+  padding-bottom: 31px;
+  display: flex;
+  flex-direction: column;
+}
+
+.companion__desc {
+  padding-right: 30px;
+}
+
+.companion__tagline {
+  margin-bottom: 56px;
+}
+
+.companion__list,
+.companion__item {
+  @include list-none;
+  display: flex;
+  flex-direction: column;
+  position: static;
+}
+
+.companion__button {
+  padding: 21px 24px 22px;
+}

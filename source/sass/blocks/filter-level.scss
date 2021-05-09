@@ -1,0 +1,61 @@
+.filter-level {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-level__custom-range {
+  @include font(14px, 13px, 500, $basic-blue-light);
+  max-width: 110px;
+  text-align: center;
+  border: 1px solid $special-border;
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 18px;
+
+  &--min {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &--max {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.filter-level__control {
+  position: relative;
+  height: 10px;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+}
+
+.filter-level__scale {
+  position: relative;
+  width: 220px;
+  height: 2px;
+  background-color: $basic-blue-light;
+}
+
+.filter-level__toggle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $basic-blue-light;
+}
+
+.filter-level__toggle--min {
+  left: 67px;
+}
+
+.filter-level__toggle--max {
+  right: 0;
+}

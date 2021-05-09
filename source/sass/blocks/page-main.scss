@@ -1,0 +1,52 @@
+
+.page-main--inner {
+  background: $bg-light-blue;
+}
+
+.page-main__title {
+  @include font(36px, 40px, 700, $basic-white);
+  text-align: center;
+  padding-top: 19px;
+  padding-bottom: 266px;
+  background: url("../../img/traveller-illustration-mobile-1.png") no-repeat right 8px bottom;
+}
+
+.page-main__category {
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+
+  &--form {
+    background-color: $basic-yellow;
+  }
+
+  &--catalog {
+    margin-bottom: 0;
+  }
+}
+
+.page-main__title--inner {
+  line-height: 36px;
+  text-align: start;
+  background: $bg-dark-blue;
+  margin: 0;
+  padding: 20px 80px 0 25px;
+  position: relative;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    border: 2px solid $basic-orange;
+    border-radius: 4px;
+    margin-top: 11px;
+  }
+}
+
+.page-main__category--catalog .page-main__title--inner {
+  padding-right: 123px;
+}
+
+.page-main__wrapper {
+  @include wrapper;
+}

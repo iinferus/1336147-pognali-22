@@ -1,0 +1,23 @@
+.quote {
+  @include font(16px, 22px, 300, $basic-white);
+  background-color: $bg-blue;
+  padding-top: 20px;
+  padding-bottom: 110px;
+}
+
+.quote__wrapper {
+  margin: 0 50px;
+}
+
+.quote__block {
+  margin: 0;
+  margin-right: 50px;
+  padding-top: 10px;
+  padding-left: 1px;
+}
+
+.quote__author {
+  font-weight: 700;
+  margin-right: 50px;
+  padding-top: 3px;
+}

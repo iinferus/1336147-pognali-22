@@ -1,0 +1,38 @@
+.transport {
+  @include list-none;
+  display: flex;
+  justify-content: center;
+}
+
+.transport__item {
+  padding-right: 8px;
+  position: relative;
+}
+
+.transport__item:nth-child(2) .transport__tooltip {
+  right: -67px;
+  padding-left: 25px;
+  padding-right: 24px;
+}
+
+.transport__item:nth-child(3) .transport__tooltip {
+  right: -43px;
+}
+
+.transport__item:last-child .transport__tooltip {
+  right: -34px;
+  padding-left: 23px;
+  padding-right: 22px;
+
+  &::before {
+    right: 46%;
+  }
+}
+
+.transport__item:hover .transport__tooltip {
+  visibility: visible;
+}
+
+.transport__icon--disable path {
+  opacity: 0.15;
+}

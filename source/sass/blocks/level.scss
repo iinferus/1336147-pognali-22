@@ -1,0 +1,33 @@
+.level {
+  background-color: rgba($basic-black, 0.6);
+  border: 4px solid $basic-orange;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  align-items: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("../../img/Ellipse-99.png");
+  }
+}
+
+.level__nubmer {
+  @include font(24px, 23px, 700, $basic-white);
+  margin: 9px 13px 0;
+  position: relative;
+  padding-bottom: 2px;
+
+  &::after {
+    display: block;
+    content: "";
+    border-bottom: 1px solid rgba($basic-white, 0.3);
+  }
+}
+
+.level__text {
+  @include font(14px, 14px, 400, $basic-white);
+  margin-bottom: 3px;
+  padding-right: 2px;
+}

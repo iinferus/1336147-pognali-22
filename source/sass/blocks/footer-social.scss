@@ -1,0 +1,38 @@
+.footer-social__item:first-child,
+.footer-social__item:nth-child(2),
+.footer-social__item:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social__item:last-child {
+  padding-top: 2px;
+}
+
+.footer-social__button {
+  background-color: $basic-yellow;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $special-yellow-dark;
+    opacity: 1;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+}
+
+.footer-social__button--facebook {
+  padding: 14px 17px 6px;
+}
+
+.footer-social__button--vk {
+  padding: 11px;
+  padding-top: 10px;
+}
+
+.footer-social__button--insta {
+  padding: 12px 14px 8px;
+}

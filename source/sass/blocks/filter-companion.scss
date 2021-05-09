@@ -1,0 +1,122 @@
+.filter-companion {
+  background-color: $basic-yellow;
+  padding-top: 24px;
+}
+
+.filter-companion__wrapper {
+  @include wrapper;
+  margin-bottom: 8px;
+}
+
+.filter-companion__title {
+  @include font(22px, 22px, 700, $basic-blue-light);
+  margin: 0 25px;
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
+}
+
+.filter-companion__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-companion__field {
+  border: none;
+  border-top: 1px solid $special-yellow-light;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 11px 0 10px;
+
+  &:last-of-type {
+    border-bottom: 1px solid $special-yellow-light;
+  }
+}
+
+.filter-companion__button {
+  @include font(16px, 18px, 700, $basic-blue-light);
+  text-align: start;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 0 1px;
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
+    position: relative;
+    content: "";
+    top: 6px;
+    right: -1px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 5px solid $basic-blue;
+  }
+}
+
+.filter-companion__list {
+  @include list-none;
+  padding-top: 14px;
+  padding-bottom: 8px;
+}
+
+.filter-companion__field--close {
+  .filter-companion__list {
+    display: none;
+  }
+
+  .filter-companion__button::after {
+    border-bottom: none;
+    border-top: 5px solid $basic-blue;
+    top: 7px;
+  }
+}
+
+.filter-companion__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.filter-companion__checkbox-label {
+  @include font(15px, 20px, 400, $basic-black);
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 26px;
+}
+
+.filter-companion__checkbox + .filter-companion__checkbox-label::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  transform: translateY(-50%);
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: $basic-white;
+}
+
+.filter-companion__checkbox:checked + .filter-companion__checkbox-label::before {
+  background-image: url("../../img/svg/icon_check-mark.svg");
+  background-position: center 2px;
+  background-repeat: no-repeat;
+}
+
+.filter-companion__send-button {
+  @include font(17px, 17px, 700, $bg-blue);
+  text-transform: uppercase;
+  border: none;
+  margin: 0 20px;
+  background-color: $basic-white;
+  border-radius: 25px;
+  padding: 12px;
+  margin-bottom: 22px;
+}

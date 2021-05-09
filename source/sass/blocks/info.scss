@@ -1,0 +1,129 @@
+.info {
+  background: $basic-blue;
+}
+
+.info__title {
+  text-align: center;
+}
+
+.info__wrapper {
+  @include wrapper;
+  padding-top: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 26px;
+}
+
+.info__desc {
+  padding: 0 30px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.info__auth-link {
+  color: $basic-yellow;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: $basic-orange;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.info__form {
+  display: flex;
+  margin-bottom: 27px;
+}
+
+.info__input {
+  @include font(18px, 18px, 700, $special-grey);
+  border-radius: 12px;
+  outline: 0;
+  outline-offset: 0;
+  padding: 20px 25px 21px;
+  width: 100%;
+  margin: 0 -2px;
+
+  &::placeholder {
+    color: rgba($special-grey, 0.3);
+  }
+
+  &:hover {
+    background-color: $bg-light-blue;
+
+    &::placeholder {
+      color: rgba($special-grey, 0.5);
+    }
+  }
+
+  &:focus {
+    background-color: transparent;
+    border: 4px solid $basic-white;
+    color: $basic-white;
+    outline: 0;
+    outline-offset: 0;
+    padding: 20px;
+    padding-bottom: 16px;
+
+    &::placeholder {
+      color: $special-grey;
+    }
+  }
+
+  &:invalid {
+    color: $basic-red;
+
+    &::placeholder {
+      color: $basic-red;
+    }
+  }
+}
+
+.info__button {
+  padding: 27px 25px;
+  position: relative;
+  margin-left: -10px;
+}
+
+.info__tagline {
+  text-align: center;
+}
+
+.info__contact {
+  @include list-none;
+  align-self: flex-start;
+  margin: 0;
+}
+
+.info__item {
+  padding-top: 8px;
+  padding-bottom: 14px;
+}
+
+.info__link {
+  @include font(16px, 22px, 700, $basic-yellow);
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $special-yellow-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.info__link--phone:hover::before {
+  background-image: url("../../img/svg/icon_telephone--hover.svg");
+}
+
+.info__link--mail:hover::before {
+  background-image: url("../../img/svg/icon-mail--hover.svg");
+}
