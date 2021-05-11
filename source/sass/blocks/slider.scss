@@ -1,0 +1,22 @@
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider__radio {
+  background-color: $basic-blue-light;
+  opacity: 0.3;
+  border: none;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  padding: 0;
+
+  &:nth-child(2) {
+    margin: 0 16px;
+  }
+
+  &--current {
+    opacity: 1;
+  }
+}
