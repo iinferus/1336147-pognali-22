@@ -104,7 +104,7 @@
     </div>
     <section class="profile-card body__profile-card">
       <h2 class="visually-hidden">Профиль</h2>
-      <div class="profile-card__wrapper wrapper">
+      <div class="profile-card__wrapper">
         <form class="profile-card__form" action="https://echo.htmlacademy.ru" name="card-form" method="POST">
           <div class="profile-card__level level body__level">
             <span class="profile-card__level-nubmer level__nubmer">80</span>
@@ -116,12 +116,9 @@
             <label for="upload-avatar" class="profile-card__upload-label">сменить фото</label>
           </div>
           <div class="profile-card__item">
-            <fieldset class="profile-card__field profile-card__field--tags">
-              <legend class="profile-card__legend">ТЭГИ</legend>
-              <label for="tags" class="visually-hidden">Добавить тэг</label>
-              <textarea class="profile-card__area" name="tags" id="tags" cols="28" rows="2"
-                required>#бургер #бар #футбол #концерт #крафт</textarea>
-            </fieldset>
+            <label for="tags" class="profile-card__legend">Тэги</label>
+            <textarea class="profile-card__area" name="tags" id="tags" cols="28" rows="3"
+              placeholder="Коротко о себе в виде 5-8 хештэгов" required>#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
           <div class="profile-card__item">
             <fieldset class="profile-card__field profile-card__field--transport profile-transport">
@@ -212,23 +209,23 @@
               <p class="plan__companion">3 попутчика</p>
               <p class="plan__period">26 мар &#8212; 29 мар</p>
             </div>
-            <a href="" class="plan__button">Изменить</a>
+            <a href="" class="profile-plan__button">Изменить</a>
           </li>
-          <li class="plan__item">
-            <h3 class="plan__title">Таиланд, Индонезия</h3>
-            <div class="plan__content">
-              <p class="plan__companion">1 попутчик</p>
-              <p class="plan__period">1 июл &#8212; 15 июл</p>
+          <li class="profile-plan__item">
+            <h3 class="profile-plan__title">Таиланд, Индонезия</h3>
+            <div class="profile-plan__content">
+              <p class="profile-plan__companion">1 попутчик</p>
+              <p class="profile-plan__period">1 июл &#8212; 15 июл</p>
             </div>
-            <a href="" class="plan__button">Изменить</a>
+            <a href="" class="profile-plan__button">Изменить</a>
           </li>
         </ol>
       </div>
     </section>
     <section class="create-plan">
-      <div class="create-plan__wrapper wrapper">
+      <div class="create-plan__wrapper">
         <div class="create-plan__heading">
-          <h2 class="create-plan__title inner-section-title">Добавить план:</h2>
+          <h2 class="create-plan__title">Добавить план:</h2>
           <div class="create-plan__slider slider">
             <button type="button" class="slider__radio slider__radio--current" aria-label="Шаг 1"></button>
             <button type="button" class="slider__radio" aria-label="Шаг 2"></button>
@@ -236,9 +233,9 @@
           </div>
         </div>
         <form class="create-plan__form step" action="https://echo.htmlacademy.ru" method="POST" name="plan-form">
-          <fieldset class="step__fieldset slide slide--current" id="step1">
-            <div class="step__wrapper wrapper">
-              <legend class="step__legend">Шаг 1.<br>Даты пребывания</legend>
+          <fieldset class="step__fieldset step__fieldset--date slide slide--current" id="step1">
+            <div class="step__wrapper">
+              <h3 class="step__legend">Шаг 1.<br>Даты пребывания</h3>
               <p class="step__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы
                 позвать
                 в
@@ -247,19 +244,19 @@
                 <label class="step__quantity" for="quantity-companion"><span>ищу попутчиков:</span><span
                     class="step__qunit">чел.</span></label>
                 <div class="step__quantity-wrapper">
-                  <button type="button" class="step__switch minus"></button>
                   <input class="step__companion input" type="number" name="quantity-companion" id="quantity-companion"
                     value="2">
-                  <button type="button" class="step__switch plus"></button>
+                  <button type="button" class="step__switch step__switch--minus"></button>
+                  <button type="button" class="step__switch step__switch--plus"></button>
                 </div>
               </div>
               <div class="step__field">
                 <label class="step__quantity" for="quantity-date"><span>длительность:</span><span
                     class="step__qunit">дн.</span></label>
                 <div class="step__quantity-wrapper">
-                  <button type="button" class="step__switch minus"></button>
                   <input class="step__companion input" type="number" name="quantity-date" id="quantity-date" value="3">
-                  <button type="button" class="step__switch plus"></button>
+                  <button type="button" class="step__switch step__switch--minus"></button>
+                  <button type="button" class="step__switch step__switch--plus"></button>
                 </div>
               </div>
               <div class="step__field">
@@ -271,8 +268,9 @@
                 <div class="calendar__month">
                   <button type="button" class="calendar__month-button calendar__month-button--previous"
                     aria-label="Предыдущий месяц"></button>
-                  <time datetime="2021-04">Март 2019</time>
-                  <button type="button" class="calendar__month-button calendar__month-button--next" aria-label="Следующий месяц"></button>
+                  <time datetime="2019-03">Март 2019</time>
+                  <button type="button" class="calendar__month-button calendar__month-button--next"
+                    aria-label="Следующий месяц"></button>
                 </div>
                 <ul class="calendar__weekdays-list">
                   <li class="calendar__weekdays-item">П</li>
@@ -284,146 +282,148 @@
                   <li class="calendar__weekdays-item calendar__weekdays-item--weekend">В</li>
                 </ul>
                 <div class="calendar__days">
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
+                  <button type="button" class="calendar__days-item" disabled>
                     <time datetime="2021-03-23">23</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
+                  <button type="button" class="calendar__days-item" disabled>
                     <time datetime="2021-03-24">24</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
+                  <button type="button" class="calendar__days-item" disabled>
                     <time datetime="2021-03-25">25</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
+                  <button type="button" class="calendar__days-item" disabled>
                     <time datetime="2021-03-26">26</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
+                  <button type="button" class="calendar__days-item" disabled>
                     <time datetime="2021-03-27">27</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
+                  <button type="button" class="calendar__days-item" disabled>
                     <time datetime="2021-03-28">28</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-01">1</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-01">1</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-02">2</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-02">2</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-03">3</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-03">3</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-04">4</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-04">4</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-05">5</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-05">5</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-06">6</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-06">6</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable ">
-                    <time datetime="2021-04-07">7</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-07">7</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-08">8</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-08">8</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-09">9</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-09">9</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-10">10</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-10">10</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-11">11</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-11">11</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-12">12</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-12">12</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-13">13</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-13">13</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-14">14</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-14">14</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-15">15</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-15">15</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-16">16</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-16">16</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-17">17</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-17">17</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-18">18</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-18">18</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-19">19</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-19">19</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-20">20</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-20">20</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-21">21</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-21">21</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-22">22</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-22">22</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-23">23</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-23">23</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-24">24</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-24">24</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--disable">
-                    <time datetime="2021-04-25">25</time>
+                  <button type="button" class="calendar__days-item" disabled>
+                    <time datetime="2019-03-25">25</time>
                   </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--today calendar__days-item--current">
-                    <time datetime="2021-04-26">26</time>
-                  </button>
-                  <button type="button" class="calendar__days-item calendar__days-item--current">
-                    <time datetime="2021-04-27">27</time>
+                  <button type="button"
+                    class="calendar__days-item calendar__days-item--today calendar__days-item--current">
+                    <time datetime="2019-03-26">26</time>
                   </button>
                   <button type="button" class="calendar__days-item calendar__days-item--current">
-                    <time datetime="2021-04-28">28</time>
+                    <time datetime="2019-03-27">27</time>
+                  </button>
+                  <button type="button" class="calendar__days-item calendar__days-item--current">
+                    <time datetime="2019-03-28">28</time>
                   </button>
                   <button type="button" class="calendar__days-item">
-                    <time datetime="2021-04-29">29</time>
+                    <time datetime="2019-03-29">29</time>
                   </button>
                   <button type="button" class="calendar__days-item">
-                    <time datetime="2021-04-30">30</time>
+                    <time datetime="2019-03-30">30</time>
                   </button>
                   <button type="button" class="calendar__days-item">
-                    <time datetime="2021-04-31">31</time>
+                    <time datetime="2019-03-31">31</time>
                   </button>
                   <button type="button" class="calendar__days-item">
-                    <time datetime="2021-05-01">1</time>
+                    <time datetime="2019-04-01">1</time>
                   </button>
                   <button type="button" class="calendar__days-item">
-                    <time datetime="2021-05-02">2</time>
+                    <time datetime="2019-04-02">2</time>
                   </button>
                   <button type="button" class="calendar__days-item">
-                    <time datetime="2021-05-03">3</time>
+                    <time datetime="2019-04-03">3</time>
                   </button>
                   <button type="button" class="calendar__days-item">
-                    <time datetime="2021-05-04">4</time>
+                    <time datetime="2019-04-04">4</time>
                   </button>
                   <button type="button" class="calendar__days-item">
-                    <time datetime="2021-05-05">5</time>
+                    <time datetime="2019-04-05">5</time>
                   </button>
                 </div>
               </div>
-              <a href="#step2" type="button" class="button step__button step__button--next">Следующий шаг</a>
+              <a href="#step2" class="button step__button step__button--next">Следующий шаг</a>
             </div>
           </fieldset>
-          <fieldset class="step__fieldset" id="step2">
+          <fieldset class="step__fieldset step__fieldset--route slide" id="step2">
             <div class="step__wrapper choose-country">
-              <legend class="step__legend">Шаг 2. Маршрут</legend>
+              <h3 class="step__legend">Шаг 2.<br>Маршрут</h3>
               <p class="step__desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или
                 сразу несколько.</p>
-              <div class="choose-country__block">
+              <div class="choose-country__block choose-country__block--bosnia">
                 <button type="button"
                   class="choose-country__button choose-country__button--active choose-country__button--open">Босния
                   и Герцеговина</button>
+                <button type="button" class="choose-country__delete"></button>
                 <div class="choose-country__menu country-menu">
                   <button type="button" class="choose-country__button choose-country__button--close">Выберите
                     страну</button>
@@ -481,9 +481,10 @@
                   </div>
                 </div>
               </div>
-              <div class="choose-country__block">
+              <div class="choose-country__block choose-country__block--czech">
                 <button type="button"
                   class="choose-country__button choose-country__button--active choose-country__button--open">Чехия</button>
+                <button type="button" class="choose-country__delete"></button>
                 <div class="choose-country__menu country-menu">
                   <button type="button" class="choose-country__button choose-country__button--close">Выберите
                     страну</button>
@@ -524,9 +525,11 @@
                   </div>
                 </div>
               </div>
-              <div class="choose-country__block">
-                <button type="button" class="choose-country__button choose-country__button--open">Выберите
+              <div class="choose-country__block choose-country__block--none">
+                <button type="button"
+                  class="choose-country__button choose-country__button--none choose-country__button--open">Выберите
                   страну</button>
+                <button type="button" class="choose-country__delete"></button>
                 <div class="choose-country__menu country-menu">
                   <button type="button" class="choose-country__button choose-country__button--close">Выберите
                     страну</button>
@@ -574,30 +577,31 @@
                   </div>
                 </div>
               </div>
-              <div class="choose-country__block">
-                <button type="button" class="choose-country__button" disabled>Выберите
+              <div class="choose-country__block choose-country__block--none">
+                <button type="button" class="choose-country__button choose-country__button--add" disabled>Добавить
                   страну</button>
               </div>
               <a href="#step3" class="button step__button step__button--next">Следующий шаг</a>
               <a href="#step1" class="button step__button step__button--previous">на шаг назад</a>
             </div>
           </fieldset>
-          <fieldset class="step__fieldset" id="step3">
+          <fieldset class="step__fieldset step__fieldset--entertainment slide" id="step3">
             <div class="step__wrapper">
-              <legend class="step__legend">Шаг 3. Развлечения</legend>
+              <h3 class="step__legend">Шаг 3.<br>Развлечения</h3>
               <p class="step__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в
                 свободной форме и ставить тэги.</p>
               <div class="step__item choosen-country">
-                <p class="choosen-country__current">Босния и Герцеговина</p>
-                <label for="action-plan__bosnia">План действий</label>
-                <textarea name="action-plan__bosnia" id="action-plan__bosnia" cols="30" rows="9"
-                  placeholder="План действий"></textarea>
+                <h4 class="choosen-country__title choosen-country__title--bosnia">Босния и Герцеговина</h4>
+                <label class="visually-hidden" for="action-plan__bosnia">План действий</label>
+                <textarea class="choosen-country__area" name="action-plan__bosnia" id="action-plan__bosnia" cols="28"
+                  rows="9" placeholder="План действий" required></textarea>
               </div>
               <div class="step__item choosen-country">
-                <p class="choosen-country__current">Чехия</p>
-                <label for="action-plan__czech">План действий</label>
-                <textarea name="action-plan__czech" id="action-plan__czech" cols="30" rows="9"
-                  placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                <h4 class="choosen-country__title choosen-country__title--czech">Чехия</h4>
+                <label class="visually-hidden" for="action-plan__czech">План действий</label>
+                <textarea class="choosen-country__area" name="action-plan__czech" id="action-plan__czech" cols="28"
+                  rows="9"
+                  placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </div>
               <button type="submit" class="button step__button step__button--submit">Отправить</button>
               <a href="#step2" class="button step__button step__button--previous">на шаг назад</a>

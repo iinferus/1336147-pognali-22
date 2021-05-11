@@ -123,24 +123,6 @@
   right: 14px;
 }
 
-.minus {
-  left: 14px;
-}
-
-.plus {
-  right: 14px;
-}
-
-.plus::before {
-  content: "";
-  position: absolute;
-  border-bottom: 2px solid $basic-grey;
-  width: 100%;
-  top: 6px;
-  left: 0;
-  transform: translate(50%, -50%) rotate(90deg);
-}
-
 .step__checkbox-label {
   @include font(15px, 15px, 400, $basic-blue-light);
   position: relative;

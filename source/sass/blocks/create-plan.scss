@@ -6,7 +6,12 @@
   position: relative;
   margin-top: -20px;
   padding-top: 28px;
-  padding-bottom: 40px;
+  padding-bottom: 74px;
+}
+
+.create-plan__wrapper {
+  @include wrapper;
+  padding-bottom: 60px;
 }
 
 .create-plan__heading {
@@ -17,5 +22,7 @@
 }
 
 .create-plan__title {
+  @include font(24px, 24px, 700, $basic-blue-light);
+  padding-left: 1px;
   margin: 0;
 }
