@@ -8,10 +8,23 @@
   padding-bottom: 34px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 40px;
+    padding: 129px 34px 80px;
+    background-image: url("../../img/bg/direction.png");
+    background-repeat: no-repeat;
+    background-position: 0 140px;
+  }
 }
 
 .direction__title {
   padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 59px;
+  }
 }
 
 .direction__desc {
@@ -19,18 +32,39 @@
   padding-left: 26px;
   padding-right: 45px;
   margin-bottom: 61px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 1px;
+    padding-right: 270px;
+    margin-bottom: 106px;
+  }
 }
 
 .direction__list {
   @include list-none;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 1px;
+    margin-bottom: 31px;
+  }
 }
 
 .direction__item {
   margin-bottom: 11px;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 8px;
+  }
+
   &:nth-child(2) {
     margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      margin-bottom: 7px;
+    }
   }
 
   &:last-child {
@@ -38,78 +72,156 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .direction__picture {
+    order: 2;
+    flex-shrink: 3;
+    z-index: 0;
+  }
+}
+
+
 .direction__image {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 140px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    max-width: none;
+  }
 }
 
 .direction__item-wrapper {
   padding: 24px 24px;
-  padding-bottom: 25px;
+  padding-bottom: 19px;
   background-color: $basic-white;
   margin-top: -14px;
   border-radius: 10px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 432px;
+    margin: 0;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    flex-shrink: 1;
+    padding: 28px 31px 23px;
+    height: 140px;
+  }
 }
 
 .direction__name {
-  font-size: 21px;
-  line-height: 21px;
+  @include font(21px, 21px, 700, $basic-black);
   margin: 0;
   flex-shrink: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
 }
 
 .direction__name::before {
   position: absolute;
   content: "";
-  top: -13px;
-  left: 25px;
   width: 35px;
   height: 24px;
   border-radius: 3px;
+  background-size: 35px 24px;
+  background-repeat: no-repeat;
+
+  @media (max-width: $mobile-width-only) {
+    top: -13px;
+    left: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 17px;
+    right: -36px;
+    width: 70px;
+    height: 47px;
+    background-size: 70px 47px;
+  }
 }
 
 .direction__name--thailand::before {
-  background: url("../../img/flags/Thailand.jpg") no-repeat;
+  background-image: url("../../img/flags/Thailand.jpg");
 }
 
 .direction__name--france::before {
-  background: url("../../img/flags/France.jpg") no-repeat;
+  background-image: url("../../img/flags/France.jpg");
 }
 
 .direction__name--czech::before {
-  background: url("../../img/flags/Czech.jpg") no-repeat;
+  background-image: url("../../img/flags/Czech.jpg");
 }
 
 .direction__tagline,
 .direction__companion {
-  @include font(16px, 18px, 500, $special-grey);
+  @include font(16px, 25px, 500, $special-grey);
   margin: 0;
   opacity: 0.3;
   order: 3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .direction__companion {
-  order: 2;
-  flex-shrink: 2;
-  padding-top: 4px;
-  position: relative;
+  color: rgba($bg-blue, 0.3);
+  position: absolute;
+
+  @media (max-width: $mobile-width-only) {
+    top: 27px;
+    right: 24px;
+  }
 
   &::before {
     position: absolute;
     content: "";
     width: 14px;
     height: 14px;
-    top: 6px;
+    top: 3px;
     left: -19px;
-    background: url("../../img/svg/icon_user.svg") no-repeat;
+    background-image: url("../../img/svg/icon_user.svg");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
     opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      left: -4px;
+      top: 0;
+      width: 24px;
+      height: 24px;
+      background-size: 24px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    margin-top: 16px;
+    padding-left: 29px;
+    bottom: 24px;
   }
 }
 
 .direction__button {
   padding: 22px 23px;
+
+  @media (min-width: $tablet-width) {
+    padding: 29px 33px;
+    margin: 0 1px;
+    padding-right: 31px;
+  }
 }

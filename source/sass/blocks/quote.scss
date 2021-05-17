@@ -3,10 +3,23 @@
   background-color: $bg-blue;
   padding-top: 20px;
   padding-bottom: 110px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    padding: 0 15px;
+    background-color: transparent;
+    margin-bottom: 293px;
+  }
 }
 
 .quote__wrapper {
   margin: 0 50px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 23px;
+    padding-right: 333px;
+  }
 }
 
 .quote__block {
@@ -14,10 +27,26 @@
   margin-right: 50px;
   padding-top: 10px;
   padding-left: 1px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 42px;
+  }
+}
+
+.quote__text {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .quote__author {
   font-weight: 700;
   margin-right: 50px;
   padding-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+    padding-right: 1px;
+  }
 }

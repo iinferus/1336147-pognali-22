@@ -1,10 +1,22 @@
 .companion {
-  background: url("../../img/companion_bg.png") left 59px no-repeat $basic-blue;
+  background-image: url("../../img/bg/companion.png");
+  background-position: center 59px;
+  background-repeat: no-repeat;
+  background-color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/bg/companion-tablet.png");
+    background-position: center 96px;
+  }
 
   &__title,
   &__desc,
   &__tagline {
     padding: 0 24px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 }
 
@@ -14,24 +26,64 @@
   padding-bottom: 31px;
   display: flex;
   flex-direction: column;
+
+
+  @media (min-width: $tablet-width) {
+    padding-top: 162px;
+    margin: 0 74px;
+    padding-bottom: 87px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .companion__title {
+    margin-bottom: 56px;
+  }
 }
 
 .companion__desc {
   padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 2px;
+    padding-right: 135px;
+    line-height: 34px;
+    margin-bottom: 39px;
+  }
 }
 
 .companion__tagline {
   margin-bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 2px;
+    padding-right: 283px;
+    line-height: 24px;
+    margin-bottom: 62px;
+  }
 }
 
-.companion__list,
-.companion__item {
+.companion__list {
   @include list-none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    margin-bottom: 61px;
+  }
+}
+
+.companion__item {
   display: flex;
   flex-direction: column;
-  position: static;
 }
 
 .companion__button {
   padding: 21px 24px 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 34px 30px 32px;
+    margin-right: 4px;
+  }
 }

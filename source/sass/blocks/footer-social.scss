@@ -1,6 +1,14 @@
 .footer-social {
+  @include list-none;
+  display: flex;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 31px;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .footer-social__item:first-child,
@@ -15,29 +23,26 @@
 }
 
 .footer-social__button {
-  background-color: $basic-yellow;
-  border-radius: 50%;
+  svg {
+    width: 45px;
+    height: 44px;
 
-  &:hover,
-  &:focus {
-    background-color: $special-yellow-dark;
-    opacity: 1;
+    @media (min-width: $tablet-width) {
+      width: 62px;
+      height: 62px;
+    }
   }
 
-  &:active path {
-    opacity: 0.3;
+  circle {
+    fill: $basic-yellow;
+
+    &:hover,
+    &:focus {
+      fill: $special-yellow-dark;
+    }
   }
-}
 
-.footer-social__button--facebook {
-  padding: 14px 17px 6px;
-}
-
-.footer-social__button--vk {
-  padding: 11px;
-  padding-top: 10px;
-}
-
-.footer-social__button--insta {
-  padding: 12px 14px 8px;
+  &:active .logo {
+    fill-opacity: 0.3;
+  }
 }

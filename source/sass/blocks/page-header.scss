@@ -1,5 +1,5 @@
 .page-header {
-  background: url("../../img/globe-back-mobile.jpg") no-repeat $bg-dark-blue;
+  background: url("../../img/globe-back-mobile.jpg") center top no-repeat $bg-blue;
   color: $basic-white;
   text-transform: uppercase;
 }
@@ -10,6 +10,6 @@
 
 .page-header--active,
 .page-header--scroll {
-  background-color: $basic-white;
+  background: $basic-white;
   color: $basic-blue;
 }

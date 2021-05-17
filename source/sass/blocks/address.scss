@@ -8,14 +8,28 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 128px;
+    margin: 0 75px;
+    padding-bottom: 84px;
+  }
 }
 
 .address__address {
   @include font(16px, 22px, 700, $basic-blue-light);
   text-transform: uppercase;
-  padding: 0 61px;
+  padding-left: 61px;
   position: relative;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 64px;
+    padding-left: 94px;
+  }
 
   &::before {
     position: absolute;
@@ -24,7 +38,19 @@
     height: 45px;
     top: 0;
     left: 0;
-    background: url("../../img/svg/map_mark.svg");
+    background-image: url("../../img/svg/icon_location.svg");
+    background-position: center;
+    background-size: 21px;
+    background-repeat: no-repeat;
+    background-color: $special-blue;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 68px;
+      height: 68px;
+      background-size: 31.73px;
+      top: -20px;
+    }
   }
 }
 
@@ -32,6 +58,10 @@
   border: 3px solid $basic-blue;
   padding: 18px 21px 20px 20px;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 34px 26px 34px;
+  }
 
   &:hover,
   &:focus {

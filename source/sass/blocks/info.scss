@@ -2,10 +2,6 @@
   background: $basic-blue;
 }
 
-.info__title {
-  text-align: center;
-}
-
 .info__wrapper {
   @include wrapper;
   padding-top: 95px;
@@ -14,12 +10,32 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 97px;
+    align-items: normal;
+    margin: 0 76px;
+    padding-bottom: 72px;
+  }
+}
+
+.info__title {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+  }
 }
 
 .info__desc {
   padding: 0 30px;
   text-align: center;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 65px;
+  }
 }
 
 .info__auth-link {
@@ -39,16 +55,29 @@
 .info__form {
   display: flex;
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .info__input {
   @include font(18px, 18px, 700, $special-grey);
-  border-radius: 12px;
   outline: 0;
   outline-offset: 0;
   padding: 20px 25px 21px;
   width: 100%;
   margin: 0 -2px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+
+  @media (min-width: $tablet-width) {
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    padding: 24px 35px 27px;
+    font-size: 24px;
+    line-height: 24px;
+  }
 
   &::placeholder {
     color: rgba($special-grey, 0.3);
@@ -89,26 +118,56 @@
   padding: 27px 25px;
   position: relative;
   margin-left: -10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 35px;
+    border-radius: 0;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+  }
 }
 
 .info__tagline {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .info__contact {
   @include list-none;
   align-self: flex-start;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .info__item {
   padding-top: 8px;
   padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+    padding-bottom: 8px;
+  }
 }
 
 .info__link {
   @include font(16px, 22px, 700, $basic-yellow);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    padding-left: 90px;
+  }
 
   &:hover,
   &:focus {
@@ -117,6 +176,13 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      top: -18px;
+      left: -1px;
+    }
   }
 }
 

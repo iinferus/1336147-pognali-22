@@ -5,20 +5,58 @@
 .profile-rate__wrapper {
   @include wrapper;
   padding-top: 76px;
-  background: url("../../img/rates.png") right 62px no-repeat;
+  background-image: url("../../img/bg/rates.png");
+  background-repeat: no-repeat;
+  background-position: right 62px;
   padding-left: 25px;
   padding-bottom: 39px;
+  background-size: 100px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 130px;
+    padding-left: 0;
+    background-position: right 60px bottom 45px;
+    padding-bottom: 87px;
+  }
 }
 
 .profile-rate__title {
   padding-right: 130px;
   margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 35px;
+  }
 }
 
 .profile-rate__list {
   @include list-none;
   counter-reset: number;
   margin-bottom: 26px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 41px;
+    padding-bottom: 26px;
+    margin-right: 15px;
+    margin-bottom: 18px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 198px;
+      height: 285px;
+      background-color: $bg-blue-filter;
+      background-repeat: no-repeat;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      border-radius: 20px;
+    }
+  }
 }
 
 .profile-rate__item {
@@ -27,15 +65,35 @@
   border-top: 1px solid $inner-border;
   padding-top: 12px;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 105px;
+    margin-bottom: 13px;
+    margin-right: 35px;
+    border-color: $light-border;
+    padding-top: 18px;
+  }
+
   &::after {
     @include font(16px, 16px, 400, $basic-white);
     counter-increment: number;
     content: counter(number) "";
     position: absolute;
-    top: 3px;
-    right: 0;
     border-radius: 50%;
     padding: 9px 13px 8px 14px;
+
+    @media (max-width: $mobile-width-only) {
+      top: 3px;
+      right: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      @include font(28px, 28px, 400, $basic-white);
+      top: -2px;
+      left: -90px;
+      padding: 20px 26px 20px 28px;
+    }
   }
 
   &:first-child::after {
@@ -44,14 +102,26 @@
 
   &:nth-child(2)::after {
     background-color: $special-yellow-dark;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+    }
   }
 
   &:last-child {
     border-bottom: 1px solid $inner-border;
     padding-bottom: 14px;
 
+    @media (min-width: $tablet-width) {
+      border-color: $light-border;
+    }
+
     &::after {
       background-color: $basic-yellow;
+
+      @media (min-width: $tablet-width) {
+        top: 2px;
+      }
     }
   }
 }
@@ -60,6 +130,14 @@
 .profile-rate__cost {
   @include font(16px, 16px, 300, $special-grey);
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font(28px, 28px, 300, $special-grey);
+  }
+}
+
+.profile-rate__cost {
+  padding: 0;
 }
 
 .profile-rate__name {
@@ -68,6 +146,23 @@
 
 .profile-rate__button {
   @include font(16px, 16px, 700, $basic-button);
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 20px, 700, $basic-button);
+    padding-left: 104px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -22px;
+      left: 15px;
+      background: url("../../img/svg/icon_businessman.svg") center center no-repeat $bg-blue-filter;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+    }
+  }
 
   &:hover,
   &:focus {

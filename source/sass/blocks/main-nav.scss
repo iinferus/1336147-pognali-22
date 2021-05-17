@@ -1,8 +1,60 @@
 .main-nav {
-  padding: 23px 26px;
+  padding: 17px 26px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.page-header--active .main-nav {
+  padding: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 40px;
+  }
+}
+
+.main-nav__logo-img {
+  display: block;
+
+  img {
+    width: 96px;
+    height: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 166px;
+    }
+  }
+}
+
+.main-nav__logo-img--active {
+  display: none;
+
+  img {
+    width: 100px;
+    height: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 164px;
+      height: 42px;
+    }
+  }
+}
+
+.page-header--active {
+  .main-nav__logo-img {
+    display: none;
+  }
+
+  .main-nav__logo-img--active {
+    display: block;
+  }
 }
 
 .main-nav__toggle {
@@ -10,7 +62,6 @@
   position: relative;
   width: 25px;
   height: 11px;
-  margin-bottom: 15px;
   padding: 0;
   background: transparent;
   border: none;
@@ -29,15 +80,20 @@
   }
 
   &::before {
-    top: 0;
+    top: 1px;
   }
 
   &::after {
-    bottom: 0;
+    bottom: -1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+    margin-left: 166px;
   }
 }
 
-.main-nav__toggle--active {
+.page-header--active .main-nav__toggle {
   height: 19px;
 
   &::before,
@@ -55,15 +111,17 @@
     transform: rotate(-45deg);
     bottom: 6px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+    margin-left: 167px;
+  }
 }
 
 
 .main-nav__wrapper {
-  margin-top: 66px;
   flex: auto;
-}
 
-.main-nav__wrapper--disable {
   margin: 0;
   position: absolute;
 
@@ -72,7 +130,23 @@
   }
 }
 
-.main-nav__user {
-  display: flex;
-  flex-direction: column;
+.page-header--active .main-nav__wrapper {
+  margin-top: 66px;
+  position: absolute;
+  display: block;
+  width: 100%;
+  background: $basic-white;
+  left: 0;
+  top: 0;
+  z-index: 18;
+  padding-top: 49px;
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 85px;
+    padding-top: 95px;
+  }
 }

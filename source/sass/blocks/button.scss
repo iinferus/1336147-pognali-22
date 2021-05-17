@@ -15,6 +15,11 @@
     border-style: solid;
     border-width: 6px 1px 6px 10px;
     border-color: transparent transparent transparent $basic-blue-light;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 1px;
+      align-self: center;
+    }
   }
 
   &:hover,
@@ -28,5 +33,11 @@
 
   &:active::after {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(24px, 24px, 700, $basic-blue-light);
+    padding: 27px 35px 29px 33px;
+    border-radius: 20px;
   }
 }

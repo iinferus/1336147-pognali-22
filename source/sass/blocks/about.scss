@@ -1,13 +1,47 @@
 .about {
-  background: url("../../img/about-mobile.png") 20px center no-repeat $basic-blue;
+  background-color: $basic-blue;
+}
+
+.about__container {
+  background-image: url("../../img/bg/about.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/bg/about-tablet.png");
+    background-position: right 8px top 16px;
+  }
 }
 
 .about__wrapper {
   padding-top: 30px;
   margin: 0 49px;
   padding-bottom: 82px;
+
+  @media (min-width: $tablet-width) {
+    padding: 73px 332px 89px 25px;
+  }
 }
 
 .about__desc {
   padding-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.about__button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about__tagline {
+    margin-bottom: 54px;
+  }
+
+  .about__button {
+    display: flex;
+    margin-right: 37px;
+  }
 }

@@ -5,8 +5,18 @@
   font-size: 20px;
   line-height: 20px;
   min-height: 100%;
-  max-width: 320px;
-  background: url("../../img/globe-back-mobile.jpg") center top no-repeat;
+  min-width: 320px;
+  background-image: url("../../img/bg/globe-back.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: $bg-blue;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+    background-image: url("../../img/bg/globe-back-tablet.png");
+    background-position: -235px 382px;
+    background-color: #182044;
+  }
 }
 
 .page-body--center {

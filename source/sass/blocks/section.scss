@@ -3,6 +3,11 @@
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include font(45px, 45px, 700, $basic-orange);
+    margin-bottom: 42px;
+  }
 }
 
 .section__desc {
@@ -10,10 +15,19 @@
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include font(28px, 33px, 300, $basic-white);
+    margin-bottom: 31px;
+  }
 }
 
 .section__tagline {
   @include font(16px, 22px, 700, $basic-white);
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font(21px, 25px, 700, $basic-white);
+  }
 }

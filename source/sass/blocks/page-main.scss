@@ -6,9 +6,19 @@
 .page-main__title {
   @include font(36px, 40px, 700, $basic-white);
   text-align: center;
-  padding-top: 19px;
+  padding-top: 20px;
   padding-bottom: 266px;
-  background: url("../../img/traveller-illustration-mobile-1.png") no-repeat right 8px bottom;
+  background-image: url("../../img/bg/traveller-illustration.png");
+  background-repeat: no-repeat;
+  background-position: right 8px bottom;
+  background-size: 192px 255px;
+
+  @media (min-width: $tablet-width) {
+    @include font(60px, 70px, 700, $basic-white);
+    padding: 5px 63px 487px;
+    padding-top: 5px;
+    background-size: 372px 451px;
+  }
 }
 
 .page-main__category {
@@ -33,6 +43,7 @@
   position: relative;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  z-index: 2;
 
   &::after {
     content: "";
