@@ -11,6 +11,12 @@
   }
 }
 
+.page-header--nojs .site-list {
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
 .site-list__link {
   @include font(30px, 35px, 500, $basic-blue);
 

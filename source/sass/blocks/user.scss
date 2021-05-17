@@ -104,6 +104,12 @@
   }
 }
 
+.page-header--nojs .user__button {
+  @media (min-width: $tablet-width) {
+    top: -6%;
+  }
+}
+
 .page-header--inner .user {
   display: none;
 }

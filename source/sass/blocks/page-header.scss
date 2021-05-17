@@ -9,7 +9,8 @@
 }
 
 .page-header--active,
-.page-header--scroll {
+.page-header--scroll,
+.page-header--nojs {
   background: $basic-white;
   color: $basic-blue;
 }

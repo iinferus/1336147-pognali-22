@@ -11,6 +11,12 @@
   }
 }
 
+.page-header--nojs .social-list {
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
 .social-list__item:first-child {
   margin-right: 27px;
 
