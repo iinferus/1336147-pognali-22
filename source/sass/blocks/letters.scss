@@ -1,0 +1,60 @@
+.letters__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.letters__item {
+  @include font(14px, 18px, 500, $basic-blue-light);
+  background-color: $basic-white;
+  margin: 0;
+  border: 1px solid $special-border;
+  text-transform: uppercase;
+  padding: 11px 16px;
+  font-family: inherit;
+
+  &:hover,
+  &:focus {
+    border-color: $inner-border;
+  }
+
+  &:active,
+  &--current {
+    background-color: $basic-blue-light;
+    color: $basic-white;
+    border: none;
+  }
+
+  &--current {
+    background-color: $bg-light-blue;
+    color: $basic-blue-light;
+    border: 1px solid $special-border;
+  }
+}
+
+.letters__country-list {
+  display: flex;
+  flex-direction: column;
+  padding: 13px 19px;
+}
+
+.letters__country {
+  @include font(16px, 22px, 400, $special-grey);
+  margin-bottom: 4px;
+
+  &:hover,
+  &:focus {
+    color: $basic-blue-light;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.country-menu .letters__country {
+  margin-bottom: 0;
+
+  &-list {
+    padding: 7px 0;
+  }
+}
